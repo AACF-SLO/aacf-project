@@ -5,12 +5,13 @@ import Header from '../components/header'
 import '../styles/index.scss'
 import layoutStyles from './layout.module.scss'
 
+
 //add props to Layout function to get all the 'children inside Layout tag
 
 const Layout = (props) => {
     return (
         <div>
-            <div>
+            <div className={layoutStyles.stickyFooter}>
                 <Header/>
                 {props.children} 
             </div>
