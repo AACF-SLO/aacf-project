@@ -7,11 +7,14 @@ import Layout from '../components/layout'
 
 import Head from '../components/head'
 
+import Button from 'react-bootstrap/Button'
+
 const IndexPage = () => {
     return (
         <Layout>
             <Head title="Home"/>
             <h1>Hello</h1>
+            <Button>Hello there</Button>
             <h2>this is a test</h2>
             <p>Need a developer?<Link to="/contact"> Contact me</Link></p>
         </Layout>
