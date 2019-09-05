@@ -14,16 +14,16 @@ import facebook_logo from '../images/fblogo.png'
 import './footer.scss'
 
 const Footer = () => {
-    const data = useStaticQuery(graphql`
-        query {
-            site {
-                siteMetadata {
-                    footer1
-                    footer2
-                }
-            }
-        }
-    `)
+    // const data = useStaticQuery(graphql`
+    //     query {
+    //         site {
+    //             siteMetadata {
+    //                 footer1
+    //                 footer2
+    //             }
+    //         }
+    //     }
+    // `)
 
     return (
         <footer>
@@ -75,7 +75,7 @@ const Footer = () => {
                 <div className="text-center footer-end">
                     {/* <p>{data.site.siteMetadata.footer1}</p> */}
                     {/* <p>{data.site.siteMetadata.footer2}</p> */}
-                    <p>Made with God`s ❤️ by AACF SLO</p>
+                    <p>Made with God`s <span role="img" aria-label="heart">❤️</span> by AACF SLO</p>
                     <p className="pb-0">Copyright © 2019, Asian American Christian Fellowship at California Polytechnic State University - San Luis Obispo</p>
                 </div>
             </Container>
