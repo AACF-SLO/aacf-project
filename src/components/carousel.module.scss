@@ -43,9 +43,10 @@ $img2: url('../images/michelle.jpg');
 .resize {
     height: calc(100vh - 102px);
     background: no-repeat center center fixed;
-    // background-image: $img1;
+    background-image: $img1;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    // transform: translateZ(1px) scale(1.2);
 }

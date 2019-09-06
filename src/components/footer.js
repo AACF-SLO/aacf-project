@@ -77,7 +77,7 @@ const Footer = () => {
                     {/* <p>{data.site.siteMetadata.footer1}</p> */}
                     {/* <p>{data.site.siteMetadata.footer2}</p> */}
                     <p>Made with God`s <span role="img" aria-label="heart">❤️</span> by AACF SLO</p>
-                    <p className="pb-0">Copyright © 2019, Asian American Christian Fellowship at California Polytechnic State University - San Luis Obispo</p>
+                    <p className="mb-0">Copyright © 2019, Asian American Christian Fellowship at California Polytechnic State University - San Luis Obispo</p>
                 </div>
             </Container>
         </footer>
