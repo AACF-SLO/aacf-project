@@ -16,45 +16,29 @@ const RotatingImages = () => {
     return(        
         <Carousel>
                 <Carousel.Item>  
-                    <div className={[carouselStyle.resize].join(' ')}> {/* works*/}
-                    
-                    
-
-                    </div>
-                    {/* <Image
-                    className="d-none d-md-block w-100"
-                    src={carouselImage1}
-                    alt="First slide"
-                    /> */}
-                    {/* <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption> */}
+                    <div style={{backgroundImage: `url(${carouselImage1})`}} className={[carouselStyle.resize, "d-none d-lg-block"].join(' ')}></div>
+                    {/* <div className="d-lg-none d-xl-none d-block" style={{backgroundImage: `url(${carouselImage1})`}}></div> */}
+                    <img
+                        className="d-lg-none d-xl-none w-100"
+                        src={carouselImage1}
+                        alt="First slide"
+                    />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <Image
-                    className="d-block w-100"
-                    src={carouselImage2}
-                    alt="Second slide"
+                    <div style={{backgroundImage: `url(${carouselImage2})`}} className={[carouselStyle.resize, "d-none d-lg-block"].join(' ')}> {/* works*/}</div>
+                    <img
+                        className="d-lg-none d-xl-none w-100"
+                        src={carouselImage2}
+                        alt="Second slide"
                     />
-
-                    {/* <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption> */}
                 </Carousel.Item>
                 <Carousel.Item>
-                    <Image
-                    className="d-block w-100"
-                    src={carouselImage3}
-                    alt="Third slide"
+                    <div style={{backgroundImage: `url(${carouselImage3})`}} className={[carouselStyle.resize, "d-none d-lg-block"].join(' ')}> {/* works*/}</div>
+                    <img
+                        className="d-lg-none d-xl-none w-100"
+                        src={carouselImage3}
+                        alt="Third slide"
                     />
-                    
-
-                    {/* <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </Carousel.Caption> */}
                 </Carousel.Item>
             </Carousel>
     )
