@@ -1,0 +1,9 @@
+$img1: url('../images/cross.jpg');
+
+.background {
+    background-image: $img1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

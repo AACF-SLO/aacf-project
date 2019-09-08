@@ -8,6 +8,7 @@ import Layout from '../components/layout'
 import Head from '../components/head'
 
 import Carousel from '../components/carousel'
+import HomeHeading from '../components/home-heading'
 
 
 const IndexPage = () => {
@@ -24,6 +25,8 @@ const IndexPage = () => {
         <Layout>
             <Head title="Home"/>
             <Carousel/>
+            <HomeHeading/>
+
         </Layout>
     )
     
