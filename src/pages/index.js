@@ -9,6 +9,7 @@ import Head from '../components/head'
 
 import Carousel from '../components/carousel'
 import HomeHeading from '../components/home-heading'
+import Hover from '../components/hover'
 
 
 const IndexPage = () => {
@@ -26,7 +27,7 @@ const IndexPage = () => {
             <Head title="Home"/>
             <Carousel/>
             <HomeHeading/>
-
+            <Hover/>
         </Layout>
     )
     
