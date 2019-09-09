@@ -17,7 +17,9 @@ export const query = graphql`
         }
     }
 `
+//frontmatter: {title: {eq: "BLOG"}},  filter in markdownRemark
 
+// template for each blog page, used in gatsby-node.js
 const Blog = (props) => {
     return (
         <Layout>

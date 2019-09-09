@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Container from 'react-bootstrap/Container'

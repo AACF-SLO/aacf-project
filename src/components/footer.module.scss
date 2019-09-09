@@ -1,0 +1,41 @@
+$blue: #1F419B;
+
+.container-fluid {
+    background: $blue;
+}
+
+.social-logo a {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.footer-links {
+    color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+    letter-spacing: 5px;
+    margin-bottom: .5rem;
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    @media only screen and (max-width: 768px){
+        margin-top: .75rem;
+    }
+
+}
+
+.footer-end {
+    color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+}

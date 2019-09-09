@@ -4,7 +4,7 @@ import React from "react"
 //Link is a react component, preloads the page content and loads instantly
 
 import Carousel from 'react-bootstrap/Carousel'
-import Image from 'react-bootstrap/Image'
+// import Image from 'react-bootstrap/Image'
 
 import carouselStyle from './carousel.module.scss'
 
