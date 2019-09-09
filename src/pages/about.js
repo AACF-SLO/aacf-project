@@ -1,5 +1,6 @@
 import React from "react"
 // import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 
 import Layout from '../components/layout'
 
@@ -19,7 +20,26 @@ import cross from '../images/cross-about.jpg'
 import bible from '../images/bible.jpg'
 import bibleWoods from '../images/bible-woods.jpg'
 
+
 const AboutPage = () => {
+    const data = useStaticQuery(graphql`
+        query {
+            allMarkdownRemark(filter: {frontmatter: {category: {eq: "about"}}}) {
+                edges {
+                    node {
+                        frontmatter {
+                            fall
+                            spring
+                            winter
+                            theme
+                        }
+                    }
+                }
+            }
+        }
+    `)
+
+
     return (
         <Layout>
             <Head title="About"/>
@@ -41,21 +61,21 @@ const AboutPage = () => {
                 <Container>
                     <Row>
                         <Col>
-                            <h1>THEME: </h1>
+                            <h1>{data.allMarkdownRemark.edges[0].node.frontmatter.theme}</h1>
                         </Col>
                     </Row>
                     <Row>
                         <Col sm={12} md={4}>
                             <h2>Fall</h2>
-                            <p>The mission of Asian American Christian Fellowship (AACF) is to reach into the university and collegiate community, primarily to those who are Asian Pacific Americans, with the life-changing message of Jesus Christ.</p>
+                            <p>{data.allMarkdownRemark.edges[0].node.frontmatter.fall}</p>
                         </Col>
                         <Col sm={12} md={4}>
                             <h2>Winter</h2>
-                            <p>The mission of Asian American Christian Fellowship (AACF) is to reach into the university and collegiate community, primarily to those who are Asian Pacific Americans, with the life-changing message of Jesus Christ.</p>
+                            <p>{data.allMarkdownRemark.edges[0].node.frontmatter.winter}</p>
                         </Col>
                         <Col sm={12} md={4}>
                             <h2>Spring</h2>
-                            <p>The mission of Asian American Christian Fellowship (AACF) is to reach into the university and collegiate community, primarily to those who are Asian Pacific Americans, with the life-changing message of Jesus Christ.</p>
+                            <p>{data.allMarkdownRemark.edges[0].node.frontmatter.spring}</p>
                         </Col>
                     </Row>
                 </Container>
