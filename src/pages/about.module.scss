@@ -1,4 +1,16 @@
 
+$img1: url('../images/bible.jpg');
+$img2: url('../images/cross-about.jpg');
+
 .jumbotron-mb-0 {
     margin-bottom: 0;
+    min-height: 80vh;
+    align-items: center;
+    display: flex; //d-flex goes hand in hand with align-items unless component already is flex
+    color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: no-repeat center center fixed;
 }
