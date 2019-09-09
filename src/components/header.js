@@ -9,7 +9,7 @@ import Nav from "react-bootstrap/Nav"
 import NavDropdown from "react-bootstrap/NavDropdown"
 import Image from "react-bootstrap/Image"
 import logo from "../images/AACF_LOGO_FINAL.png"
-import Container from "react-bootstrap/Container"
+// import Container from "react-bootstrap/Container"
 // import Button from "react-bootstrap/Button"
 
 // import './header.module.scss' before: <Link className="link", 
@@ -61,8 +61,11 @@ const Header = () => {
     // TODO use react-router-bootstrap for effecient routing
     return (
         <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-            <Navbar.Brand className="" href="/">
-                <Image className={["mb-0"].join(' ')} src={logo} />
+            <Navbar.Brand className="" >
+                <Link to="/">
+                    <Image className={["mb-0"].join(' ')} src={logo} />
+                </Link>
+                
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
