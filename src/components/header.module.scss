@@ -32,8 +32,13 @@
 
 
 // below is bootstrap's navbar 
-.navbar-brand img {
-    width: 150px;
+.navbar-brand {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    img {
+        width: 150px;
+    }
+    
 }
 
 .nav-link {
@@ -41,31 +46,32 @@
     font-family: Montserrat, sans-serif;
     font-size: 1rem;
     letter-spacing: 2px;
+    .dropdown-item {
+        font-family: Montserrat, sans-serif;
+        letter-spacing: 0px;
+        :hover {
+            background-color: #d2d9eb;
+        }
+    }
     
 }
 
-.dropdown-item {
-    font-family: Montserrat, sans-serif;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1rem;
-    padding-left: 1rem;
-}
-
-.navbar-brand {
-    padding-right: 1rem;
-    padding-left: 1rem;
-}
-
-.dropdown:hover > .dropdown-menu{
-	display: block;
-}
-.dropdown-menu {  //closes gap when hovering to items
-    margin-top: 0;
-}
-.dropdown-item:hover {
-	background-color: #d2d9eb;
+.navbar-expand-lg {
+    .navbar-nav {
+        div.nav-link {
+            padding-right: 1rem;
+            padding-left: 1rem;
+            >a { //padding classnames are weird
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+        .nav-link {
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+        
+    }
 }
 
 @media only screen and (max-width: 992px) {

@@ -16,8 +16,8 @@ import logo from "../images/AACF_LOGO_FINAL.png"
 // import headerStyles from './header.module.scss'
 // now with css component module: <Link className={headerStyles.link}
 
-import './header.scss'
-
+import headerStyles from './header.module.scss'
+import './header-support.scss'
 
 const Header = () => {
     //querying to get title below
@@ -60,45 +60,45 @@ const Header = () => {
 
     // TODO use react-router-bootstrap for effecient routing
     return (
-        <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-            <Navbar.Brand className="" >
+        <Navbar className={headerStyles.navbarExpandLg} collapseOnSelect expand="lg" bg="light" variant="light">
+            <Navbar.Brand className={headerStyles.navbarBrand} >
                 <Link to="/">
                     <Image className={["mb-0"].join(' ')} src={logo} />
                 </Link>
-                
             </Navbar.Brand>
+
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="ml-auto mr-3">
-                    <NavDropdown title="ABOUT" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">AACF</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Ministries</NavDropdown.Item>
+                <Nav className={["ml-auto mr-3", headerStyles.navbarNav].join(' ')}>
+                    <NavDropdown className={[headerStyles.navLink, headerStyles.dropdown].join(' ')} title="ABOUT" id="collasible-nav-dropdown">
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.1">AACF</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.2">Ministries</NavDropdown.Item>
                     </NavDropdown>
                     {/* <Navbar.Brand className="d-none d-lg-block mr-0 px-4" href="#home">
                         <Image className={["mb-0"].join(' ')} src={logo} fluid />
                     </Navbar.Brand> */}
-                    <NavDropdown title="WEEKLY" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="/">Weekly</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">SAD & BAD</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Senior Banquet</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">AACF United</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Bball Tourney</NavDropdown.Item>
+                    <NavDropdown className={headerStyles.navLink} title="WEEKLY" id="collasible-nav-dropdown">
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="/">Weekly</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.2">SAD & BAD</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">Senior Banquet</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">AACF United</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">Bball Tourney</NavDropdown.Item>
                     </NavDropdown>
-                    <NavDropdown title="EVENTS" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.2">SAD & BAD</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Senior Banquet</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">AACF United</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Bball Tourney</NavDropdown.Item>
+                    <NavDropdown className={headerStyles.navLink} title="EVENTS" id="collasible-nav-dropdown">
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.2">SAD & BAD</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">Senior Banquet</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">AACF United</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">Bball Tourney</NavDropdown.Item>
                     </NavDropdown>
-                    <NavDropdown title="OUTREACH" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="/">Bags of Love</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Inter-fellowhsip</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Senior Banquet</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">AACF United</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Bball Tourney</NavDropdown.Item>
+                    <NavDropdown className={headerStyles.navLink} title="OUTREACH" id="collasible-nav-dropdown">
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="/">Bags of Love</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.2">Inter-fellowhsip</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">Senior Banquet</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">AACF United</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">Bball Tourney</NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link  href="/">CHURCHES</Nav.Link>
-                    <Nav.Link  href="#pricing">CONTACT</Nav.Link>
+                    <Nav.Link className={headerStyles.navLink} href="/">CHURCHES</Nav.Link>
+                    <Nav.Link className={headerStyles.navLink} href="#pricing">CONTACT</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
