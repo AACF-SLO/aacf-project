@@ -1,3 +1,6 @@
+
+// These are global for header since cannot access them in component
+
 .dropdown:hover > .dropdown-menu{
 	display: block;
 }

@@ -29,7 +29,7 @@ const BlogPage = () => {
     `)
 
     // console.log(data)
-
+    // this is the blog page that holds blog list
     return (
         <Layout>
             <Head title="Blog"/>
@@ -40,6 +40,7 @@ const BlogPage = () => {
                         <li key={edge.id} className={blogStyles.post}>
                             <Link to={`/blog/${edge.node.fields.slug}`}>
                                 <h2>{edge.node.frontmatter.title}</h2>
+                                hi
                                 <p>{edge.node.frontmatter.date}</p>
                             </Link>
                         </li>
