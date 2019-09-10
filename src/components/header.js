@@ -77,25 +77,25 @@ const Header = () => {
                     {/* <Navbar.Brand className="d-none d-lg-block mr-0 px-4" href="#home">
                         <Image className={["mb-0"].join(' ')} src={logo} fluid />
                     </Navbar.Brand> */}
-                    <NavDropdown className={headerStyles.navLink} title="WEEKLY" id="collasible-nav-dropdown">
-                        <NavDropdown.Item className={headerStyles.dropdownItem} href="/">Weekly</NavDropdown.Item>
-                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.2">SAD & BAD</NavDropdown.Item>
-                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">Senior Banquet</NavDropdown.Item>
-                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">AACF United</NavDropdown.Item>
-                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">Bball Tourney</NavDropdown.Item>
+                    <NavDropdown className={headerStyles.navLink} title="CONNECT" id="collasible-nav-dropdown">
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="/">Large Group</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.2">Small Group</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">Prayer</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">MOIs</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">Men's &<br/>Women's</NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown className={headerStyles.navLink} title="EVENTS" id="collasible-nav-dropdown">
-                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.2">SAD & BAD</NavDropdown.Item>
-                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">Senior Banquet</NavDropdown.Item>
-                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">AACF United</NavDropdown.Item>
-                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">Bball Tourney</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="/sad-bad">SAD & BAD</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="/winter-retreat">Winter Retreat</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="/senior-banquet">Senior Banquet</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="/united">AACF United</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="/bball">Bball Tourney</NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown className={headerStyles.navLink} title="OUTREACH" id="collasible-nav-dropdown">
                         <NavDropdown.Item className={headerStyles.dropdownItem} href="/">Bags of Love</NavDropdown.Item>
                         <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.2">Inter-fellowhsip</NavDropdown.Item>
-                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">Senior Banquet</NavDropdown.Item>
-                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">AACF United</NavDropdown.Item>
-                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">Bball Tourney</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">Farmer's Market</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">Freshmen</NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link className={headerStyles.navLink} href="/">CHURCHES</Nav.Link>
                     <Nav.Link className={headerStyles.navLink} href="#pricing">CONTACT</Nav.Link>
