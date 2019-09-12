@@ -54,7 +54,7 @@ const Ministries = () => {
     return (
         <Layout>
             <Head title="Ministries"/>
-            <div className="my-5">
+            <div className="mb-5">
                 <Jumbotron fluid style={{backgroundImage: `url(${cross})`}} className={[ministryStyles.heading, "text-center"].join(' ')}>
                     <Container>
                         <Row>
@@ -67,8 +67,8 @@ const Ministries = () => {
                 </Jumbotron>
                 {data.allMarkdownRemark.edges[0].node.frontmatter.ministries.map((ministry) => {
                     return (
-                        <div>
-                            <Container fluid className="mb-5 text-center">
+                        <React.Fragment>
+                            <Container className="mb-5 text-center"> {/* Can be fluid*/}
                                 <Row className="">
                                     <Col>
                                         <h2>{ministry.ministry.type}</h2>
@@ -99,7 +99,7 @@ const Ministries = () => {
                                     
                                 </Row>
                             </Container>
-                        </div>
+                        </React.Fragment>
                     )
                 })}
             </div>
