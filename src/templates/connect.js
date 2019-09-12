@@ -52,7 +52,7 @@ const Connect = (props) => {
                                 <h2>Where:</h2>
                                 <p>{props.data.markdownRemark.frontmatter.location}</p>
                                 <a href="/">
-                                    <button className="" type="button">
+                                    <button className="" type="button" disabled>
                                         SIGN UP
                                     </button>
                                 </a>
