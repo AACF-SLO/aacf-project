@@ -1,15 +1,9 @@
 import React from "react"
-
-import { Link } from "gatsby"
-
-import Navbar from "react-bootstrap/Navbar"
-import Nav from "react-bootstrap/Nav"
-import NavDropdown from "react-bootstrap/NavDropdown"
-import Image from "react-bootstrap/Image"
-import logo from "../images/AACF_LOGO_FINAL.png"
-import Container from "react-bootstrap/Container"
-
 import styles from './hover.module.scss'
+
+import controller from "../images/controller.png"
+import food from "../images/food.png"
+import mountain from "../images/mountain.png"
 
 const Hover = () => {
     // TODO use react-router-bootstrap for effecient routing
@@ -19,7 +13,7 @@ const Hover = () => {
                 <div className = {styles.card}>
                     <div className = {[styles.face, styles.face1].join(' ')}>
                         <div className = {styles.content}>
-                            <img src = "design.png"></img>
+                            <img src = {controller}></img>
                             <h3>Event 1</h3>
                         </div>
                     </div>
@@ -34,7 +28,7 @@ const Hover = () => {
                 <div className = {styles.card}>
                     <div className = {[styles.face, styles.face1].join(' ')}>
                         <div className = {styles.content}>
-                            <img src = "design.png"></img>
+                            <img src = {food}></img>
                             <h3>Event 2</h3>
                         </div>
                     </div>
@@ -49,7 +43,7 @@ const Hover = () => {
                 <div className = {styles.card}>
                     <div className = {[styles.face, styles.face1].join(' ')}>
                         <div className = {styles.content}>
-                            <img src = "design.png"></img>
+                            <img src = {mountain}></img>
                             <h3>Event 3</h3>
                         </div>
                     </div>
