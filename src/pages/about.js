@@ -32,6 +32,7 @@ const AboutPage = () => {
                             spring
                             winter
                             theme
+                            verse
                         }
                     }
                 }
@@ -59,9 +60,10 @@ const AboutPage = () => {
             </Jumbotron>
             <Jumbotron fluid style={{backgroundImage: `url(${bible})`}} className={[aboutStyles.jumbotronMb0, "text-center"].join(' ')}>
                 <Container>
-                    <Row>
-                        <Col>
+                    <Row className="justify-content-center">
+                        <Col sm={12} md={9}>
                             <h1>{data.allMarkdownRemark.edges[0].node.frontmatter.theme}</h1>
+                            <h3>{data.allMarkdownRemark.edges[0].node.frontmatter.verse}</h3>
                         </Col>
                     </Row>
                     <Row>
