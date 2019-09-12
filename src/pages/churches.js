@@ -45,7 +45,7 @@ const Churches = () => {
     return (
         <Layout>
             <Head title="Churches"/>
-            <Jumbotron fluid style={{backgroundImage: `url(${cross})`}} className={["text-center"].join(' ')}>
+            <Jumbotron fluid style={{backgroundImage: `url(${cross})`}} className={[churchesStyles.heading,"text-center"].join(' ')}>
                 <Container>
                     <Row>
                         <Col>
