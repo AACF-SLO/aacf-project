@@ -1,6 +1,6 @@
 import React from "react"
 // import { Link } from "gatsby"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from '../components/layout'
 
@@ -119,7 +119,7 @@ const AboutPage = () => {
                     </Row>
                     <Row>
                         <Col className="text-center">
-                            <h3>Learn More</h3>
+                            <h3>Learn More:</h3>
                             <a href="http://www.aacf.org/" target="_blank" rel="noopener noreferrer">
                                 <img
                                 src={aacfLogo}
