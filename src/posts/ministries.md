@@ -98,7 +98,14 @@ ministries:
                 name: "Nick Desimone"
                 photo: "../images/ministries/adam-m-1.jpg"
                 detail: "3rd year, mechanical engineering"
-advisor: "David Janzen"
+    - ministry:
+        type: "advisor"
+        responsibility: "responsibility here"
+        people:
+            - person:
+                name: "David Janzen"
+                photo: "../images/ministries/adam-m-1.jpg"
+                detail: "professor"
 ---
 can make each ministry a key/value pair or a list with '-'
 will be able to add image inside each person

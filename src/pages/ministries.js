@@ -80,7 +80,7 @@ const Ministries = () => {
                                         <hr/>
                                     </Col>
                                 </Row>
-                                <Row className="d-flex justify-content-start">
+                                <Row className="d-flex justify-content-center">
                                 {ministry.ministry.people.map((childOfGod) => {
                                     return (
                                         <React.Fragment key={childOfGod.uid}>
