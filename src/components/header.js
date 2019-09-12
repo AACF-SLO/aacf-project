@@ -92,14 +92,15 @@ const Header = () => {
                         <NavDropdown.Item className={headerStyles.dropdownItem} href="/united">AACF United</NavDropdown.Item>
                         <NavDropdown.Item className={headerStyles.dropdownItem} href="/bball">Bball Tourney</NavDropdown.Item>
                     </NavDropdown>
-                    <NavDropdown className={headerStyles.navLink} title="OUTREACH" id="collasible-nav-dropdown">
+                    {/* <NavDropdown className={headerStyles.navLink} title="OUTREACH" id="collasible-nav-dropdown">
                         <NavDropdown.Item className={headerStyles.dropdownItem} href="/">Bags of Love</NavDropdown.Item>
                         <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.2">Inter-fellowhsip</NavDropdown.Item>
                         <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">Farmer's Market</NavDropdown.Item>
                         <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">Freshmen</NavDropdown.Item>
-                    </NavDropdown>
-                    <Nav.Link className={headerStyles.navLink} href="/">CHURCHES</Nav.Link>
-                    <Nav.Link className={headerStyles.navLink} href="#pricing">CONTACT</Nav.Link>
+                    </NavDropdown> */}
+                    <Nav.Link className={headerStyles.navLink} href="/outreach">OUTREACH</Nav.Link>
+                    <Nav.Link className={headerStyles.navLink} href="/churches">CHURCHES</Nav.Link>
+                    <Nav.Link className={headerStyles.navLink} href="/contact">CONTACT</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
