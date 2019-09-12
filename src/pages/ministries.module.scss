@@ -1,0 +1,12 @@
+.heading {
+    margin-bottom: 4rem;
+    min-height: 20vh;
+    align-items: center;
+    display: flex; //d-flex goes hand in hand with align-items unless component already is flex
+    color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: no-repeat center center fixed;
+}
