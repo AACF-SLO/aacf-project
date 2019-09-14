@@ -10,6 +10,7 @@ import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Jumbotron from 'react-bootstrap/Jumbotron'
+import Button from 'react-bootstrap/Button'
 
 import outreachStyles from './outreach.module.scss'
 
@@ -49,11 +50,7 @@ const Outreach = () => {
                     <Row className="justify-content-center">
                         <Col sm={12} md={8}>
                             <p>{data.allMarkdownRemark.edges[0].node.frontmatter.description}</p>
-                            <a href="/" target="_blank">
-                            <button>
-                                SIGN UP!
-                            </button>
-                            </a>
+                            <Button size="lg" variant="outline-primary">SIGN UP</Button>
                         </Col>
                     </Row>
                 </Container>

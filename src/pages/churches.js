@@ -11,6 +11,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
 
 import cross from '../images/cross-about.jpg'
 
@@ -54,10 +55,8 @@ const Churches = () => {
                     </Row>
                     <Row className="justify-content-center">
                         <Col sm={12} md={8}>
-                            <p>Sign up below to get a ride to one of the many churches around SLO!</p>
-                            <button className="" type="button">
-                                I need a ride!
-                            </button>
+                            <p>Click below to get a ride to one of many churches around SLO!</p>
+                            <Button size="lg" variant="primary">I NEED A RIDE!</Button>
                         </Col>
                     </Row>
                 </Container>
