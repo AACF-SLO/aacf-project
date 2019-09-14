@@ -69,17 +69,18 @@ const Ministries = () => {
                     return (
                         <React.Fragment>
                             <Container className="mb-5 text-center"> {/* Can be fluid*/}
-                                <Row className="">
+                                <Row className={ministryStyles.ministryTitle}>
                                     <Col>
                                         <h2>{ministry.ministry.type}</h2>
+                                        <hr/>
                                     </Col>
                                 </Row>
-                                <Row className="justify-content-center">
+                                {/* <Row className="justify-content-center">
                                     <Col xs={12} md={8}>
                                         <p>{ministry.ministry.responsibility}</p>
                                         <hr/>
                                     </Col>
-                                </Row>
+                                </Row> */}
                                 <Row className="d-flex justify-content-center">
                                 {ministry.ministry.people.map((childOfGod) => {
                                     return (

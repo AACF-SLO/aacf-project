@@ -47,7 +47,7 @@ ministries:
                 photo: "../images/ministries/adam-m-1.jpg"
                 detail: "4th year, computer engineering"
             - person: 
-                name: "Rachel Wang"
+                name: "Rachel Jung"
                 photo: "../images/ministries/adam-m-1.jpg"
                 detail: "4th year, business"
     - ministry:
