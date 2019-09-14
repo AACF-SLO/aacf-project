@@ -60,7 +60,7 @@ const Header = () => {
 
     // TODO use react-router-bootstrap for effecient routing
     return (
-        <Navbar className={headerStyles.navbarExpandLg} collapseOnSelect expand="lg" bg="light" variant="light">
+        <Navbar sticky="top" className={headerStyles.navbarExpandLg} collapseOnSelect expand="lg" bg="light" variant="light">
             <Navbar.Brand className={headerStyles.navbarBrand} >
                 <Link to="/">
                     <Image className={["mb-0"].join(' ')} src={logo} />
