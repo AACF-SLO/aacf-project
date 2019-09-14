@@ -44,7 +44,7 @@ const AboutPage = () => {
     return (
         <Layout>
             <Head title="About"/>
-            <Jumbotron fluid style={{backgroundImage: `url(${cross})`}} className={[aboutStyles.jumbotronMb0, "text-center"].join(' ')}>
+            <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${cross})`}} className={[aboutStyles.jumbotronMb0, "text-center"].join(' ')}>
                 <Container>
                     <Row>
                         <Col>
@@ -58,7 +58,7 @@ const AboutPage = () => {
                     </Row>
                 </Container>
             </Jumbotron>
-            <Jumbotron fluid style={{backgroundImage: `url(${bible})`}} className={[aboutStyles.jumbotronMb0, "text-center"].join(' ')}>
+            <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bible})`}} className={[aboutStyles.jumbotronMb0, "text-center"].join(' ')}>
                 <Container>
                     <Row className="justify-content-center">
                         <Col sm={12} md={9}>
@@ -83,7 +83,7 @@ const AboutPage = () => {
                 </Container>
             </Jumbotron>
 
-            <Jumbotron fluid style={{backgroundImage: `url(${bibleWoods})`}} className={[aboutStyles.jumbotronMb0, "text-center"].join(' ')} >
+            <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bibleWoods})`}} className={[aboutStyles.jumbotronMb0, "text-center"].join(' ')} >
                 <Container>
                     <Row className="justify-content-center">
                         <Col sm={12} md={8}>
@@ -98,7 +98,7 @@ const AboutPage = () => {
                     </Row> */}
                 </Container>
             </Jumbotron>
-            <Jumbotron fluid style={{backgroundImage: `url(${cross})`}} className={[aboutStyles.jumbotronMb0].join(' ')} >
+            <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${cross})`}} className={[aboutStyles.jumbotronMb0].join(' ')} >
                 <Container>
                     <Row>
                         <Col className="text-center">
