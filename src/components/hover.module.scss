@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     min-height: 70vh;
-    background: #333;
+    background: #e6e6e6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@
 
 .container .card
 {
-    background: #333;
+    background: #e6e6e6;
     position:relative;
     border: none !important;
 
@@ -35,7 +35,7 @@
 .container .card .face.face1
 {
     position: relative;
-    background: #333;
+    background: #001d7d;
     display: flex;
     justify-content: center;
     align-items: center;
