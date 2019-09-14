@@ -5,4 +5,5 @@ description: "Located in Southern California, the AACF Basketball Tournament is 
 location: "San Luis Obispo"
 date: "During the school year"
 gif: "../../images/events/bball.gif"
+link: ""
 ---

@@ -1,6 +1,7 @@
 ---
 category: "Churches"
 title: "Churches"
+link: ""
 churches:
     - church:
         name: "Vista Church"

@@ -12,6 +12,8 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
+import Tooltip from 'react-bootstrap/Tooltip'
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 
 import cross from '../images/cross-about.jpg'
 
@@ -26,6 +28,7 @@ const Churches = () => {
             node {
               frontmatter {
                 title
+                link
                 churches {
                   church {
                     link
@@ -56,7 +59,15 @@ const Churches = () => {
                     <Row className="justify-content-center">
                         <Col sm={12} md={8}>
                             <p>Click below to get a ride to one of many churches around SLO!</p>
-                            <Button size="lg" variant="primary">I NEED A RIDE!</Button>
+                            {/* <Button size="lg" variant="primary">I NEED A RIDE!</Button> */}
+                            { data.allMarkdownRemark.edges[0].node.frontmatter.link.trim() === "" ? 
+                                    (<OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Not Ready Yet!</Tooltip>}>
+                                        <span className="d-inline-block">
+                                            <Button disabled style={{ pointerEvents: 'none' }} size="lg" variant="secondary">Sign Up</Button>
+                                        </span>
+                                    </OverlayTrigger>
+                                    ) 
+                                    : (<Button href={data.allMarkdownRemark.edges[0].node.frontmatter.link} size="lg" variant="outline-primary">SIGN UP</Button>) }
                         </Col>
                     </Row>
                 </Container>

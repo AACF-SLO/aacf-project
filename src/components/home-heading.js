@@ -20,7 +20,7 @@ const Heading = () => {
                 grow with each other in the Word of the Bible and live out our faith in San Luis Obispo!
                 </p>
                 {/* Might want to do some row/col action for more buttons */}
-                <Button variant="primary">Learn more</Button>
+                <Button href="/about" variant="primary">Learn more</Button>
             </Container>
         </Jumbotron>
     )

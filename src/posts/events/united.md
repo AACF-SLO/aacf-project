@@ -5,5 +5,5 @@ description: "An annual event where AACFs from all over the west coast gather to
 location: "San Luis Obispo"
 date: "During the school year"
 gif: "../../images/events/united.gif"
-# thumbnail: "../../images/events/winter2018.jpg"
+link: "/"
 ---

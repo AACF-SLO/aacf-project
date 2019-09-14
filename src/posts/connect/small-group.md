@@ -5,4 +5,5 @@ description: "Involving both Bible study and community based activities, small g
 location: "San Luis Obispo"
 date: "During the school year"
 gif: "../../images/events/bball.gif"
+link: ""
 ---

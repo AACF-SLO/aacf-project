@@ -10,6 +10,8 @@ import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button'
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
+import Tooltip from 'react-bootstrap/Tooltip'
 
 import eventsStyles from './events.module.scss'
 
@@ -22,6 +24,7 @@ export const query = graphql`
                 location
                 date
                 title
+                link
                 gif {
                     publicURL
                 }
@@ -42,16 +45,24 @@ const Connect = (props) => {
             <Head title={props.data.markdownRemark.frontmatter.title}/>
             <Container fluid className={["my-5"].join(' ')}>
                 <Row>
-                    <Col xs={12} md={6} className={["mb-5 text-right order-1 order-md-2"].join(' ')}>
-                        <Row className={["justify-content-center"].join(' ')}>
-                            <Col xs={12} md={11}>
+                    <Col xs={12} md={6} className={["mb-5 text-center text-md-right order-1 order-md-2"].join(' ')}>
+                        <Row className={["justify-content-center justify-content-md-end"].join(' ')}>
+                            <Col xs={10} md={9}>
                                 <h1 className={eventsStyles.title}>{props.data.markdownRemark.frontmatter.title}</h1>
-                                <h3>{props.data.markdownRemark.frontmatter.description}</h3>
+                                <h3 className="">{props.data.markdownRemark.frontmatter.description}</h3>
                                 <h2>When:</h2>
                                 <p>{props.data.markdownRemark.frontmatter.date}</p>
                                 <h2>Where:</h2>
                                 <p>{props.data.markdownRemark.frontmatter.location}</p>
-                                <Button size="lg" variant="outline-primary">SIGN UP</Button>
+                                {/* can make this a component below that takes a string for the button*/}
+                                { props.data.markdownRemark.frontmatter.link.trim() === "" ? 
+                                    (<OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Not Ready Yet!</Tooltip>}>
+                                        <span className="d-inline-block">
+                                            <Button disabled style={{ pointerEvents: 'none' }} size="lg" variant="secondary">Sign Up</Button>
+                                        </span>
+                                    </OverlayTrigger>
+                                    ) 
+                                    : (<Button href={props.data.markdownRemark.frontmatter.link} size="lg" variant="outline-primary">SIGN UP</Button>) }
                             </Col>
                         </Row>
                         

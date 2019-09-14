@@ -5,4 +5,5 @@ description: "As a celebratory send off, the non-senior members of the fellowshi
 location: "San Luis Obispo"
 date: "During the school year"
 gif: "../../images/events/banquet.gif"
+link: ""
 ---

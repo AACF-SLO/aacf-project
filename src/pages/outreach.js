@@ -11,6 +11,8 @@ import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Button from 'react-bootstrap/Button'
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
+import Tooltip from 'react-bootstrap/Tooltip'
 
 import outreachStyles from './outreach.module.scss'
 
@@ -27,6 +29,7 @@ const Outreach = () => {
               frontmatter {
                 title
                 description
+                link
                 photo {
                   publicURL
                 }
@@ -50,7 +53,16 @@ const Outreach = () => {
                     <Row className="justify-content-center">
                         <Col sm={12} md={8}>
                             <p>{data.allMarkdownRemark.edges[0].node.frontmatter.description}</p>
-                            <Button size="lg" variant="outline-primary">SIGN UP</Button>
+                            {/* <Button size="lg" variant="outline-primary">SIGN UP</Button> */}
+                            {console.log(data.allMarkdownRemark.edges[0].node.frontmatter.link)}
+                            { data.allMarkdownRemark.edges[0].node.frontmatter.link.trim() === "" ? 
+                                (<OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Not Ready Yet!</Tooltip>}>
+                                    <span className="d-inline-block">
+                                        <Button disabled style={{ pointerEvents: 'none' }} size="lg" variant="secondary">Sign Up</Button>
+                                    </span>
+                                </OverlayTrigger>
+                                ) 
+                                : (<Button href={data.allMarkdownRemark.edges[0].node.frontmatter.link} size="lg" variant="outline-primary">SIGN UP</Button>) }
                         </Col>
                     </Row>
                 </Container>

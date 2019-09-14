@@ -5,4 +5,5 @@ description: "Winter retreat is held the first weekend of Winter quarter (Friday
 location: "San Luis Obispo"
 date: "During the school year"
 gif: "../../images/events/retreat.gif"
+link: ""
 ---

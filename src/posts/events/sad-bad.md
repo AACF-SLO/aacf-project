@@ -5,4 +5,5 @@ description: "SAD (Sisters Appreciation Day) and BAD (Brothers Appreciation Day)
 location: "San Luis Obispo"
 date: "During the school year"
 gif: "../../images/events/sad.gif"
+link: ""
 ---

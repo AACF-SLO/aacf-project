@@ -5,4 +5,5 @@ description: "A weekly time for devoted prayer in a small group! Throughout the 
 location: "San Luis Obispo"
 date: "During the school year"
 gif: "../../images/events/bball.gif"
+link: ""
 ---

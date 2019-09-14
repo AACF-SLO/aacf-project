@@ -5,4 +5,5 @@ description: "MOIs stand for “Moment of Impact.” A MOI is a one on one with 
 location: "San Luis Obispo"
 date: "During the school year"
 gif: "../../images/events/bball.gif"
+link: ""
 ---

@@ -5,4 +5,5 @@ description: "Women’s Ministry aims to cultivate a space where sisters can see
 location: "San Luis Obispo"
 date: "During the school year"
 gif: "../../images/events/bball.gif"
+link: ""
 ---
