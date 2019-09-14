@@ -27,7 +27,7 @@ const IndexPage = () => {
             <Head title="Home"/>
             <Carousel/>
             <HomeHeading/>
-            <Hover/>
+            {/* <Hover/> We can implement this later*/}
         </Layout>
     )
     
