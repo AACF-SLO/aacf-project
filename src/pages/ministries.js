@@ -5,7 +5,7 @@ import React from "react"
 
 import Layout from '../components/layout'
 
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 import ministryStyles from './ministries.module.scss'
 

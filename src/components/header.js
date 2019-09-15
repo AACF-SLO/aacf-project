@@ -71,26 +71,26 @@ const Header = () => {
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className={["ml-auto mr-3", headerStyles.navbarNav].join(' ')}>
                     <NavDropdown className={[headerStyles.navLink, headerStyles.dropdown].join(' ')} title="ABOUT" id="collasible-nav-dropdown">
-                        <NavDropdown.Item className={headerStyles.dropdownItem} href="/about">AACF</NavDropdown.Item>
-                        <NavDropdown.Item className={headerStyles.dropdownItem} href="/ministries">Ministries</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/about">AACF</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/ministries">Ministries</NavDropdown.Item>
                     </NavDropdown>
                     {/* <Navbar.Brand className="d-none d-lg-block mr-0 px-4" href="#home">
                         <Image className={["mb-0"].join(' ')} src={logo} fluid />
                     </Navbar.Brand> */}
                     <NavDropdown className={headerStyles.navLink} title="CONNECT" id="collasible-nav-dropdown">
-                        <NavDropdown.Item className={headerStyles.dropdownItem} href="/large-group">Large Group</NavDropdown.Item>
-                        <NavDropdown.Item className={headerStyles.dropdownItem} href="/small-group">Small Group</NavDropdown.Item>
-                        <NavDropdown.Item className={headerStyles.dropdownItem} href="/prayer">Prayer</NavDropdown.Item>
-                        <NavDropdown.Item className={headerStyles.dropdownItem} href="/moi">MOIs</NavDropdown.Item>
-                        <NavDropdown.Item className={headerStyles.dropdownItem} href="/mens">Men's</NavDropdown.Item>
-                        <NavDropdown.Item className={headerStyles.dropdownItem} href="/womens">Women's</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/large-group">Large Group</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/small-group">Small Group</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/prayer">Prayer</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/moi">MOIs</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/mens">Men's</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/womens">Women's</NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown className={headerStyles.navLink} title="EVENTS" id="collasible-nav-dropdown">
-                        <NavDropdown.Item className={headerStyles.dropdownItem} href="/sad-bad">SAD & BAD</NavDropdown.Item>
-                        <NavDropdown.Item className={headerStyles.dropdownItem} href="/winter-retreat">Winter Retreat</NavDropdown.Item>
-                        <NavDropdown.Item className={headerStyles.dropdownItem} href="/senior-banquet">Senior Banquet</NavDropdown.Item>
-                        <NavDropdown.Item className={headerStyles.dropdownItem} href="/united">AACF United</NavDropdown.Item>
-                        <NavDropdown.Item className={headerStyles.dropdownItem} href="/bball">Bball Tourney</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/sad-bad">SAD & BAD</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/winter-retreat">Winter Retreat</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/senior-banquet">Senior Banquet</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/united">AACF United</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/bball">Bball Tourney</NavDropdown.Item>
                     </NavDropdown>
                     {/* <NavDropdown className={headerStyles.navLink} title="OUTREACH" id="collasible-nav-dropdown">
                         <NavDropdown.Item className={headerStyles.dropdownItem} href="/">Bags of Love</NavDropdown.Item>
@@ -98,9 +98,9 @@ const Header = () => {
                         <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">Farmer's Market</NavDropdown.Item>
                         <NavDropdown.Item className={headerStyles.dropdownItem} href="#action/3.3">Freshmen</NavDropdown.Item>
                     </NavDropdown> */}
-                    <Nav.Link className={headerStyles.navLink} href="/outreach">OUTREACH</Nav.Link>
-                    <Nav.Link className={headerStyles.navLink} href="/churches">CHURCHES</Nav.Link>
-                    <Nav.Link className={headerStyles.navLink} href="/contact">CONTACT</Nav.Link>
+                    <Nav.Link className={headerStyles.navLink} as={Link} to="/outreach">OUTREACH</Nav.Link>
+                    <Nav.Link className={headerStyles.navLink} as={Link} to="/churches">CHURCHES</Nav.Link>
+                    <Nav.Link className={headerStyles.navLink} as={Link} to="/contact">CONTACT</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

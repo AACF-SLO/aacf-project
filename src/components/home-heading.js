@@ -1,6 +1,7 @@
 import React from 'react'
+// import { LinkContainer } from 'react-router-bootstrap'
+import { Link } from 'gatsby'
 
-// import { Link } from 'gatsby'
 
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Container from 'react-bootstrap/Container'
@@ -24,17 +25,17 @@ const Heading = () => {
                     </Row>
                     <Row className={["justify-content-around d-flex mt-4"].join(' ')} >  {/* className={["justify-content-around d-flex"].join(' ')} */}
                         <Col xs={12} md={6}>
-                            <Button href="/outreach" size="lg" block variant="primary">Freshmen Outreach</Button>
+                            <Link to="/outreach"><Button size="lg" block variant="primary">Freshmen Outreach</Button></Link>
                         </Col>
                     </Row>
                     <Row className={["justify-content-around d-flex mt-4"].join(' ')} >  {/* className={["justify-content-around d-flex"].join(' ')} */}
                         <Col xs={12} md={6}>
-                            <Button href="/large-group" size="lg" block variant="primary">Large Group</Button>
+                            <Link to="/large-group"><Button size="lg" block variant="primary">Large Group</Button></Link>
                         </Col>
                     </Row>
                     <Row className={["justify-content-around d-flex mt-4"].join(' ')} >  {/* className={["justify-content-around d-flex"].join(' ')} */}
                         <Col xs={12} md={6}>
-                            <Button href="/small-group" size="lg" block  variant="primary">Small Group</Button>
+                            <Link to="/small-group"><Button size="lg" block  variant="primary">Small Group</Button></Link>
                         </Col>
                     </Row>
                    
