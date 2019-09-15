@@ -36,14 +36,14 @@ const Footer = () => {
                 </Row>
                 <Row className="justify-content-md-center mt-5">
                     <Col md="auto" className="d-flex justify-content-center">
-                        <p className={footerStyles.footerLinks}><Link to="/">
+                        <p className={footerStyles.footerLinks}><Link to="/about">
                             ABOUT
                         </Link>
                         </p>
                     </Col >
                         
                     <Col md="auto" className="d-flex justify-content-center">
-                        <p className={footerStyles.footerLinks}><Link to="/">
+                        <p className={footerStyles.footerLinks}><Link to="/contact">
                             CONTACT
                         </Link>
                         </p>

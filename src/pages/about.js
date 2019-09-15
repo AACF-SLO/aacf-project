@@ -1,6 +1,6 @@
 import React from "react"
 // import { Link } from "gatsby"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from '../components/layout'
 
@@ -32,6 +32,7 @@ const AboutPage = () => {
                             spring
                             winter
                             theme
+                            verse
                         }
                     }
                 }
@@ -43,7 +44,7 @@ const AboutPage = () => {
     return (
         <Layout>
             <Head title="About"/>
-            <Jumbotron fluid style={{backgroundImage: `url(${cross})`}} className={[aboutStyles.jumbotronMb0, "text-center"].join(' ')}>
+            <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${cross})`}} className={[aboutStyles.jumbotronMb0, "text-center"].join(' ')}>
                 <Container>
                     <Row>
                         <Col>
@@ -57,11 +58,12 @@ const AboutPage = () => {
                     </Row>
                 </Container>
             </Jumbotron>
-            <Jumbotron fluid style={{backgroundImage: `url(${bible})`}} className={[aboutStyles.jumbotronMb0, "text-center"].join(' ')}>
+            <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bible})`}} className={[aboutStyles.jumbotronMb0, "text-center"].join(' ')}>
                 <Container>
-                    <Row>
-                        <Col>
+                    <Row className="justify-content-center">
+                        <Col sm={12} md={9}>
                             <h1>{data.allMarkdownRemark.edges[0].node.frontmatter.theme}</h1>
+                            <h3>{data.allMarkdownRemark.edges[0].node.frontmatter.verse}</h3>
                         </Col>
                     </Row>
                     <Row>
@@ -81,7 +83,7 @@ const AboutPage = () => {
                 </Container>
             </Jumbotron>
 
-            <Jumbotron fluid style={{backgroundImage: `url(${bibleWoods})`}} className={[aboutStyles.jumbotronMb0, "text-center"].join(' ')} >
+            <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bibleWoods})`}} className={[aboutStyles.jumbotronMb0, "text-center"].join(' ')} >
                 <Container>
                     <Row className="justify-content-center">
                         <Col sm={12} md={8}>
@@ -96,7 +98,7 @@ const AboutPage = () => {
                     </Row> */}
                 </Container>
             </Jumbotron>
-            <Jumbotron fluid style={{backgroundImage: `url(${cross})`}} className={[aboutStyles.jumbotronMb0].join(' ')} >
+            <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${cross})`}} className={[aboutStyles.jumbotronMb0].join(' ')} >
                 <Container>
                     <Row>
                         <Col className="text-center">
@@ -119,7 +121,7 @@ const AboutPage = () => {
                     </Row>
                     <Row>
                         <Col className="text-center">
-                            <h3>Learn More</h3>
+                            <h3>Learn More:</h3>
                             <a href="http://www.aacf.org/" target="_blank" rel="noopener noreferrer">
                                 <img
                                 src={aacfLogo}

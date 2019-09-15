@@ -10,13 +10,14 @@ import layoutStyles from './layout.module.scss'
 
 const Layout = (props) => {
     return (
-        <div>
+        <div className={layoutStyles.container}>
             <div className={layoutStyles.stickyFooter}>
                 <Header/>
                 {props.children} 
             </div>
             <Footer/>
         </div>
+        
     )
 }
 

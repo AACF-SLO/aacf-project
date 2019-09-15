@@ -1,6 +1,7 @@
 ---
 title: "BLOG"
 date: "2019-04-04"
+category: "BLOG"
 ---
 
 I just launched a new bootcamp!

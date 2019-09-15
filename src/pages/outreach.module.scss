@@ -1,0 +1,16 @@
+
+.jumbotron {
+    margin-bottom: 0;
+    min-height: calc(100vh - 102px);
+    align-items: center;
+    display: flex; //d-flex goes hand in hand with align-items unless component already is flex
+    color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: no-repeat fixed center center; // center in on Andre
+        // background-repeat: no-repeat
+        // background-attachment: fixed
+        // background-position: center center
+}

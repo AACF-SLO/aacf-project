@@ -14,7 +14,7 @@ import carouselImage3 from '../images/bball2018.jpg'
 
 const RotatingImages = () => {
     return(        
-        <Carousel>
+        <Carousel pauseOnHover={false} interval={3000}> {/* default is 5000 (5 secs)*/}
                 <Carousel.Item>  
                     <div style={{backgroundImage: `url(${carouselImage1})`}} className={[carouselStyle.resize, "d-none d-lg-block"].join(' ')}></div>
                     {/* <div className="d-lg-none d-xl-none d-block" style={{backgroundImage: `url(${carouselImage1})`}}></div> */}
