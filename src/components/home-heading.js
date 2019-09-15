@@ -4,25 +4,42 @@ import React from 'react'
 
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 
 import homeHeading from './home-heading.module.scss'
+import cross from '../images/cross.jpg'
+
 
 
 const Heading = () => {
     return  (
-        <Jumbotron className={[homeHeading.background, "mb-0"].join(' ')}>
-            <Container>
-                {/* this info can be queried later on */}
-                <h1>What is AACF?</h1>
-                <p>
-                Asian American Christian Fellowship (AACF) is an on-campus fellowship communitiy to 
-                grow with each other in the Word of the Bible and live out our faith in San Luis Obispo!
-                </p>
-                {/* Might want to do some row/col action for more buttons */}
-                <Button href="/about" variant="primary">Learn more</Button>
-            </Container>
-        </Jumbotron>
+        <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${cross})`}} className={[homeHeading.section, "text-center"].join(' ')}>
+                <Container>
+                    <Row>
+                        <Col>
+                            <h1>Stay Tuned for Upcoming Events!</h1>
+                        </Col>
+                    </Row>
+                    <Row className={["justify-content-around d-flex mt-4"].join(' ')} >  {/* className={["justify-content-around d-flex"].join(' ')} */}
+                        <Col xs={12} md={6}>
+                            <Button href="/outreach" size="lg" block variant="primary">Freshmen Outreach</Button>
+                        </Col>
+                    </Row>
+                    <Row className={["justify-content-around d-flex mt-4"].join(' ')} >  {/* className={["justify-content-around d-flex"].join(' ')} */}
+                        <Col xs={12} md={6}>
+                            <Button href="/large-group" size="lg" block variant="primary">Large Group</Button>
+                        </Col>
+                    </Row>
+                    <Row className={["justify-content-around d-flex mt-4"].join(' ')} >  {/* className={["justify-content-around d-flex"].join(' ')} */}
+                        <Col xs={12} md={6}>
+                            <Button href="/small-group" size="lg" block  variant="primary">Small Group</Button>
+                        </Col>
+                    </Row>
+                   
+                </Container>
+            </Jumbotron>
     )
 }
 
