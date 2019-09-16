@@ -65,12 +65,12 @@ const Footer = () => {
                             </Col>
                         </Row>
                     </Col>
-                    <Col md="auto" className="d-flex justify-content-center">
+                    {/* <Col md="auto" className="d-flex justify-content-center">
                         <p className={footerStyles.footerLinks} ><Link to="/">
                             ARCHIVE
                         </Link>
                         </p>
-                    </Col>
+                    </Col> */}
                 </Row>
 
                 <div className={[footerStyles.footerEnd, "text-center"].join(' ')}>

@@ -65,9 +65,9 @@ const Ministries = () => {
                         </Row>
                     </Container>
                 </Jumbotron>
-                {data.allMarkdownRemark.edges[0].node.frontmatter.ministries.map((ministry) => {
+                {data.allMarkdownRemark.edges[0].node.frontmatter.ministries.map((ministry, index) => {
                     return (
-                        <React.Fragment>
+                        <React.Fragment key={index}>
                             <Container className="mb-5 text-center"> {/* Can be fluid*/}
                                 <Row className={ministryStyles.ministryTitle}>
                                     <Col>
@@ -82,9 +82,10 @@ const Ministries = () => {
                                     </Col>
                                 </Row> */}
                                 <Row className="d-flex justify-content-center">
-                                {ministry.ministry.people.map((childOfGod) => {
+                                {ministry.ministry.people.map((childOfGod, index) => {
                                     return (
-                                        <React.Fragment key={childOfGod.uid}>
+                                        <React.Fragment key={index}>
+                                             {/* TODO: Should use react-key-index instead since safer */}
                                             <Col md={4} className="px-5 py-2 d-flex justify-content-center">
                                                 <Card>
                                                     <Card.Img variant="top" src={childOfGod.person.photo.publicURL} />

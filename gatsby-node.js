@@ -23,7 +23,6 @@ module.exports.createPages = async ({graphql, actions}) => {
     const { createPage } = actions
 
     // 1. get path to template
-    const blogTemplate = path.resolve('./src/templates/blog.js')//curent location to destination
     // const aboutTemplate = path.resolve('./src/templates/about.js') not gonna be making multiple /about/... pages
     // will use for events/connect pages
     const eventsTemplate = path.resolve('./src/templates/events.js')
@@ -57,15 +56,6 @@ module.exports.createPages = async ({graphql, actions}) => {
             createPage({
                 component: eventsTemplate,
                 path: `/${edge.node.fields.slug}`,
-                context: {
-                    slug: edge.node.fields.slug
-                }
-            })
-        }
-        else if (edge.node.frontmatter.category === 'BLOG') {
-            createPage({
-                component: blogTemplate,
-                path: `/blog/${edge.node.fields.slug}`,
                 context: {
                     slug: edge.node.fields.slug
                 }
