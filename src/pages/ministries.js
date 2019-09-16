@@ -68,10 +68,10 @@ const Ministries = () => {
                 {data.allMarkdownRemark.edges[0].node.frontmatter.ministries.map((ministry, index) => {
                     return (
                         <React.Fragment key={index}>
-                            <Container className="mb-5 text-center"> {/* Can be fluid*/}
+                            <Container className="mb-5"> {/* Can be fluid*/}
                                 <Row className={ministryStyles.ministryTitle}>
                                     <Col>
-                                        <h2>{ministry.ministry.type}</h2>
+                                        <h2 className="text-center">{ministry.ministry.type}</h2>
                                         <hr/>
                                     </Col>
                                 </Row>

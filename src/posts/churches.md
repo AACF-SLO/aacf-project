@@ -35,4 +35,5 @@ churches:
         name: "Renovate Church"
         img: "../images/sunset-cross.jpg"
         link: "https://renovateslo.com/"
+        
 ---
