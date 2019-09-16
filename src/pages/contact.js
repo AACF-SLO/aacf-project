@@ -26,7 +26,7 @@ const ContactPage = () => {
                 <Container>
                     <Row>
                         <Col>
-                            <h1>Contact us!</h1>
+                            <h1>Contact Us!</h1>
                         </Col>
                     </Row>
                     <Row className={[contactStyles.info, "justify-content-center"].join(' ')}>

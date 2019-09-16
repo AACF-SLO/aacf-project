@@ -33,6 +33,9 @@ const AboutPage = () => {
                             winter
                             theme
                             verse
+                            fallWords
+                            winterWords
+                            springWords
                         }
                     }
                 }
@@ -66,17 +69,20 @@ const AboutPage = () => {
                             <h3>{data.allMarkdownRemark.edges[0].node.frontmatter.verse}</h3>
                         </Col>
                     </Row>
-                    <Row>
-                        <Col sm={12} md={4}>
+                    <Row className="pt-md-4">
+                        <Col sm={12} md={4} className="pt-5 pt-md-0">
                             <h2>Fall</h2>
+                            <h3 className={aboutStyles.themeWords}>{data.allMarkdownRemark.edges[0].node.frontmatter.fallWords}</h3>
                             <p>{data.allMarkdownRemark.edges[0].node.frontmatter.fall}</p>
                         </Col>
-                        <Col sm={12} md={4}>
+                        <Col sm={12} md={4} className="pt-5 pt-md-0">
                             <h2>Winter</h2>
+                            <h3 className={aboutStyles.themeWords}>{data.allMarkdownRemark.edges[0].node.frontmatter.winterWords}</h3>
                             <p>{data.allMarkdownRemark.edges[0].node.frontmatter.winter}</p>
                         </Col>
-                        <Col sm={12} md={4}>
+                        <Col sm={12} md={4} className="pt-5 pt-md-0">
                             <h2>Spring</h2>
+                            <h3 className={aboutStyles.themeWords} >{data.allMarkdownRemark.edges[0].node.frontmatter.springWords}</h3>
                             <p>{data.allMarkdownRemark.edges[0].node.frontmatter.spring}</p>
                         </Col>
                     </Row>

@@ -9,8 +9,45 @@
     -o-background-size: cover;
     background-size: cover;
     background: no-repeat center center fixed;
+    h1 {
+        font-family: "Staatliches";
+        font-size: 4rem;
+        letter-spacing: .2rem;
+    }
+    p {
+        font-family: 'Lato';
+        font-size: 1.25rem;
+        letter-spacing: 1.3px;
+    }
 }
 
 .ministry-title {
     text-transform: uppercase; 
+    font-family: "Staatliches";
+    h2 {
+        font-size: 3rem;
+        letter-spacing: .2rem;
+    }
+    hr {
+        // border: none;
+        height: 2px;
+        color: #000;
+        background-color: #000;
+    }
+
+}
+
+.card-body {
+    font-family: "Lato";
+    p {
+        margin-bottom: 0;
+    }
+    .core {
+        font-weight: bold;
+    }
+}
+
+.prayer {
+    font-family: "Lato";
+    font-size: 1.75rem;
 }

@@ -11,12 +11,14 @@ import carouselStyle from './carousel.module.scss'
 import carouselImage1 from '../images/winter2018.jpg'
 import carouselImage2 from '../images/michelle.jpg'
 import carouselImage3 from '../images/bball2018.jpg'
+import adjustedImage1 from '../images/winter2018-adjusted.jpg'
+import adjustedImage3 from '../images/bballFunny2018copy.jpg'
 
 const RotatingImages = () => {
     return(        
-        <Carousel pauseOnHover={false} interval={3000}> {/* default is 5000 (5 secs)*/}
+        <Carousel pauseOnHover={false} > {/* default is 5000 (5 secs)*/}
                 <Carousel.Item>  
-                    <div style={{backgroundImage: `url(${carouselImage1})`}} className={[carouselStyle.resize, "d-none d-lg-block"].join(' ')}></div>
+                    <div style={{backgroundImage: `url(${adjustedImage1})`}} className={[carouselStyle.resize, "d-none d-lg-block"].join(' ')}></div>
                     {/* <div className="d-lg-none d-xl-none d-block" style={{backgroundImage: `url(${carouselImage1})`}}></div> */}
                     <img
                         className="d-lg-none d-xl-none w-100"
@@ -33,7 +35,7 @@ const RotatingImages = () => {
                     />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <div style={{backgroundImage: `url(${carouselImage3})`}} className={[carouselStyle.resize, "d-none d-lg-block"].join(' ')}> {/* works*/}</div>
+                    <div style={{backgroundImage: `url(${adjustedImage3})`}} className={[carouselStyle.resize, "d-none d-lg-block"].join(' ')}> {/* works*/}</div>
                     <img
                         className="d-lg-none d-xl-none w-100"
                         src={carouselImage3}
