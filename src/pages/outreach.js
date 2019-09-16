@@ -58,11 +58,11 @@ const Outreach = () => {
                             { data.allMarkdownRemark.edges[0].node.frontmatter.link.trim() === "" ? 
                                 (<OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Not Ready Yet!</Tooltip>}>
                                     <span className="d-inline-block">
-                                        <Button disabled style={{ pointerEvents: 'none' }} size="lg" variant="secondary">Sign Up</Button>
+                                        <Button className={outreachStyles.button} disabled style={{ pointerEvents: 'none' }} size="lg" variant="secondary">SIGN UP</Button>
                                     </span>
                                 </OverlayTrigger>
                                 ) 
-                                : (<Button href={data.allMarkdownRemark.edges[0].node.frontmatter.link} size="lg" variant="outline-primary">SIGN UP</Button>) }
+                                : (<Button className={outreachStyles.button} href={data.allMarkdownRemark.edges[0].node.frontmatter.link} size="lg" variant="outline-primary">SIGN UP</Button>) }
                         </Col>
                     </Row>
                 </Container>
