@@ -33,6 +33,7 @@ const Ministries = () => {
                           person {
                             detail
                             name
+                            core
                             photo {
                                 publicURL
                             }
@@ -60,7 +61,7 @@ const Ministries = () => {
                         <Row>
                             <Col>
                                 <h1>AACF SLO MINISTRIES</h1>
-                                <p>Find who's serving AACF SLO below!</p>
+                                <p>See who's serving AACF SLO!</p>
                             </Col>
                         </Row>
                     </Container>
@@ -80,18 +81,31 @@ const Ministries = () => {
                                         <p>{ministry.ministry.responsibility}</p>
                                         <hr/>
                                     </Col>
-                                </Row> */}
-                                <Row className="d-flex justify-content-center">
+                                </Row>
+                                className="d-flex justify-content-left"
+                                 */}
+                                <Row className={"d-flex " + (ministry.ministry.type !== "advisor" ? "justify-content-left" : "justify-content-center")}>
                                 {ministry.ministry.people.map((childOfGod, index) => {
+                                    if (ministry.ministry.type === 'prayer') {
+                                        return (
+                                            <Col key={index} className="px-5 py-2 d-flex justify-content-center">
+                                                 <h3 className={ministryStyles.prayer}>{ministry.ministry.responsibility}</h3>
+                                            </Col>
+                                           
+                                        );
+                                    }
+
                                     return (
                                         <React.Fragment key={index}>
                                              {/* TODO: Should use react-key-index instead since safer */}
                                             <Col md={4} className="px-5 py-2 d-flex justify-content-center">
-                                                <Card>
+                                                <Card className="border-0">
                                                     <Card.Img variant="top" src={childOfGod.person.photo.publicURL} />
-                                                    <Card.Body>
-                                                        <Card.Title>{childOfGod.person.name}</Card.Title>
-                                                        <Card.Text>{childOfGod.person.detail}</Card.Text>
+                                                    <Card.Body className={ministryStyles.cardBody}>
+                                                        <Card.Title className={ministryStyles.name}>{childOfGod.person.name}</Card.Title>
+                                                        <Card.Text className={ministryStyles.detail}>{childOfGod.person.detail}</Card.Text>
+                                                        {childOfGod.person.core.trim() !== "" &&
+                                                            ( <Card.Text className={ministryStyles.core}>{childOfGod.person.core}</Card.Text>) }
                                                     </Card.Body>
                                                 </Card>
                                             </Col>
