@@ -31,7 +31,7 @@ const ContactPage = () => {
                     </Row>
                     <Row className={[contactStyles.info, "justify-content-center"].join(' ')}>
                         <Col sm={12} md={8}>
-                            <h3>hello@aacfslo.com</h3>
+                            <h3>slo.aacf@gmail.com</h3>
                             {/* TODO: implement React form for newsletter, or integrate netlify forms  */}
                         </Col>
                     </Row>
