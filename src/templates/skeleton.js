@@ -51,24 +51,49 @@ const ConnectEvents = (props) => {
                     <Row>
                         <Col>
                             {/* <h1>test</h1> */}
-                            <img
+                            {props.data.markdownRemark.frontmatter.gif && (
+                                <img
                                 src={props.data.markdownRemark.frontmatter.gif.publicURL}
                                 alt="thumbnail"
                                 className={[skeletonStyles.gif].join(' ')}
                             />
+                            )}
+                            
                         </Col>
                     </Row>
                 </Container>
             </Jumbotron>
-            <Container>
+            <Container className={[skeletonStyles.info, "text-center"].join(' ')}>
                 <Row>
                     <Col >
-                        <h1>{props.data.markdownRemark.frontmatter.title}</h1>
+                        <h1 className={skeletonStyles.title}>{props.data.markdownRemark.frontmatter.title}</h1>
                     </Col>
                 </Row>
                 <Row>
                     <Col>
-                        <p>{props.data.markdownRemark.frontmatter.desciption}</p>
+                        <p>{props.data.markdownRemark.frontmatter.description}</p>
+                    </Col>
+                </Row>
+                <Row className={[skeletonStyles.details, "justify-content-center d-flex mt-2 mt-md-4"].join(' ')}>
+                    <Col xs={12} md={3}>
+                        <h3>Where</h3>
+                        <p>{props.data.markdownRemark.frontmatter.location}</p>
+                    </Col>
+                    <Col xs={12} md={3}>
+                        <h3>When</h3>
+                        <p>{props.data.markdownRemark.frontmatter.date}</p>
+                    </Col>
+                </Row>
+                <Row className={["justify-content-center d-flex"].join(' ')}>
+                    <Col xs={12} md={4}>
+                    { props.data.markdownRemark.frontmatter.link.trim() === "" ? 
+                        (<OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Not Ready Yet!</Tooltip>}>
+                            <span className="d-block">
+                                <Button className={skeletonStyles.button} disabled style={{ pointerEvents: 'none' }} size="lg" block variant="secondary">Sign Up</Button>
+                            </span>
+                        </OverlayTrigger>
+                        ) 
+                        : (<Button className={skeletonStyles.button} href={props.data.markdownRemark.frontmatter.link} size="lg" block variant="outline-primary">SIGN UP</Button>) }
                     </Col>
                 </Row>
             </Container>
