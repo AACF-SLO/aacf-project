@@ -14,7 +14,8 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Tooltip from 'react-bootstrap/Tooltip'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 
-import eventsStyles from './events.module.scss'
+// import eventsStyles from './events.module.scss'
+import skeletonStyles from './skeleton.module.scss'
 
 export const query = graphql`
     query($slug: String!) {
@@ -26,6 +27,9 @@ export const query = graphql`
                 date
                 title
                 link
+                img {
+                    publicURL
+                }
                 gif {
                     publicURL
                 }
@@ -38,19 +42,38 @@ export const query = graphql`
     }
 `
 
-const ConnectEvents = () => {
+const ConnectEvents = (props) => {
     return (
         <Layout>
             <Head title={props.data.markdownRemark.frontmatter.title}/>
-            <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${missionStatement})`}} className={[aboutStyles.jumbotronMb0, "text-center"].join(' ')}>
+            <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${props.data.markdownRemark.frontmatter.img.publicURL})`}} className={[skeletonStyles.media, "text-center"].join(' ')}>
                 <Container>
                     <Row>
                         <Col>
-                            <h1>AACF MISSION STATEMENT</h1>
+                            {/* <h1>test</h1> */}
+                            <img
+                                src={props.data.markdownRemark.frontmatter.gif.publicURL}
+                                alt="thumbnail"
+                                className={[skeletonStyles.gif].join(' ')}
+                            />
                         </Col>
                     </Row>
                 </Container>
             </Jumbotron>
+            <Container>
+                <Row>
+                    <Col >
+                        <h1>{props.data.markdownRemark.frontmatter.title}</h1>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <p>{props.data.markdownRemark.frontmatter.desciption}</p>
+                    </Col>
+                </Row>
+            </Container>
         </Layout>
     )
 }
+
+export default ConnectEvents
