@@ -13,6 +13,18 @@ module.exports = {
       'gatsby-plugin-react-helmet',
       'gatsby-transformer-sharp',
       'gatsby-plugin-sharp',
+      {
+        resolve: 'gatsby-plugin-manifest',
+        options: {
+          name: `AACF SLO Website`,
+          short_name: `aacf slo`,
+          start_url: `/`,
+          background_color: `#f7f0eb`,
+          theme_color: `#a2466c`,
+          display: `minimal-ui`,
+          icon: `src/images/logo.png`
+        }
+      },
       
       {
         resolve: 'gatsby-source-filesystem', /* source content from our md files */

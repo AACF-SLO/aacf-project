@@ -20,6 +20,9 @@ import cross from '../images/cross-about.jpg'
 import bible from '../images/bible.jpg'
 import bibleWoods from '../images/bible-woods.jpg'
 
+import missionStatement from '../images/aacf_mission_statement.jpg'
+import statementOfFaith from '../images/statement_of_faith.jpg'
+
 
 const AboutPage = () => {
     const data = useStaticQuery(graphql`
@@ -47,7 +50,7 @@ const AboutPage = () => {
     return (
         <Layout>
             <Head title="About"/>
-            <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${cross})`}} className={[aboutStyles.jumbotronMb0, "text-center"].join(' ')}>
+            <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${missionStatement})`}} className={[aboutStyles.jumbotronMb0, "text-center"].join(' ')}>
                 <Container>
                     <Row>
                         <Col>
@@ -104,7 +107,7 @@ const AboutPage = () => {
                     </Row> */}
                 </Container>
             </Jumbotron>
-            <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${cross})`}} className={[aboutStyles.jumbotronMb0].join(' ')} >
+            <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${statementOfFaith})`}} className={[aboutStyles.jumbotronMb0].join(' ')} >
                 <Container>
                     <Row>
                         <Col className="text-center">
