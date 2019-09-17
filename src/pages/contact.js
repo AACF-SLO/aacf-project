@@ -12,8 +12,11 @@ import Button from 'react-bootstrap/Button'
 
 import contactStyles from './contact.module.scss'
 import contact from '../images/contact.jpg'
+// import contactUs from '../images/contactUs.jpg'
 import instagram_logo from '../images/iglogo.png'
 import facebook_logo from '../images/fblogo.png'
+import instagram_black from '../images/igblack.png'
+import facebook_black from '../images/fbblack.png'
 
 // console.log(React.version);
 const ContactPage = () => {
@@ -22,7 +25,7 @@ const ContactPage = () => {
             <Head title="Contact"/>
             {/* <h1>Contact</h1>
             <h2>this is a contact page, <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">contact</a></h2> */}
-            <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${contact})`}} className={[contactStyles.heading, "text-center"].join(' ')}>
+            <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${contact})`}} className={[contactStyles.heading, "text-center"].join(' ')}>
                 <Container>
                     <Row>
                         <Col>
@@ -47,7 +50,7 @@ const ContactPage = () => {
                             </a>
                         </Col>
                         <Col sm={8} md={10} className="mt-5">
-                            <Button target="_blank" size="md" variant="outline-primary" style={{color: `white`}} href="https://jems.networkforgood.com/projects/11454-aacf-chapters-aacf-cpslo-cal-poly-san-luis-obispo">Donate to our ministry!</Button>
+                            <Button className={contactStyles.button} target="_blank" size="lg" variant="primary" href="https://jems.networkforgood.com/projects/11454-aacf-chapters-aacf-cpslo-cal-poly-san-luis-obispo">Donate To Our Ministry!</Button>
                         </Col>
                     </Row>
                 </Container>
