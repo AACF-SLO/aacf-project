@@ -56,7 +56,7 @@ const Ministries = () => {
         <Layout>
             <Head title="Ministries"/>
             <div className="mb-5">
-                <Jumbotron fluid style={{backgroundImage: `url(${cross})`}} className={[ministryStyles.heading, "text-center"].join(' ')}>
+                <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${cross})`}} className={[ministryStyles.heading, "text-center"].join(' ')}>
                     <Container>
                         <Row>
                             <Col>
