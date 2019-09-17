@@ -1,0 +1,11 @@
+---
+category: "about"
+theme: "Undivided"
+verse: "Teach me your way, O Lord, that I may walk in your truth; unite my heart to fear your name. Psalms 86:11 (ESV)"
+fall: "Who is God? What characteristics does he embody? What does  it mean to have an undivided heart towards Him? "
+winter: "What do God's characteristics mean to us? How do we see God working in our own lives?"
+spring: "What does it look like to have an intimate personal relationship with God? How can we share the love of Christ to those around us?"
+fallWords: "Understand"
+winterWords: "Reflect"
+springWords: "Overflow"
+---

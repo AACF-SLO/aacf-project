@@ -1,0 +1,79 @@
+// $fbblack: '../images/fbblack.png';
+// $igblack: '../images/igblack.png';
+
+.heading {
+    margin-bottom: 0;
+    min-height: 80vh;
+    align-items: center;
+    display: flex; //d-flex goes hand in hand with align-items unless component already is flex
+    color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: no-repeat fixed center center; 
+    h1 {
+        font-family: 'Staatliches';
+        font-size: 3rem;
+        letter-spacing: .2rem;
+    }
+    h3 {
+        font-family: 'Lato';
+        font-size: 1.5rem;
+        letter-spacing: 1.6px;
+    }
+
+    // .facebook {
+    //     display: none;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     z-index: 99;
+    // }
+    // .instagram {
+    //     display: none;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     z-index: 99;
+    // }
+
+    // .facebook:hover {
+    //     display: inline;
+    // }
+    // .instagram:hover {
+    //     display: inline
+    // }
+}
+
+.info {
+    a {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        @media only screen and (min-width: 768px){
+            margin-right: 3rem;
+            margin-left: 3rem;
+        }
+        img {
+            width: 8rem;
+        }
+        p {
+            font-family: 'Lato';
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            color: white;
+            text-decoration: none;
+        }
+        :hover {
+            color: #000;
+        }
+        
+    }
+    
+}
+
+.button {
+    font-family: "Lato";
+    letter-spacing: 2px;
+    // font-size: 1.5rem;
+}
