@@ -25,9 +25,11 @@ module.exports.createPages = async ({graphql, actions}) => {
     // 1. get path to template
     // const aboutTemplate = path.resolve('./src/templates/about.js') not gonna be making multiple /about/... pages
     // will use for events/connect pages
-    const eventsTemplate = path.resolve('./src/templates/events.js')
 
-    const connectTemplate = path.resolve('./src/templates/connect.js')
+    // const eventsTemplate = path.resolve('./src/templates/events.js')
+    // const connectTemplate = path.resolve('./src/templates/connect.js')
+
+    const connect_events_template = path.resolve('./src/templates/skeleton.js')
 
     const res = await graphql(`
         query {
@@ -51,25 +53,25 @@ module.exports.createPages = async ({graphql, actions}) => {
     // res.data.allMarkdownRemark.edges.node.frontmatter.category .... path: `/events/... with different template 
     res.data.allMarkdownRemark.edges.forEach((edge) => {
         // console.log(edge.node)
-        if (edge.node.frontmatter.category === 'Events') {
+        if (edge.node.frontmatter.category === 'Events' || edge.node.frontmatter.category === 'Connect') {
             // console.log(edge.frontmatter.category)
             createPage({
-                component: eventsTemplate,
+                component: connect_events_template,
                 path: `/${edge.node.fields.slug}`,
                 context: {
                     slug: edge.node.fields.slug
                 }
             })
         }
-        else if (edge.node.frontmatter.category === 'Connect') {
-            createPage({
-                component: connectTemplate,
-                path: `/${edge.node.fields.slug}`,
-                context: {
-                    slug: edge.node.fields.slug
-                }
-            })
-        }
+        // else if (edge.node.frontmatter.category === 'Connect') {
+        //     createPage({
+        //         component: connectTemplate,
+        //         path: `/${edge.node.fields.slug}`,
+        //         context: {
+        //             slug: edge.node.fields.slug
+        //         }
+        //     })
+        // }
     })
 
     // res.data.allMarkdownRemark.edges.forEach((edge) => {

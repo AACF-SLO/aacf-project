@@ -5,5 +5,6 @@ description: "Large Groups are weekly meetings held on campus where the body of 
 location: "San Luis Obispo"
 date: "During the school year"
 gif: "../../images/events/bball.gif"
+img: ""
 link: ""
 ---
