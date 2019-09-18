@@ -16,7 +16,7 @@ import Col from 'react-bootstrap/Col'
 
 //images
 import aacfLogo from '../images/aacf_logo.png'
-import cross from '../images/cross-about.jpg'
+// import cross from '../images/cross-about.jpg'
 import bible from '../images/bible.jpg'
 import bibleWoods from '../images/bible-woods.jpg'
 
