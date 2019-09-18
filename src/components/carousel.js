@@ -1,5 +1,6 @@
 import React from "react"
-
+// import { graphql, useStaticQuery } from 'gatsby'
+// import Img from 'gatsby-image'
 // import { Link } from 'gatsby' 
 //Link is a react component, preloads the page content and loads instantly
 
@@ -8,13 +9,31 @@ import Carousel from 'react-bootstrap/Carousel'
 
 import carouselStyle from './carousel.module.scss'
 
-import carouselImage1 from '../images/winter2018.jpg'
-import carouselImage2 from '../images/michelle.jpg'
-import carouselImage3 from '../images/bball2018.jpg'
-import adjustedImage1 from '../images/winter2018-adjusted.jpg'
-import adjustedImage3 from '../images/bballFunny2018copy.jpg'
+import carouselImage1 from '../images/carousel/winter2018Copy-min.jpg'
+import carouselImage2 from '../images/carousel/michelleCopy-min.jpg'
+import carouselImage3 from '../images/carousel/bball2018Copy-min.jpg'
+import adjustedImage1 from '../images/carousel/winter2018-adjustedCopy-min.jpg'
+import adjustedImage3 from '../images/carousel/bballFunny2018copyCopy-min.jpg'
 
 const RotatingImages = () => {
+    // const data = useStaticQuery(graphql`
+    //     query {
+    //         allFile(filter: {relativeDirectory: {eq: "images/carousel"}}) {
+    //           edges {
+    //             node {
+    //               id
+    //               relativeDirectory
+    //               childImageSharp {
+    //                 fluid {
+    //                     ...GatsbyImageSharpFluid
+    //                 }
+    //               }
+    //             }
+    //           }
+    //         }
+    //       }
+    // `)
+
     return(        
         <Carousel pauseOnHover={false} > {/* default is 5000 (5 secs)*/}
                 <Carousel.Item>  

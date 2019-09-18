@@ -9,8 +9,8 @@ import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 
 import homeHeading from './home-heading.module.scss'
-import calpoly from '../images/cpstock.jpg'
-import upcoming from '../images/UpcomingEvents.jpg'
+// import calpoly from '../images/cpstock.jpg'
+import upcoming from '../images/UpcomingEventsCopy-min.jpg'
 
 
 

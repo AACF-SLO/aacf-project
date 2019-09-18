@@ -15,8 +15,8 @@ import contact from '../images/contact.jpg'
 // import contactUs from '../images/contactUs.jpg'
 import instagram_logo from '../images/iglogo.png'
 import facebook_logo from '../images/fblogo.png'
-import instagram_black from '../images/igblack.png'
-import facebook_black from '../images/fbblack.png'
+// import instagram_black from '../images/igblack.png'
+// import facebook_black from '../images/fbblack.png'
 
 // console.log(React.version);
 const ContactPage = () => {
