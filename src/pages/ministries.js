@@ -106,6 +106,7 @@ const Ministries = () => {
                                              {/* TODO: Should use react-key-index instead since safer */}
                                             <Col md={4} className="px-5 py-2 d-flex justify-content-center">
                                                 <Card style={{ width: '18rem' }} className="border-0">
+                                                    {console.log(childOfGod.person.name)}
                                                     <Img fluid={childOfGod.person.featuredImage.childImageSharp.fluid} className="card-img-top"/>
                                                     <Card.Body className={ministryStyles.cardBody}>
                                                         <Card.Title className={ministryStyles.name}>{childOfGod.person.name}</Card.Title>
