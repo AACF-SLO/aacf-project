@@ -38,7 +38,7 @@ ministries:
             - person:
                 name: "Jonathan Date-Chong"
                 core: "Core"
-                featuredImage: "../images/ministries/dc.jpg"
+                featuredImage: "../images/ministries/dc.JPG"
                 detail: "4th year, Computer Science"
             - person: 
                 name: "Andre Tran"
