@@ -3,6 +3,8 @@
 
 import React from "react"
 
+import Img from 'gatsby-image'
+
 import Layout from '../components/layout'
 
 import { graphql, useStaticQuery } from "gatsby"
@@ -19,6 +21,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron'
 
 import cross from '../images/cross-about.jpg'
 
+
 const Ministries = () => {
     const data = useStaticQuery(graphql`
         query {
@@ -34,8 +37,13 @@ const Ministries = () => {
                             detail
                             name
                             core
-                            photo {
-                                publicURL
+                            featuredImage {
+                                childImageSharp {
+                                    fluid(maxWidth: 288, quality: 80) {
+                                        ...GatsbyImageSharpFluid
+                                        
+                                    }
+                                }
                             }
                           }
                         }
@@ -99,8 +107,9 @@ const Ministries = () => {
                                         <React.Fragment key={index}>
                                              {/* TODO: Should use react-key-index instead since safer */}
                                             <Col md={4} className="px-5 py-2 d-flex justify-content-center">
-                                                <Card className="border-0">
-                                                    <Card.Img variant="top" src={childOfGod.person.photo.publicURL} />
+                                                <Card style={{ width: '18rem' }} className="border-0">
+                                                    {/* <Card.Img variant="top" src={`${cross}`}/> */}
+                                                    <Img fluid={childOfGod.person.featuredImage.childImageSharp.fluid} className="card-img-top"/>
                                                     <Card.Body className={ministryStyles.cardBody}>
                                                         <Card.Title className={ministryStyles.name}>{childOfGod.person.name}</Card.Title>
                                                         <Card.Text className={ministryStyles.detail}>{childOfGod.person.detail}</Card.Text>
