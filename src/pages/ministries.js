@@ -47,6 +47,7 @@ const Ministries = () => {
                           }
                         }
                         type
+                        responsibility
                       }
                     }
                   }
