@@ -5,6 +5,8 @@ import Layout from '../components/layout'
 
 import Head from '../components/head'
 
+import Img from 'gatsby-image'
+
 // bootstrap imports
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Container from 'react-bootstrap/Container'
@@ -34,6 +36,13 @@ const Churches = () => {
                   church {
                     link
                     name
+                    img {
+                        childImageSharp {
+                            fluid {
+                                ...GatsbyImageSharpFluid
+                            }
+                        }
+                    }
                   }
                 }
               }
@@ -82,8 +91,8 @@ const Churches = () => {
                                 {/* TODO: Should use react-key-index instead */}
                                 <Col md={4} lg={3} className="px-2 py-2 d-flex justify-content-center">
                                     <a href={church.church.link} target="_blank" rel="noopener noreferrer">
-                                        <Card className={["border-0", churchesStyles.card].join(' ')}>
-                                            {/* <Card.Img variant="top" src={church.church.img.publicURL} /> */}
+                                        <Card style={{ width: '14rem' }} className={["border-0", churchesStyles.card].join(' ')}>
+                                            <Img fluid={church.church.img.childImageSharp.fluid} className="card-img-top"/>
                                             <Card.Body >
                                                 <Card.Title className={churchesStyles.cardText}>{church.church.name}</Card.Title>
                                             </Card.Body>
