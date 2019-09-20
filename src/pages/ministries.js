@@ -19,7 +19,7 @@ import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 
-import cross from '../images/cross-about.jpg'
+// import cross from '../images/cross-about.jpg'
 
 
 const Ministries = () => {
@@ -70,7 +70,8 @@ const Ministries = () => {
         <Layout>
             <Head title="Ministries"/>
             <div className="mb-5">
-                <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${cross})`}} className={[ministryStyles.heading, "text-center"].join(' ')}>
+            {/* style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${cross})`}} */}
+                <Jumbotron fluid className={[ministryStyles.heading, "text-center"].join(' ')}>
                     <Container>
                         <Row>
                             <Col>

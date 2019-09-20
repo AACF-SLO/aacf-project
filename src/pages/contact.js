@@ -11,7 +11,7 @@ import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 
 import contactStyles from './contact.module.scss'
-import contact from '../images/contact.jpg'
+// import contact from '../images/contact.jpg'
 // import contactUs from '../images/contactUs.jpg'
 import instagram_logo from '../images/iglogoCopy.png'
 import facebook_logo from '../images/fblogo.png'
@@ -24,8 +24,11 @@ const ContactPage = () => {
         <Layout>
             <Head title="Contact"/>
             {/* <h1>Contact</h1>
-            <h2>this is a contact page, <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">contact</a></h2> */}
-            <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${contact})`}} className={[contactStyles.heading, "text-center"].join(' ')}>
+            <h2>this is a contact page, <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">contact</a></h2> 
+            
+            style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${contact})`}}
+            */}
+            <Jumbotron fluid  className={[contactStyles.heading, "text-center"].join(' ')}>
                 <Container>
                     <Row>
                         <Col>
