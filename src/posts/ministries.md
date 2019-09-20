@@ -1,7 +1,7 @@
 ---
 category: "Ministries"
 title: "Ministries"
-featruedImage: "../images/cross-about.jpg"
+featuredImage: "../images/cross-about.jpg"
 ministries: 
     - ministry: 
         type: "large group"

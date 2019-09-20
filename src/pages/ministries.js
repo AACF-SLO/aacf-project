@@ -30,7 +30,7 @@ const Ministries = () => {
                 node {
                   frontmatter {
                     title
-                    featruedImage {
+                    featuredImage {
                         childImageSharp {
                             fluid {
                                 ...GatsbyImageSharpFluid    
