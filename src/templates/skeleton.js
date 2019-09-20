@@ -27,12 +27,6 @@ export const query = graphql`
                 date
                 title
                 link
-                img {
-                    publicURL
-                }
-                gif {
-                    publicURL
-                }
             }
             html
             fields {
@@ -46,18 +40,20 @@ const ConnectEvents = (props) => {
     return (
         <Layout>
             <Head title={props.data.markdownRemark.frontmatter.title}/>
-            <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${props.data.markdownRemark.frontmatter.img.publicURL})`}} className={[skeletonStyles.media, "text-center"].join(' ')}>
+            {/* style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${props.data.markdownRemark.frontmatter.img.publicURL})`}}  */}
+            <Jumbotron fluid className={[skeletonStyles.media, "text-center"].join(' ')}>
                 <Container>
                     <Row>
                         <Col>
-                            {/* <h1>test</h1> */}
-                            {props.data.markdownRemark.frontmatter.gif && (
+                            <h1>test</h1>
+                            {/* {props.data.markdownRemark.frontmatter.gif && (
                                 <img
                                 src={props.data.markdownRemark.frontmatter.gif.publicURL}
                                 alt="thumbnail"
                                 className={[skeletonStyles.gif].join(' ')}
                             />
-                            )}
+                            )} */}
+                            
                             
                         </Col>
                     </Row>

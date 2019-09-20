@@ -17,11 +17,11 @@ import Col from 'react-bootstrap/Col'
 //images
 import aacfLogo from '../images/aacf_logo.png'
 // import cross from '../images/cross-about.jpg'
-import bible from '../images/bible.jpg'
-import bibleWoods from '../images/bible-woods.jpg'
+// import bible from '../images/bible.jpg'
+// import bibleWoods from '../images/bible-woods.jpg'
 
-import missionStatement from '../images/aacf_mission_statement.jpg'
-import statementOfFaith from '../images/statement_of_faith.jpg'
+// import missionStatement from '../images/aacf_mission_statement.jpg'
+// import statementOfFaith from '../images/statement_of_faith.jpg'
 
 
 const AboutPage = () => {
@@ -50,7 +50,8 @@ const AboutPage = () => {
     return (
         <Layout>
             <Head title="About"/>
-            <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${missionStatement})`}} className={[aboutStyles.jumbotronMb0, "text-center"].join(' ')}>
+            {/* style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${missionStatement})`}} */}
+            <Jumbotron fluid className={[aboutStyles.jumbotronMb0, "text-center"].join(' ')}>
                 <Container>
                     <Row>
                         <Col>
@@ -64,7 +65,8 @@ const AboutPage = () => {
                     </Row>
                 </Container>
             </Jumbotron>
-            <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bible})`}} className={[aboutStyles.jumbotronMb0, "text-center"].join(' ')}>
+            {/* style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bible})`}} */}
+            <Jumbotron fluid className={[aboutStyles.jumbotronMb0, "text-center"].join(' ')}>
                 <Container>
                     <Row className="justify-content-center">
                         <Col sm={12} md={9}>
@@ -92,7 +94,8 @@ const AboutPage = () => {
                 </Container>
             </Jumbotron>
 
-            <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bibleWoods})`}} className={[aboutStyles.jumbotronMb0, "text-center"].join(' ')} >
+            {/* style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bibleWoods})`}} */}
+            <Jumbotron fluid className={[aboutStyles.jumbotronMb0, "text-center"].join(' ')} >
                 <Container>
                     <Row className="justify-content-center">
                         <Col sm={12} md={8}>
@@ -107,7 +110,8 @@ const AboutPage = () => {
                     </Row> */}
                 </Container>
             </Jumbotron>
-            <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${statementOfFaith})`}} className={[aboutStyles.jumbotronMb0].join(' ')} >
+            {/*  style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${statementOfFaith})`}}  */}
+            <Jumbotron fluid className={[aboutStyles.jumbotronMb0].join(' ')} >
                 <Container>
                     <Row>
                         <Col className="text-center">

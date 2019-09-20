@@ -15,7 +15,7 @@ import Button from 'react-bootstrap/Button'
 import Tooltip from 'react-bootstrap/Tooltip'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 
-import cross from '../images/cross-about.jpg'
+// import cross from '../images/cross-about.jpg'
 
 
 import churchesStyles from './churches.module.scss'
@@ -34,9 +34,6 @@ const Churches = () => {
                   church {
                     link
                     name
-                    img {
-                        publicURL
-                    }
                   }
                 }
               }
@@ -50,7 +47,8 @@ const Churches = () => {
     return (
         <Layout>
             <Head title="Churches"/>
-            <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${cross})`}} className={[churchesStyles.heading,"text-center"].join(' ')}>
+            {/* style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${cross})`}} */}
+            <Jumbotron fluid className={[churchesStyles.heading,"text-center"].join(' ')}>
                 <Container>
                     <Row>
                         <Col>
@@ -85,7 +83,7 @@ const Churches = () => {
                                 <Col md={4} lg={3} className="px-2 py-2 d-flex justify-content-center">
                                     <a href={church.church.link} target="_blank" rel="noopener noreferrer">
                                         <Card className={["border-0", churchesStyles.card].join(' ')}>
-                                            <Card.Img variant="top" src={church.church.img.publicURL} />
+                                            {/* <Card.Img variant="top" src={church.church.img.publicURL} /> */}
                                             <Card.Body >
                                                 <Card.Title className={churchesStyles.cardText}>{church.church.name}</Card.Title>
                                             </Card.Body>

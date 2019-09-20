@@ -30,9 +30,6 @@ const Outreach = () => {
                 title
                 description
                 link
-                photo {
-                  publicURL
-                }
               }
             }
           }
@@ -43,7 +40,8 @@ const Outreach = () => {
     return (
         <Layout>
             <Head title="Outreach"/>
-            <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(${data.allMarkdownRemark.edges[0].node.frontmatter.photo.publicURL})`}} className={[outreachStyles.jumbotron, "text-center"].join(' ')}>
+            {/* style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(${data.allMarkdownRemark.edges[0].node.frontmatter.photo.publicURL})`}}  */}
+            <Jumbotron fluid className={[outreachStyles.jumbotron, "text-center"].join(' ')}>
                 <Container>
                     <Row>
                         <Col>
