@@ -10,14 +10,14 @@ import carouselStyles from './carousel.module.scss'
 
 const Carousel = () => {
     const settings = {
-      dots: true,
+      // dots: true,
       infinite: true,
       fade:true,
-      lazyLoad: true,
+      // lazyLoad: true,
 
       autoplay: true,
-      autoplaySpeed: 2500,
-      speed: 500,
+      autoplaySpeed: 3000,
+      speed: 1000,
       pauseOnHover: false,
       
       slidesToShow: 1,
@@ -34,7 +34,7 @@ const Carousel = () => {
                   name
                   relativeDirectory
                   childImageSharp {
-                      fluid(maxWidth: 1440, quality: 100) {
+                      fluid(maxWidth: 1440, quality: 80) {
                           ...GatsbyImageSharpFluid
                       }
                   }
