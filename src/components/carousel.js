@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 
 import Img from 'gatsby-image'
-import './carousel.scss'
+// import './carousel.scss'
 import carouselStyles from './carousel.module.scss'
 
 const Carousel = () => {
@@ -13,6 +13,7 @@ const Carousel = () => {
       dots: true,
       infinite: true,
       fade:true,
+      lazyLoad: true,
 
       autoplay: true,
       autoplaySpeed: 2500,
