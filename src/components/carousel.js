@@ -1,69 +1,70 @@
-import React from "react"
-// import { graphql, useStaticQuery } from 'gatsby'
-// import Img from 'gatsby-image'
-// import { Link } from 'gatsby' 
-//Link is a react component, preloads the page content and loads instantly
+import React, { Component } from "react";
+import { graphql, useStaticQuery } from 'gatsby'
+import Slider from "react-slick";
+import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
 
-import Carousel from 'react-bootstrap/Carousel'
-// import Image from 'react-bootstrap/Image'
+import Img from 'gatsby-image'
+import './carousel.scss'
+import carouselStyles from './carousel.module.scss'
 
-import carouselStyle from './carousel.module.scss'
+const Carousel = () => {
+    const settings = {
+      dots: true,
+      infinite: true,
+      fade:true,
 
-import carouselImage1 from '../images/carousel/winter2018Copy-min.jpg'
-import carouselImage2 from '../images/carousel/michelleCopy-min.jpg'
-import carouselImage3 from '../images/carousel/bball2018Copy-min.jpg'
-import adjustedImage1 from '../images/carousel/winter2018-adjustedCopy-min.jpg'
-import adjustedImage3 from '../images/carousel/bballFunny2018copyCopy-min.jpg'
+      autoplay: true,
+      autoplaySpeed: 2500,
+      speed: 500,
+      pauseOnHover: false,
+      
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: false
+    };
 
-const RotatingImages = () => {
-    // const data = useStaticQuery(graphql`
-    //     query {
-    //         allFile(filter: {relativeDirectory: {eq: "images/carousel"}}) {
-    //           edges {
-    //             node {
-    //               id
-    //               relativeDirectory
-    //               childImageSharp {
-    //                 fluid {
-    //                     ...GatsbyImageSharpFluid
-    //                 }
-    //               }
-    //             }
-    //           }
-    //         }
-    //       }
-    // `)
+    const data = useStaticQuery(graphql`
+        query {
+            allFile(filter: {relativeDirectory: {eq: "images/carousel"}}) {
+              edges {
+                node {
+                  name
+                  relativeDirectory
+                  childImageSharp {
+                      fluid(maxWidth: 1440, quality: 100) {
+                          ...GatsbyImageSharpFluid
+                      }
+                  }
+                }
+              }
+            }
+          }
+    `)
 
-    return(        
-        <Carousel pauseOnHover={false} > {/* default is 5000 (5 secs)*/}
-                <Carousel.Item>  
-                    <div style={{backgroundImage: `url(${adjustedImage1})`}} className={[carouselStyle.resize, "d-none d-lg-block"].join(' ')}></div>
-                    {/* <div className="d-lg-none d-xl-none d-block" style={{backgroundImage: `url(${carouselImage1})`}}></div> */}
-                    <img
-                        className="d-lg-none d-xl-none w-100"
-                        src={carouselImage1}
-                        alt="First slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <div style={{backgroundImage: `url(${carouselImage2})`}} className={[carouselStyle.resize, "d-none d-lg-block"].join(' ')}> {/* works*/}</div>
-                    <img
-                        className="d-lg-none d-xl-none w-100"
-                        src={carouselImage2}
-                        alt="Second slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <div style={{backgroundImage: `url(${adjustedImage3})`}} className={[carouselStyle.resize, "d-none d-lg-block"].join(' ')}> {/* works*/}</div>
-                    <img
-                        className="d-lg-none d-xl-none w-100"
-                        src={carouselImage3}
-                        alt="Third slide"
-                    />
-                </Carousel.Item>
-            </Carousel>
-    )
+    return (
+        
+
+        <div>
+            <Slider {...settings}>
+            {data.allFile.edges.map((image, index) => {
+                return (
+                    <React.Fragment key={index}>
+                        <div className={carouselStyles.parent}>
+                            <Img
+                              fluid={image.node.childImageSharp.fluid}
+                            />
+                        </div>
+                    </React.Fragment>
+                );
+
+            })}
+            
+            
+            </Slider>
+        </div>
+        );
 }
 
-
-export default RotatingImages
+export default Carousel
