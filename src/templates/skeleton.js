@@ -14,6 +14,8 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Tooltip from 'react-bootstrap/Tooltip'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 
+import Img from 'gatsby-image'
+
 // import eventsStyles from './events.module.scss'
 import skeletonStyles from './skeleton.module.scss'
 
@@ -27,6 +29,13 @@ export const query = graphql`
                 date
                 title
                 link
+                img {
+                    childImageSharp {
+                        fluid(maxWidth: 1440) {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
+                }
             }
             html
             fields {
@@ -41,24 +50,31 @@ const ConnectEvents = (props) => {
         <Layout>
             <Head title={props.data.markdownRemark.frontmatter.title}/>
             {/* style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${props.data.markdownRemark.frontmatter.img.publicURL})`}}  */}
-            <Jumbotron fluid className={[skeletonStyles.media, "text-center"].join(' ')}>
-                <Container>
-                    <Row>
-                        <Col>
-                            <h1>test</h1>
-                            {/* {props.data.markdownRemark.frontmatter.gif && (
+            {/* {props.data.markdownRemark.frontmatter.gif && (
                                 <img
                                 src={props.data.markdownRemark.frontmatter.gif.publicURL}
                                 alt="thumbnail"
                                 className={[skeletonStyles.gif].join(' ')}
                             />
                             )} */}
+            
+            {/* <Jumbotron fluid className={[skeletonStyles.media, "text-center"].join(' ')}>
+                <Container>
+                    <Row>
+                        <Col>
+                            <h1>test</h1>
+                            
                             
                             
                         </Col>
                     </Row>
                 </Container>
-            </Jumbotron>
+            </Jumbotron> */}
+            <Img
+                fluid={props.data.markdownRemark.frontmatter.img.childImageSharp.fluid}
+                // loading="eager"
+                className={skeletonStyles.img}
+            />
             <Container className={[skeletonStyles.info, "text-center"].join(' ')}>
                 <Row>
                     <Col >

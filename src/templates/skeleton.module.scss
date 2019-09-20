@@ -67,3 +67,12 @@
         letter-spacing: 1.3px;
     }
 }
+
+
+
+.img {
+    height: 75vh;
+    @media screen and (max-width: 768px) {
+        height: 100%;
+    }
+}
