@@ -7,7 +7,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 import cross from '../images/mini-cross.png'
-import instagram_logo from '../images/iglogo.png'
+import instagram_logo from '../images/iglogoCopy.png'
 import facebook_logo from '../images/fblogo.png'
 
 
