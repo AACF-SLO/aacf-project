@@ -15,8 +15,8 @@ import contactStyles from './contact.module.scss'
 // import contactUs from '../images/contactUs.jpg'
 import instagram_logo from '../images/iglogoCopy.png'
 import facebook_logo from '../images/fblogo.png'
-// import instagram_black from '../images/igblack.png'
-// import facebook_black from '../images/fbblack.png'
+import instagram_black from '../images/igblack.png'
+import facebook_black from '../images/fbblack.png'
 
 // console.log(React.version);
 const ContactPage = () => {
@@ -44,11 +44,11 @@ const ContactPage = () => {
                     <Row className={[contactStyles.info, "justify-content-center pt-3"].join(' ')}>
                         <Col sm={12} md={10} className={["justify-content-center  d-flex"].join(' ')}>
                             <a href="https://www.instagram.com/aacf.slo/" target="_blank" rel="noopener noreferrer">
-                                <img src={instagram_logo}  fluid="true" alt="instagram"/>
+                                <img src={instagram_black}  fluid="true" alt="instagram"/>
                                 <p>@aacf.slo</p>
                             </a>
                             <a href="https://www.facebook.com/groups/aacfslo/" target="_blank" rel="noopener noreferrer">
-                                <img src={facebook_logo} fluid="true" alt="facebook"/>
+                                <img src={facebook_black} fluid="true" alt="facebook"/>
                                 <p>/aacfslo</p>
                             </a>
                         </Col>

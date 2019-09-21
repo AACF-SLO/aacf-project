@@ -17,6 +17,8 @@ import Button from 'react-bootstrap/Button'
 import Tooltip from 'react-bootstrap/Tooltip'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 
+import Hero from '../components/hero'
+
 // import cross from '../images/cross-about.jpg'
 
 
@@ -32,13 +34,20 @@ const Churches = () => {
               frontmatter {
                 title
                 link
+                featuredImage {
+                    childImageSharp {
+                        fluid(maxWidth: 1920) {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
+                }
                 churches {
                   church {
                     link
                     name
                     img {
                         childImageSharp {
-                            fluid {
+                            fluid{
                                 ...GatsbyImageSharpFluid
                             }
                         }
@@ -59,6 +68,7 @@ const Churches = () => {
             {/* style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${cross})`}} */}
             <Jumbotron fluid className={[churchesStyles.heading,"text-center"].join(' ')}>
                 <Container>
+                    {/* <Hero image={data.allMarkdownRemark.edges[0].node.frontmatter.featuredImage.childImageSharp.fluid} /> */}
                     <Row>
                         <Col>
                             <h1>AACF IS NOT A REPLACEMENT FOR CHURCH!</h1>
@@ -80,6 +90,7 @@ const Churches = () => {
                                     : (<Button className={churchesStyles.button} href={data.allMarkdownRemark.edges[0].node.frontmatter.link} size="lg" variant="outline-primary">SIGN UP</Button>) }
                         </Col>
                     </Row>
+                    
                 </Container>
             </Jumbotron>
             <Container className="mb-5 text-center"> {/* Can be fluid*/}

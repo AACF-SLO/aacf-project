@@ -2,6 +2,7 @@
 category: "Churches"
 title: "Churches"
 link: ""
+featuredImage: "../images/cross-about.jpg"
 churches:
     - church:
         name: "Vista Church"

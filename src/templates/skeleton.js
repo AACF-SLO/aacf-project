@@ -15,6 +15,7 @@ import Tooltip from 'react-bootstrap/Tooltip'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 
 import Img from 'gatsby-image'
+import Hero from '../components/hero'
 
 // import eventsStyles from './events.module.scss'
 import skeletonStyles from './skeleton.module.scss'
@@ -31,7 +32,7 @@ export const query = graphql`
                 link
                 img {
                     childImageSharp {
-                        fluid(maxWidth: 1440) {
+                        fluid(maxWidth: 1920, quality: 80 ) {
                             ...GatsbyImageSharpFluid
                         }
                     }
@@ -58,7 +59,7 @@ const ConnectEvents = (props) => {
                             />
                             )} */}
             
-            {/* <Jumbotron fluid className={[skeletonStyles.media, "text-center"].join(' ')}>
+            {/* <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${props.data.markdownRemark.frontmatter.img.childImageSharp.fluid.src})`}}  className={[skeletonStyles.media, "text-center"].join(' ')}>
                 <Container>
                     <Row>
                         <Col>
@@ -70,11 +71,14 @@ const ConnectEvents = (props) => {
                     </Row>
                 </Container>
             </Jumbotron> */}
-            <Img
+             {/* <div style={{ position: `relative` }}>
+                <Img
+                css={{ top: 0, left: 0, right: 0, bottom: 0 }}
+                style={{ position: `absolute` }}
                 fluid={props.data.markdownRemark.frontmatter.img.childImageSharp.fluid}
-                // loading="eager"
-                className={skeletonStyles.img}
-            />
+                />
+            </div> */}
+            <Hero image={props.data.markdownRemark.frontmatter.img.childImageSharp.fluid}/>
             <Container className={[skeletonStyles.info, "text-center"].join(' ')}>
                 <Row>
                     <Col >
