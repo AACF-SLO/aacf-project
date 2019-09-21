@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 
 import Head from '../components/head'
 
+import Img from 'gatsby-image'
 
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
@@ -30,6 +31,13 @@ const Outreach = () => {
                 title
                 description
                 link
+                featuredImage {
+                    childImageSharp {
+                        fluid(maxWidth: 1920, quality: 70) {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
+                }
               }
             }
           }
@@ -42,6 +50,20 @@ const Outreach = () => {
             <Head title="Outreach"/>
             {/* style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(${data.allMarkdownRemark.edges[0].node.frontmatter.photo.publicURL})`}}  */}
             <Jumbotron fluid className={[outreachStyles.jumbotron, "text-center"].join(' ')}>
+                <Img 
+                    fluid={data.allMarkdownRemark.edges[0].node.frontmatter.featuredImage.childImageSharp.fluid}
+                    style={{
+                        position: "fixed",
+                        left: 0,
+                        top: 0,
+                        width: "100%",
+                        maxHeight: "100vh",
+                        height: "100%",
+                        zIndex: -1,
+                        }}
+                    // backgroundColor={"black"}
+                    className={outreachStyles.background}
+                />
                 <Container>
                     <Row>
                         <Col>

@@ -10,7 +10,7 @@ export default (props) => (
       fluid={props.image}
       style={{
           width: `100%`,
-          height: `50vh`,
+          height: `50vh`
       }}
     />
   </React.Fragment>

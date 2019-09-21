@@ -6,7 +6,8 @@
     min-height: 80vh;
     align-items: center;
     display: flex; //d-flex goes hand in hand with align-items unless component already is flex
-    color: black;
+    color: white;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -61,12 +62,12 @@
             font-family: 'Lato';
             margin-top: 1rem;
             font-size: 1.5rem;
-            color: black;
+            color: white;
             text-decoration: none;
         }
-        :hover {
-            color: #000;
-        }
+        // :hover {
+        //     color: #000;
+        // }
         
     }
     
@@ -76,4 +77,17 @@
     font-family: "Lato";
     letter-spacing: 2px;
     // font-size: 1.5rem;
+}
+
+.background::after {
+    content: "";
+    display: block;
+    position: fixed;
+    padding: 100px 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    // z-index: 1;
 }

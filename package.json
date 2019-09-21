@@ -13,15 +13,18 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
+    "babel-plugin-styled-components": "^1.10.6",
     "bootstrap": "^4.3.1",
     "gatsby": "^2.13.73",
+    "gatsby-background-image": "^0.8.12",
     "gatsby-image": "^2.2.19",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-manifest": "^2.2.16",
     "gatsby-plugin-netlify": "^2.1.15",
     "gatsby-plugin-react-helmet": "^3.1.5",
     "gatsby-plugin-sass": "^2.1.12",
-    "gatsby-plugin-sharp": "^2.2.18",
+    "gatsby-plugin-sharp": "^2.2.25",
+    "gatsby-plugin-styled-components": "^3.1.6",
     "gatsby-remark-images": "^3.1.19",
     "gatsby-remark-relative-images": "^0.2.3",
     "gatsby-source-filesystem": "^2.0.28",
@@ -33,7 +36,8 @@
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
     "react-slick": "^0.25.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^4.3.2"
   },
   "devDependencies": {
     "env-cmd": "^10.0.1",

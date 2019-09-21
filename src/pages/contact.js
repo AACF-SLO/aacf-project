@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql, useStaticQuery } from 'gatsby'
 
 import Layout from '../components/layout'
 import Head from "../components/head"
@@ -10,16 +11,39 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 
+import Img from 'gatsby-image'
+
 import contactStyles from './contact.module.scss'
 // import contact from '../images/contact.jpg'
 // import contactUs from '../images/contactUs.jpg'
 import instagram_logo from '../images/iglogoCopy.png'
 import facebook_logo from '../images/fblogo.png'
-import instagram_black from '../images/igblack.png'
-import facebook_black from '../images/fbblack.png'
+// import instagram_black from '../images/igblack.png'
+// import facebook_black from '../images/fbblack.png'
 
 // console.log(React.version);
 const ContactPage = () => {
+    const data = useStaticQuery(graphql`
+    query {
+        allMarkdownRemark(filter: {frontmatter: {category: {eq: "Contact"}}}) {
+            edges {
+                node {
+                    frontmatter {
+                        featuredImage {
+                            childImageSharp {
+                                fluid (maxWidth: 1920, quality: 70 ) 
+                                {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+        
+    `)
     return (
         <Layout>
             <Head title="Contact"/>
@@ -29,6 +53,22 @@ const ContactPage = () => {
             style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${contact})`}}
             */}
             <Jumbotron fluid  className={[contactStyles.heading, "text-center"].join(' ')}>
+                <Img 
+                    fluid={data.allMarkdownRemark.edges[0].node.frontmatter.featuredImage.childImageSharp.fluid}
+                    style={{
+                        position: "fixed",
+                        left: 0,
+                        top: 0,
+                        width: "100%",
+                        height: "100%",
+                        zIndex: -1,
+                        }}
+                    // imgStyle={{
+                    //     backgroundColor: 'black'
+                    // }}
+                    // backgroundColor={"black"}
+                    className={contactStyles.background}
+                />
                 <Container>
                     <Row>
                         <Col>
@@ -44,11 +84,11 @@ const ContactPage = () => {
                     <Row className={[contactStyles.info, "justify-content-center pt-3"].join(' ')}>
                         <Col sm={12} md={10} className={["justify-content-center  d-flex"].join(' ')}>
                             <a href="https://www.instagram.com/aacf.slo/" target="_blank" rel="noopener noreferrer">
-                                <img src={instagram_black}  fluid="true" alt="instagram"/>
+                                <img src={instagram_logo}  fluid="true" alt="instagram"/>
                                 <p>@aacf.slo</p>
                             </a>
                             <a href="https://www.facebook.com/groups/aacfslo/" target="_blank" rel="noopener noreferrer">
-                                <img src={facebook_black} fluid="true" alt="facebook"/>
+                                <img src={facebook_logo} fluid="true" alt="facebook"/>
                                 <p>/aacfslo</p>
                             </a>
                         </Col>

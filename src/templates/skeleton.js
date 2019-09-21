@@ -12,9 +12,9 @@ import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Tooltip from 'react-bootstrap/Tooltip'
-import Jumbotron from 'react-bootstrap/Jumbotron'
+// import Jumbotron from 'react-bootstrap/Jumbotron'
 
-import Img from 'gatsby-image'
+// import Img from 'gatsby-image'
 import Hero from '../components/hero'
 
 // import eventsStyles from './events.module.scss'
