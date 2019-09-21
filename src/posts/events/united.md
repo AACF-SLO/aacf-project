@@ -6,5 +6,5 @@ location: "San Luis Obispo"
 date: "During the school year"
 gif: "../../images/events/united.gif"
 img: "../../images/events/united.jpg"
-link: "/"
+link: ""
 ---

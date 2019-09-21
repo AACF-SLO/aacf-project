@@ -81,8 +81,8 @@ const ConnectEvents = (props) => {
                         <h1 className={skeletonStyles.title}>{props.data.markdownRemark.frontmatter.title}</h1>
                     </Col>
                 </Row>
-                <Row>
-                    <Col>
+                <Row className="justify-content-center">
+                    <Col xs={12} md={8}>
                         <p>{props.data.markdownRemark.frontmatter.description}</p>
                     </Col>
                 </Row>
