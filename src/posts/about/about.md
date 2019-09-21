@@ -8,4 +8,8 @@ spring: "What does it look like to have an intimate personal relationship with G
 fallWords: "Understand"
 winterWords: "Reflect"
 springWords: "Overflow"
+featuredImage1: "../../images/aacf_mission_statement.jpg"
+featuredImage2: "../../images/bible.jpg"
+featuredImage3: "../../images/bible-woods.jpg"
+featuredImage4: "../../images/statement_of_faith.jpg"
 ---

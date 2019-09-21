@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql, useStaticQuery } from 'gatsby'
 
 import Layout from '../components/layout'
 import Head from "../components/head"
@@ -10,6 +11,8 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 
+import Img from 'gatsby-image'
+
 import contactStyles from './contact.module.scss'
 // import contact from '../images/contact.jpg'
 // import contactUs from '../images/contactUs.jpg'
@@ -20,6 +23,27 @@ import facebook_logo from '../images/fblogo.png'
 
 // console.log(React.version);
 const ContactPage = () => {
+    const data = useStaticQuery(graphql`
+    query {
+        allMarkdownRemark(filter: {frontmatter: {category: {eq: "Contact"}}}) {
+            edges {
+                node {
+                    frontmatter {
+                        featuredImage {
+                            childImageSharp {
+                                fluid (maxWidth: 1920, quality: 70 ) 
+                                {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+        
+    `)
     return (
         <Layout>
             <Head title="Contact"/>
@@ -29,6 +53,22 @@ const ContactPage = () => {
             style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${contact})`}}
             */}
             <Jumbotron fluid  className={[contactStyles.heading, "text-center"].join(' ')}>
+                <Img 
+                    fluid={data.allMarkdownRemark.edges[0].node.frontmatter.featuredImage.childImageSharp.fluid}
+                    style={{
+                        position: "fixed",
+                        left: 0,
+                        top: 0,
+                        width: "100%",
+                        height: "100%",
+                        zIndex: -1,
+                        }}
+                    // imgStyle={{
+                    //     backgroundColor: 'black'
+                    // }}
+                    // backgroundColor={"black"}
+                    className={contactStyles.background}
+                />
                 <Container>
                     <Row>
                         <Col>

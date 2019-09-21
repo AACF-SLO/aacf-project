@@ -1,31 +1,25 @@
-import React from "react"
-// import { Link } from "gatsby"
-import { graphql, useStaticQuery } from "gatsby"
+import React from 'react'
+import { graphql, StaticQuery } from 'gatsby'
+import styled from 'styled-components'
 
 import Layout from '../components/layout'
 
 import Head from '../components/head'
 
-import aboutStyles from './about.module.scss'
 
-// bootstrap imports
+import BackgroundImage from 'gatsby-background-image'
+
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-
-//images
 import aacfLogo from '../images/aacf_logo.png'
-// import cross from '../images/cross-about.jpg'
-// import bible from '../images/bible.jpg'
-// import bibleWoods from '../images/bible-woods.jpg'
 
-// import missionStatement from '../images/aacf_mission_statement.jpg'
-// import statementOfFaith from '../images/statement_of_faith.jpg'
+import aboutStyles from './about.module.scss'
 
-
-const AboutPage = () => {
-    const data = useStaticQuery(graphql`
+const BackgroundSection = ({ className }) => (
+  <StaticQuery
+    query={graphql`
         query {
             allMarkdownRemark(filter: {frontmatter: {category: {eq: "about"}}}) {
                 edges {
@@ -39,21 +33,60 @@ const AboutPage = () => {
                             fallWords
                             winterWords
                             springWords
+                            featuredImage1 {
+                                childImageSharp {
+                                    fluid (maxWidth: 1920) {
+                                        ...GatsbyImageSharpFluid
+                                    }
+                                }
+                            }
+                            featuredImage2 {
+                                childImageSharp {
+                                    fluid (maxWidth: 1920) {
+                                        ...GatsbyImageSharpFluid
+                                    }
+                                }
+                            }
+                            featuredImage3 {
+                                childImageSharp {
+                                    fluid (maxWidth: 1920) {
+                                        ...GatsbyImageSharpFluid
+                                    }
+                                }
+                            }
+                            featuredImage4 {
+                                childImageSharp {
+                                    fluid (maxWidth: 1920) {
+                                        ...GatsbyImageSharpFluid
+                                    }
+                                }
+                            }
                         }
                     }
                 }
             }
         }
-    `)
-
-
-    return (
+    `}
+    render={data => {
+      // Set ImageData.
+      const imageData1 = [data.allMarkdownRemark.edges[0].node.frontmatter.featuredImage1.childImageSharp.fluid, `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))`].reverse()
+      const imageData2 = [data.allMarkdownRemark.edges[0].node.frontmatter.featuredImage2.childImageSharp.fluid, `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))`].reverse()
+      const imageData3 = [data.allMarkdownRemark.edges[0].node.frontmatter.featuredImage3.childImageSharp.fluid, `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))`].reverse()
+      const imageData4 = [data.allMarkdownRemark.edges[0].node.frontmatter.featuredImage4.childImageSharp.fluid, `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))`].reverse()
+      
+      return (
+        // <React.Fragment>
         <Layout>
-            <Head title="About"/>
-            {/* style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${missionStatement})`}} */}
-            <Jumbotron fluid className={[aboutStyles.jumbotronMb0, "text-center"].join(' ')}>
+        <Head title="About" />
+        <BackgroundImage
+          Tag="section"
+          className={className}
+          fluid={imageData1}
+          backgroundColor={`#040e18`}
+        >
+            <Jumbotron className={[aboutStyles.container, "text-center"].join(' ')}>
                 <Container>
-                    <Row>
+                    <Row className="">
                         <Col>
                             <h1>AACF MISSION STATEMENT</h1>
                         </Col>
@@ -65,8 +98,16 @@ const AboutPage = () => {
                     </Row>
                 </Container>
             </Jumbotron>
-            {/* style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bible})`}} */}
-            <Jumbotron fluid className={[aboutStyles.jumbotronMb0, "text-center"].join(' ')}>
+        </BackgroundImage>
+
+        <BackgroundImage
+          Tag="section"
+          className={className}
+          fluid={imageData2}
+          backgroundColor={`#040e18`}
+        >
+            <Jumbotron fluid className={[aboutStyles.container, "text-center"].join(' ')}>
+                
                 <Container>
                     <Row className="justify-content-center">
                         <Col sm={12} md={9}>
@@ -94,8 +135,15 @@ const AboutPage = () => {
                 </Container>
             </Jumbotron>
 
-            {/* style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bibleWoods})`}} */}
-            <Jumbotron fluid className={[aboutStyles.jumbotronMb0, "text-center"].join(' ')} >
+        </BackgroundImage>
+
+        <BackgroundImage
+          Tag="section"
+          className={className}
+          fluid={imageData3}
+          backgroundColor={`#040e18`}
+        >
+            <Jumbotron fluid className={[aboutStyles.container, "text-center"].join(' ')} >
                 <Container>
                     <Row className="justify-content-center">
                         <Col sm={12} md={8}>
@@ -110,8 +158,17 @@ const AboutPage = () => {
                     </Row> */}
                 </Container>
             </Jumbotron>
-            {/*  style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${statementOfFaith})`}}  */}
-            <Jumbotron fluid className={[aboutStyles.jumbotronMb0].join(' ')} >
+
+
+        </BackgroundImage>
+
+        <BackgroundImage
+          Tag="section"
+          className={className}
+          fluid={imageData4}
+          backgroundColor={`#040e18`}
+        >
+             <Jumbotron fluid className={[aboutStyles.container].join(' ')} >
                 <Container>
                     <Row>
                         <Col className="text-center">
@@ -145,8 +202,21 @@ const AboutPage = () => {
                     </Row>
                 </Container>
             </Jumbotron>
-        </Layout>
-    )
-}
 
-export default AboutPage
+        </BackgroundImage>
+            
+        </Layout>
+      )
+    }}
+  />
+)
+
+const StyledBackgroundSection = styled(BackgroundSection)`
+  width: 100%;
+//   min-height: 50vh;
+  background-position: center center;
+  background-repeat: repeat-y;
+  background-size: cover;
+`
+
+export default StyledBackgroundSection

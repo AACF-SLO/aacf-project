@@ -52,6 +52,8 @@
 }
 
 .info {
+    margin-top: 2rem;
+    color: black;
     h1 {
         font-family: 'Staatliches';
         font-size: 4rem;
@@ -70,9 +72,10 @@
 
 
 
-.img {
-    height: 75vh;
-    @media screen and (max-width: 768px) {
-        height: 100%;
-    }
-}
+// .img {
+    
+//     height: 75vh;
+//     @media screen and (max-width: 768px) {
+//         height: 100%;
+//     }
+// }

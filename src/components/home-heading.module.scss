@@ -1,14 +1,16 @@
 .section {
     margin-bottom: 0;
     min-height: 50vh;
-    width: 100%;
+    background-color: transparent;
+    // width: 100%;
     // align-items: center;
     // display: flex; //d-flex goes hand in hand with align-items unless component already is flex
     color: white;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // background-size: cover;
+    
     // background: no-repeat center center fixed;
     h1 {
         font-family: "Staatliches";
@@ -19,4 +21,5 @@
         font-family: "Lato";
         letter-spacing: 2px;
     }
+
 }

@@ -16,6 +16,9 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import Tooltip from 'react-bootstrap/Tooltip'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
+// import BgImage from '../components/BgImage'
+
+// import Hero from '../components/hero'
 
 // import cross from '../images/cross-about.jpg'
 
@@ -32,13 +35,20 @@ const Churches = () => {
               frontmatter {
                 title
                 link
+                featuredImage {
+                    childImageSharp {
+                        fluid(maxWidth: 1920) {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
+                }
                 churches {
                   church {
                     link
                     name
                     img {
                         childImageSharp {
-                            fluid {
+                            fluid{
                                 ...GatsbyImageSharpFluid
                             }
                         }
@@ -57,31 +67,51 @@ const Churches = () => {
         <Layout>
             <Head title="Churches"/>
             {/* style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${cross})`}} */}
-            <Jumbotron fluid className={[churchesStyles.heading,"text-center"].join(' ')}>
-                <Container>
-                    <Row>
-                        <Col>
-                            <h1>AACF IS NOT A REPLACEMENT FOR CHURCH!</h1>
-                        </Col>
-                    </Row>
-                    <Row className="justify-content-center">
-                        <Col sm={12} md={8}>
-                            <p>People in AACF all go to different churches around SLO and a majority like to carpool as well.
-                                Below are a list of churches that some members of AACF go to. Click on each church to learn more about them.</p>
-                            <p>Click below to get a ride to church!</p>
-                            {/* <Button size="lg" variant="primary">I NEED A RIDE!</Button> */}
-                            { data.allMarkdownRemark.edges[0].node.frontmatter.link.trim() === "" ? 
-                                    (<OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Not Ready Yet!</Tooltip>}>
-                                        <span className="d-inline-block">
-                                            <Button className={churchesStyles.button} disabled style={{ pointerEvents: 'none' }} size="lg" variant="secondary">Sign Up</Button>
-                                        </span>
-                                    </OverlayTrigger>
-                                    ) 
-                                    : (<Button className={churchesStyles.button} href={data.allMarkdownRemark.edges[0].node.frontmatter.link} size="lg" variant="outline-primary">SIGN UP</Button>) }
-                        </Col>
-                    </Row>
-                </Container>
-            </Jumbotron>
+            {/* <BgImage fluid={data.allMarkdownRemark.edges[0].node.frontmatter.featuredImage.childImageSharp.fluid}  overlayColor="#04040454">> */}
+                <Jumbotron fluid className={[churchesStyles.heading,"text-center"].join(' ')}>
+                    {/* <Hero image={data.allMarkdownRemark.edges[0].node.frontmatter.featuredImage.childImageSharp.fluid} /> */}
+                    {/* <Img 
+                            fluid={data.allMarkdownRemark.edges[0].node.frontmatter.featuredImage.childImageSharp.fluid}
+                            style={{
+                                position: "fixed",
+                                left: 0,
+                                top: 0,
+                                width: "100%",
+                                height: "100%",
+                                zIndex: -1,
+                            }}
+                            imgStyle={{
+                                objectFit: "contain"
+                            }}
+                            className={churchesStyles.background}
+                        /> */}
+                    <Container>
+                   
+                        <Row>
+                            <Col>
+                                <h1>AACF IS NOT A REPLACEMENT FOR CHURCH!</h1>
+                            </Col>
+                        </Row>
+                        <Row className="justify-content-center">
+                            <Col sm={12} md={8}>
+                                <p>People in AACF all go to different churches around SLO and a majority like to carpool as well.
+                                    Below are a list of churches that some members of AACF go to. Click on each church to learn more about them.</p>
+                                <p>Click below to get a ride to church!</p>
+                                {/* <Button size="lg" variant="primary">I NEED A RIDE!</Button> */}
+                                { data.allMarkdownRemark.edges[0].node.frontmatter.link.trim() === "" ? 
+                                        (<OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Not Ready Yet!</Tooltip>}>
+                                            <span className="d-inline-block">
+                                                <Button className={churchesStyles.button} disabled style={{ pointerEvents: 'none' }} size="lg" variant="secondary">Sign Up</Button>
+                                            </span>
+                                        </OverlayTrigger>
+                                        ) 
+                                        : (<Button className={churchesStyles.button} href={data.allMarkdownRemark.edges[0].node.frontmatter.link} size="lg" variant="outline-primary">SIGN UP</Button>) }
+                            </Col>
+                        </Row>
+                        
+                    </Container>
+                </Jumbotron>
+            {/* </BgImage> */}
             <Container className="mb-5 text-center"> {/* Can be fluid*/}
                 <Row className="d-flex justify-content-center">
                     {data.allMarkdownRemark.edges[0].node.frontmatter.churches.map((church, index) => {
