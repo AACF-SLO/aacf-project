@@ -1,6 +1,7 @@
   
 import React from "react"
 import Img from 'gatsby-image';
+import { Z_FIXED } from "zlib";
 // import { Link } from 'gatsby';
 
 export default (props) => (
@@ -10,7 +11,7 @@ export default (props) => (
       fluid={props.image}
       style={{
           width: `100%`,
-          height: `50vh`
+          height: `70vh`
       }}
     />
   </React.Fragment>
