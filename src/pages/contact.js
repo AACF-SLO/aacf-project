@@ -56,10 +56,17 @@ const ContactPage = () => {
                 <Img 
                     fluid={data.allMarkdownRemark.edges[0].node.frontmatter.featuredImage.childImageSharp.fluid}
                     style={{
+                        // position: "fixed",
+                        // left: 0,
+                        // top: 0,
+                        // width: "100%",
+                        // height: "100%",
+                        // zIndex: -1,
                         position: "fixed",
                         left: 0,
                         top: 0,
                         width: "100%",
+                        maxHeight: "100vh",
                         height: "100%",
                         zIndex: -1,
                         }}
