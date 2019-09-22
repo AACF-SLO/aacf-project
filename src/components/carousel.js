@@ -55,6 +55,9 @@ const Carousel = () => {
                         <div className={carouselStyles.parent}>
                             <Img
                               fluid={image.node.childImageSharp.fluid}
+                              style={{
+                                maxHeight: `calc(100vh - 102px)`
+                              }}
                             />
                         </div>
                     </React.Fragment>
