@@ -16,7 +16,7 @@ ministries:
                 name: "Calvin Wang"
                 core: ""
                 featuredImage: "../images/ministries/Calvin.jpg"
-                detail: "4rd year, Civil Engineering"
+                detail: "4th year, Civil Engineering"
             - person: 
                 name: "Lawrence Lai"
                 core: ""
