@@ -1,7 +1,7 @@
 ---
 category: "Churches"
 title: "Churches"
-link: ""
+link: "https://docs.google.com/forms/d/e/1FAIpQLSecdIMpNGlg8z3Mejg_OkNjEIJ1ZvHX93VEAnUc5ZMkihUc3A/viewform"
 featuredImage: "../images/cross-about.jpg"
 churches:
     - church:

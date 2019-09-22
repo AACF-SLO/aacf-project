@@ -104,7 +104,7 @@ ministries:
         responsibility: "responsibilities here"
         people:
             - person: 
-                name: "Isiah Kim"
+                name: "Isaiah Kim"
                 core: "Core"
                 featuredImage: "../images/ministries/isaiah.JPG"
                 detail: "3rd year, English"

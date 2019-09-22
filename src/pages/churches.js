@@ -105,7 +105,7 @@ const Churches = () => {
                                             </span>
                                         </OverlayTrigger>
                                         ) 
-                                        : (<Button className={churchesStyles.button} href={data.allMarkdownRemark.edges[0].node.frontmatter.link} size="lg" variant="outline-primary">SIGN UP</Button>) }
+                                        : (<Button className={churchesStyles.button} href={data.allMarkdownRemark.edges[0].node.frontmatter.link} rel="noopener noreferrer" target="_blank" size="lg" variant="outline-primary">SIGN UP</Button>) }
                             </Col>
                         </Row>
                         

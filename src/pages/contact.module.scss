@@ -7,7 +7,6 @@
     align-items: center;
     display: flex; //d-flex goes hand in hand with align-items unless component already is flex
     color: white;
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -17,11 +16,13 @@
         font-family: 'Staatliches';
         font-size: 3rem;
         letter-spacing: .2rem;
+        text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
     }
     h3 {
         font-family: 'Lato';
         font-size: 1.5rem;
         letter-spacing: 1.6px;
+        text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
     }
 
     // .facebook {
