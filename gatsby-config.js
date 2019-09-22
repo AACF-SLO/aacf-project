@@ -22,7 +22,7 @@ module.exports = {
           short_name: `aacf slo`,
           start_url: `/`,
           background_color: `#f7f0eb`,
-          theme_color: `#a2466c`,
+          theme_color: `#1F419B`,
           display: `minimal-ui`,
           icon: `src/images/logo.png`
         }
