@@ -1,7 +1,6 @@
   
 import React from "react"
 import Img from 'gatsby-image';
-import { Z_FIXED } from "zlib";
 // import { Link } from 'gatsby';
 
 export default (props) => (
