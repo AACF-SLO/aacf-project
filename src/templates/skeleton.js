@@ -5,6 +5,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 
 import Head from '../components/head'
+import Img from 'gatsby-image'
 
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
@@ -78,7 +79,15 @@ const ConnectEvents = (props) => {
                 fluid={props.data.markdownRemark.frontmatter.img.childImageSharp.fluid}
                 />
             </div> */}
-            <Hero image={props.data.markdownRemark.frontmatter.img.childImageSharp.fluid}/>
+            {/* <Hero image={props.data.markdownRemark.frontmatter.img.childImageSharp.fluid}/> */}
+            <Img 
+                fluid={props.data.markdownRemark.frontmatter.img.childImageSharp.fluid}
+                style={{
+                    width:`100%`,
+                    maxHeight:`70vh`
+                    
+                }}
+            />
             <Container className={[skeletonStyles.info, "text-center"].join(' ')}>
                 <Row>
                     <Col >
