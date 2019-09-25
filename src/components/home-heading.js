@@ -21,7 +21,7 @@ const HomeHeading = ({ className }) => (
         query {
           desktop: file(relativePath: { eq: "images/UpcomingEventsCopy-min.jpg" }) {
             childImageSharp {
-              fluid(quality: 90, maxWidth: 1920) {
+              fluid(maxWidth: 1920) {
                 ...GatsbyImageSharpFluid
               }
             }
