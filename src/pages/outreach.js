@@ -82,7 +82,7 @@ const Outreach = () => {
                                     </span>
                                 </OverlayTrigger>
                                 ) 
-                                : (<Button className={outreachStyles.button} href={data.allMarkdownRemark.edges[0].node.frontmatter.link} size="lg" variant="outline-primary">SIGN UP</Button>) }
+                                : (<Button className={outreachStyles.button} target="_blank" href={data.allMarkdownRemark.edges[0].node.frontmatter.link} size="lg" variant="outline-primary">SIGN UP</Button>) }
                         </Col>
                     </Row>
                 </Container>
