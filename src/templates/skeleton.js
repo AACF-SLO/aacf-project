@@ -118,7 +118,7 @@ const ConnectEvents = (props) => {
                             </span>
                         </OverlayTrigger>
                         ) 
-                        : (<Button className={skeletonStyles.button} href={props.data.markdownRemark.frontmatter.link} size="lg" block variant="outline-primary">SIGN UP</Button>) }
+                        : (<Button className={skeletonStyles.button} target="_blank" href={props.data.markdownRemark.frontmatter.link} size="lg" block variant="outline-primary">SIGN UP</Button>) }
                     </Col>
                 </Row>
             </Container>

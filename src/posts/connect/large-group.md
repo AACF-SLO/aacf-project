@@ -6,5 +6,5 @@ location: "Baker 102 for Fall Quarter."
 date: "Every Friday at 7:30 PM." 
 gif: "../../images/connect/large_group.gif"
 img: "../../images/connect/large_group.jpg"
-link: ""
+link: "https://forms.gle/UPtHHB5NVkUaAjNy8"
 ---
