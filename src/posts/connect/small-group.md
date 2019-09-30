@@ -6,5 +6,5 @@ location: "Hosted at different AACF members' houses."
 date: "Every Wednesday from 7:30 - 9:00 PM."
 gif: ""
 img: "../../images/connect/small_group.jpg"
-link: ""
+link: "https://forms.gle/me2LuduXQdD1oYEJ6"
 ---
