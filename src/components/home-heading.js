@@ -48,7 +48,7 @@ const HomeHeading = ({ className }) => (
                         </Row>
                         <Row className={["justify-content-around d-flex mt-4"].join(' ')} >  {/* className={["justify-content-around d-flex"].join(' ')} */}
                             <Col xs={12} md={6}>
-                                <Link to="/outreach"><Button className={homeHeading.button} size="lg" block variant="primary">FRESHMEN OUTREACH</Button></Link>
+                                <Link to="/outreach"><Button className={homeHeading.button} size="lg" block variant="primary">CULTURE FEST</Button></Link>
                             </Col>
                         </Row>
                         <Row className={["justify-content-around d-flex mt-4"].join(' ')} >  {/* className={["justify-content-around d-flex"].join(' ')} */}
