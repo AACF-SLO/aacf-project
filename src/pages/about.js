@@ -35,28 +35,28 @@ const BackgroundSection = ({ className }) => (
                             springWords
                             featuredImage1 {
                                 childImageSharp {
-                                    fluid (maxWidth: 1920) {
+                                    fluid (maxWidth: 1000) {
                                         ...GatsbyImageSharpFluid
                                     }
                                 }
                             }
                             featuredImage2 {
                                 childImageSharp {
-                                    fluid (maxWidth: 1920) {
+                                    fluid (maxWidth: 1000) {
                                         ...GatsbyImageSharpFluid
                                     }
                                 }
                             }
                             featuredImage3 {
                                 childImageSharp {
-                                    fluid (maxWidth: 1920) {
+                                    fluid (maxWidth: 1000) {
                                         ...GatsbyImageSharpFluid
                                     }
                                 }
                             }
                             featuredImage4 {
                                 childImageSharp {
-                                    fluid (maxWidth: 1920) {
+                                    fluid (maxWidth: 1000) {
                                         ...GatsbyImageSharpFluid
                                     }
                                 }
