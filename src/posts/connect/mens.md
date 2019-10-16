@@ -5,6 +5,6 @@ description: "Men’s Ministry is in charge of pouring into the lives of the men
 location: "Various activities around San Luis Obispo."
 date: "Dates vary throughout the school year."
 gif: "../../images/connect/mens.gif"
-img: "../../images/connect/mens.png"
+img: "../../images/connect/mens.jpg"
 link: ""
 ---
