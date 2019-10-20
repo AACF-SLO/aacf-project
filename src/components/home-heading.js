@@ -47,11 +47,16 @@ const HomeHeading = ({ className }) => (
                             </Col>
                         </Row>
                         {/* WILL ADD NEW EVENT WHEN NEEDED */}
-                        {/* <Row className={["justify-content-around d-flex mt-4"].join(' ')} > 
+                        <Row className={["justify-content-around d-flex mt-4"].join(' ')} > 
                             <Col xs={12} md={6}>
-                                <Link to="/outreach"><Button className={homeHeading.button} size="lg" block variant="primary">CULTURE FEST</Button></Link>
+                                <Link to="/womens"><Button className={homeHeading.button} size="lg" block variant="primary">WOMEN'S</Button></Link>
                             </Col>
-                        </Row> */}
+                        </Row>
+                        <Row className={["justify-content-around d-flex mt-4"].join(' ')} > 
+                            <Col xs={12} md={6}>
+                                <Link to="/mens"><Button className={homeHeading.button} size="lg" block variant="primary">MEN'S</Button></Link>
+                            </Col>
+                        </Row>
                         <Row className={["justify-content-around d-flex mt-4"].join(' ')} >  {/* className={["justify-content-around d-flex"].join(' ')} */}
                             <Col xs={12} md={6}>
                                 <Link to="/large-group"><Button className={homeHeading.button} size="lg" block variant="primary">LARGE GROUP</Button></Link>
