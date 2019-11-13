@@ -5,6 +5,6 @@ description: "Large Groups are weekly meetings held on campus where the body of 
 location: "Baker 102 for Fall Quarter."
 date: "Every Friday at 7:30 PM." 
 gif: "../../images/connect/large_group.gif"
-link: "https://docs.google.com/forms/d/e/1FAIpQLSd7kqrSGGL148MyW0QEDgDilzbRaLk6R9hYO8Dt_bgx-yEamw/viewform?usp=sf_link"
+link: "https://docs.google.com/forms/d/e/1FAIpQLSeyK72dnJO6HjyCtP191huXCNotYeIJxb_wNNHDwQrT1oimxQ/viewform?usp=sf_link"
 img: "../../images/connect/first_large.jpg"
 ---
