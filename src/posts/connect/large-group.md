@@ -5,6 +5,6 @@ description: "Large Groups are weekly meetings held on campus where the body of 
 location: "Renovate Church for Winter Quarter."
 date: "Every Friday at 7:30 PM." 
 gif: "../../images/connect/large_group.gif"
-link: "https://docs.google.com/forms/d/e/1FAIpQLScPkAdoQyZgqUIh89JVWT0dYSJfG2SFNe5ufku-d2Zb3izRvA/viewform?usp=sf_link"
+link: "https://forms.gle/AQbufjfKGiVetWcR7"
 img: "../../images/connect/first_large.jpg"
 ---
