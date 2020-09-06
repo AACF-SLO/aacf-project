@@ -20,6 +20,7 @@ import instagram_logo from '../images/iglogoCopy.png'
 import facebook_logo from '../images/fblogo.png'
 // import instagram_black from '../images/igblack.png'
 // import facebook_black from '../images/fbblack.png'
+import link from '../images/link.png'
 
 // console.log(React.version);
 const ContactPage = () => {
@@ -31,7 +32,7 @@ const ContactPage = () => {
                     frontmatter {
                         featuredImage {
                             childImageSharp {
-                                fluid (maxWidth: 1920, quality: 70 ) 
+                                fluid (maxWidth: 1920, quality: 70 )
                                 {
                                     ...GatsbyImageSharpFluid
                                 }
@@ -42,18 +43,18 @@ const ContactPage = () => {
             }
         }
     }
-        
+
     `)
     return (
         <Layout>
             <Head title="Contact"/>
             {/* <h1>Contact</h1>
-            <h2>this is a contact page, <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">contact</a></h2> 
-            
+            <h2>this is a contact page, <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">contact</a></h2>
+
             style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${contact})`}}
             */}
             <Jumbotron fluid  className={[contactStyles.heading, "text-center"].join(' ')}>
-                <Img 
+                <Img
                     fluid={data.allMarkdownRemark.edges[0].node.frontmatter.featuredImage.childImageSharp.fluid}
                     style={{
                         // position: "fixed",
@@ -79,7 +80,7 @@ const ContactPage = () => {
                 <Container>
                     <Row>
                         <Col>
-                            <h1>Contact Us!</h1>
+                            <h1>CONTACT US</h1>
                         </Col>
                     </Row>
                     <Row className={[contactStyles.info, "justify-content-center"].join(' ')}>
@@ -98,9 +99,16 @@ const ContactPage = () => {
                                 <img src={facebook_logo} fluid="true" alt="facebook"/>
                                 <p>/aacfslo</p>
                             </a>
+                            <a href="https://linktr.ee/aacfslo" target="_blank" rel="noopener noreferrer">
+                                <img src={link} fluid="true" alt="facebook"/>
+                                <p>/linktree</p>
+                            </a>
                         </Col>
-                        <Col sm={8} md={10} className="mt-5">
-                            <Button className={contactStyles.button} target="_blank" size="lg" variant="primary" href="https://jems.networkforgood.com/projects/11454-aacf-chapters-aacf-cpslo-cal-poly-san-luis-obispo">Donate To Our Ministry!</Button>
+                        <Col sm={8} md={10} className="mt-3">
+                            <Button className={contactStyles.button} target="_blank" size="lg" variant="light" href="https://jems.networkforgood.com/projects/11454-aacf-chapters-aacf-cpslo-cal-poly-san-luis-obispo">Donate To Our Ministry!</Button>
+                        </Col>
+                        <Col sm={8} md={10} className="mt-3">
+                            <Button className={contactStyles.button} target="_blank" size="lg" variant="light" href="https://mailchi.mp/555292b0c94e/aacf-slo">Sign up for email newsletter</Button>
                         </Col>
                     </Row>
                 </Container>

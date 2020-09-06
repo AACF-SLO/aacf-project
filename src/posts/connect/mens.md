@@ -6,5 +6,5 @@ location: "Various activities around San Luis Obispo."
 date: "Dates vary throughout the school year."
 gif: "../../images/connect/mens.gif"
 img: "../../images/connect/mens.jpg"
-link: "https://docs.google.com/forms/d/e/1FAIpQLSct-pMmdSE5xdKIqIBoZXmDOjt5HEeS5tekC6L-hET6s5sDEg/viewform?fbclid=IwAR1aNoDwjrfRCV1LmJUL9Ul6X7T1Yc2foU0BXXQCtS8xnYj7URaGJWJHrEQ"
+link: ""
 ---

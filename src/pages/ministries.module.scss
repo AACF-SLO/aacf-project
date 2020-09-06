@@ -10,21 +10,23 @@
     background-size: cover;
     background: no-repeat center center fixed;
     h1 {
-        font-family: "Staatliches";
+        font-family: "Oswald";
+        font-weight:700;
         font-size: 4rem;
         letter-spacing: .2rem;
     }
     p {
-        font-family: 'Lato';
+        font-family: 'Roboto';
         font-size: 1.25rem;
         letter-spacing: 1.3px;
     }
 }
 
 .ministry-title {
-    text-transform: uppercase; 
-    font-family: "Staatliches";
+    // text-transform: uppercase;
     h2 {
+      font-family: "Oswald";
+      font-weight:500;
         font-size: 3rem;
         letter-spacing: .2rem;
     }
@@ -38,13 +40,20 @@
 }
 
 .card-body {
-    font-family: "Lato";
+    font-family: "Roboto";
     p {
         margin-bottom: 0;
+        line-height: 1.5;
     }
     .core {
         font-weight: bold;
     }
+    .subtitle {
+        // font-weight: bold;
+    }
+    .detail {
+      font-weight: bold;
+   }
 }
 
 .prayer {

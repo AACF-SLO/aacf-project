@@ -7,7 +7,7 @@
 module.exports = {
   /* Your site config here */
   /* siteMetaData used to query to get info */
-  
+
   plugins: [
       'gatsby-plugin-sass',
       'gatsby-plugin-react-helmet',
@@ -27,7 +27,7 @@ module.exports = {
           icon: `src/images/logo.png`
         }
       },
-      
+
       {
         resolve: 'gatsby-source-filesystem', /* source content from our md files */
         options: {
@@ -61,9 +61,9 @@ module.exports = {
         resolve: `gatsby-plugin-google-fonts`,
         options: {
           fonts: [
-            `Montserrat`,
+            `Roboto`,
             `Lato`,
-            `Staatliches`
+            `Oswald\:200,300,400,400i,500,600,700`
           ],
           display: 'swap'
         }
@@ -73,7 +73,7 @@ module.exports = {
     title: 'AACF SLO',
     author: 'Andrew Lor',
     footer1: 'Made with God`s ❤️ by AACF SLO',
-    footer2: 'Copyright © 2019, Asian American Christian Fellowship at California Polytechnic State University - San Luis Obispo'
+    footer2: 'Copyright © 2020, Asian American Christian Fellowship at California Polytechnic State University - San Luis Obispo'
     //social media, emails, etc.
   }
 

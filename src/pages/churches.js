@@ -60,7 +60,7 @@ const Churches = () => {
           }
         }
       }
-      
+
     `)
 
     return (
@@ -70,7 +70,7 @@ const Churches = () => {
             {/* <BgImage fluid={data.allMarkdownRemark.edges[0].node.frontmatter.featuredImage.childImageSharp.fluid}  overlayColor="#04040454">> */}
                 <Jumbotron fluid className={[churchesStyles.heading,"text-center"].join(' ')}>
                     {/* <Hero image={data.allMarkdownRemark.edges[0].node.frontmatter.featuredImage.childImageSharp.fluid} /> */}
-                    {/* <Img 
+                    {/* <Img
                             fluid={data.allMarkdownRemark.edges[0].node.frontmatter.featuredImage.childImageSharp.fluid}
                             style={{
                                 position: "fixed",
@@ -86,7 +86,7 @@ const Churches = () => {
                             className={churchesStyles.background}
                         /> */}
                     <Container>
-                   
+
                         <Row>
                             <Col>
                                 <h1>AACF IS NOT A REPLACEMENT FOR CHURCH!</h1>
@@ -94,21 +94,22 @@ const Churches = () => {
                         </Row>
                         <Row className="justify-content-center">
                             <Col sm={12} md={8}>
-                                <p>People in AACF all go to different churches around SLO and a majority like to carpool as well.
-                                    Below are a list of churches that some members of AACF go to. Click on each church to learn more about them.</p>
-                                <p>Click below to get a ride to church!</p>
+                                <p>People in AACF go to different churches around SLO and in their hometowns. Since most churches are doing
+                                online services, we currently do not offer rides to churches. But we still try involve ourselves heavily with the church!
+                                    Below are a list of churches in SLO that some members of AACF go to. Click on each church to learn more about them.</p>
+                                <p>Click below to add your church or to check other churches!</p>
                                 {/* <Button size="lg" variant="primary">I NEED A RIDE!</Button> */}
-                                { data.allMarkdownRemark.edges[0].node.frontmatter.link.trim() === "" ? 
-                                        (<OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Not Ready Yet!</Tooltip>}>
+                                { data.allMarkdownRemark.edges[0].node.frontmatter.link.trim() === "" ?
+                                        (<OverlayTrigger overlay={<Tooltip id="tooltip-disabled"> Not Ready Yet! </Tooltip>}>
                                             <span className="d-inline-block">
                                                 <Button className={churchesStyles.button} disabled style={{ pointerEvents: 'none' }} size="lg" variant="secondary">Sign Up</Button>
                                             </span>
                                         </OverlayTrigger>
-                                        ) 
-                                        : (<Button className={churchesStyles.button} href={data.allMarkdownRemark.edges[0].node.frontmatter.link} rel="noopener noreferrer" target="_blank" size="lg" variant="outline-primary">SIGN UP</Button>) }
+                                        )
+                                        : (<Button className={churchesStyles.button} href={data.allMarkdownRemark.edges[0].node.frontmatter.link} rel="noopener noreferrer" target="_blank" size="lg" variant="outline-dark">SIGN UP</Button>) }
                             </Col>
                         </Row>
-                        
+
                     </Container>
                 </Jumbotron>
             {/* </BgImage> */}

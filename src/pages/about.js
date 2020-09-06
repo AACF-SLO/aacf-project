@@ -166,7 +166,7 @@ const BackgroundSection = ({ className }) => (
             <Jumbotron fluid className={[aboutStyles.container, "text-center"].join(' ')}>
 
                 <Container>
-                    <Row className="justify-content-center mb-3">
+                    <Row className="justify-content-center mb-5">
                         <Col sm={12} md={9}>
                             <p>Every school year, our leadership team chooses a theme verse and word
                             to guide the direction and focus of the fellowship. We also have a subtheme
@@ -177,16 +177,16 @@ const BackgroundSection = ({ className }) => (
                         <Col sm={12} md={9}>
                             <h1>{data.allMarkdownRemark.edges[0].node.frontmatter.theme}</h1>
                             <h3>{data.allMarkdownRemark.edges[0].node.frontmatter.verse}</h3>
-                            <h3>1 John 3:16</h3>
+                            <h2>1 John 3:16</h2>
                         </Col>
                     </Row>
-                    <Row className="justify-content-center mt-3">
+                    <Row className="justify-content-center mt-5 mb-0">
                         <Col sm={12} md={9} className="">
                              <h2>Subthemes</h2>
                              <h3>This is how we know...</h3>
                         </Col>
                      </Row>
-                    <Row className="pt-md-4">
+                    <Row className="pt-md-4 mt-0">
                         <Col sm={12} md={4} className="pt-5 pt-md-0">
                             <h3 className={aboutStyles.themeWords}>{data.allMarkdownRemark.edges[0].node.frontmatter.fallWords}</h3>
                             <h2>Fall</h2>

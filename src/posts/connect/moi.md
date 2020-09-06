@@ -6,5 +6,5 @@ location: "Anywhere & everywhere."
 date: "Whenever. Feel free to ask anyone to MOI :)"
 gif: "../../images/connect/mois.gif"
 img: "../../images/connect/mois.jpg"
-link: "https://docs.google.com/forms/d/e/1FAIpQLSfYvKxrCOrIJYJqRRkGt13uYWWwPs3L92Ym3rvvqQ9oC09qAg/viewform?usp=sf_link"
+link: ""
 ---
