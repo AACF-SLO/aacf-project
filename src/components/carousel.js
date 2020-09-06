@@ -19,7 +19,7 @@ const Carousel = () => {
       autoplaySpeed: 3000,
       speed: 1000,
       pauseOnHover: false,
-      
+
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
@@ -45,11 +45,11 @@ const Carousel = () => {
     `)
 
     return (
-        
+
 
         <div>
             <Slider {...settings}>
-            {data.allFile.edges.map((image, index) => {
+               {data.allFile.edges.map((image, index) => {
                 return (
                     <React.Fragment key={index}>
                         <div className={carouselStyles.parent}>
@@ -64,8 +64,8 @@ const Carousel = () => {
                 );
 
             })}
-            
-            
+
+
             </Slider>
         </div>
         );

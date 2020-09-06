@@ -10,16 +10,19 @@
     // -moz-background-size: cover;
     // -o-background-size: cover;
     // background-size: cover;
-    
+
     // background: no-repeat center center fixed;
     h1 {
-        font-family: "Staatliches";
+        font-family: "Roboto-Bold";
         letter-spacing: .25rem;
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .button {
-        font-family: "Lato";
-        letter-spacing: 2px;
+      :hover {
+          background-color: #d2d9eb;
+      }
+        font-family: "Roboto-Light";
+        letter-spacing: 5px;
     }
 
 }

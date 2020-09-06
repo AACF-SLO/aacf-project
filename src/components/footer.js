@@ -34,14 +34,14 @@ const Footer = () => {
                         <img src={cross} fluid="true" width={15} height={20} alt="Cross"/>
                     </Col>
                 </Row>
-                <Row className="justify-content-md-center mt-5">
+                <Row className="justify-content-md-center mt-3">
                     <Col md="auto" className="d-flex justify-content-center">
                         <p className={footerStyles.footerLinks}><Link to="/about">
                             ABOUT
                         </Link>
                         </p>
                     </Col >
-                        
+
                     <Col md="auto" className="d-flex justify-content-center">
                         <p className={footerStyles.footerLinks}><Link to="/contact">
                             CONTACT
@@ -76,8 +76,8 @@ const Footer = () => {
                 <div className={[footerStyles.footerEnd, "text-center"].join(' ')}>
                     {/* <p>{data.site.siteMetadata.footer1}</p> */}
                     {/* <p>{data.site.siteMetadata.footer2}</p> */}
-                    <p className="mb-0">Made with God`s <span role="img" aria-label="heart">❤️</span> by AACF SLO</p>
-                    <p className="mb-0">Copyright © 2019, Asian American Christian Fellowship at California Polytechnic State University - San Luis Obispo</p>
+                    <p className="mb-0">Made with God's <span role="img" aria-label="heart">❤️</span> by AACF SLO</p>
+                    <p className="mb-0">Copyright © 2020, Asian American Christian Fellowship at California Polytechnic State University - San Luis Obispo</p>
                 </div>
             </Container>
         </footer>

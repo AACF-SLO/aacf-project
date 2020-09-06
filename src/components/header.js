@@ -9,11 +9,11 @@ import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
 import NavDropdown from "react-bootstrap/NavDropdown"
 import Image from "react-bootstrap/Image"
-import logo from "../images/AACF_LOGO_FINAL_copy.png"
+import logo from "../images/AACF_LOGO_FINAL-black.png"
 // import Container from "react-bootstrap/Container"
 // import Button from "react-bootstrap/Button"
 
-// import './header.module.scss' before: <Link className="link", 
+// import './header.module.scss' before: <Link className="link",
 // import headerStyles from './header.module.scss'
 // now with css component module: <Link className={headerStyles.link}
 
@@ -24,12 +24,24 @@ const Header = () => {
     //querying to get title below
     // const data = useStaticQuery(graphql`
     //     query {
-            
+
     //     }
     // `)
 
     return (
-        <Navbar sticky="top" className={headerStyles.navbarExpandLg} collapseOnSelect expand="lg" bg="light" variant="light">
+        <Navbar className={headerStyles.navbarExpandLg} expand="lg" sticky="top" variant="light"
+        style={{
+           backgroundColor: "white",
+            // position: "fixed",
+        //     height: 0,
+        //     left: 0,
+        //     top: 0,
+        //     width: "100%",
+        //     maxHeight: "100vh",
+            height: "10%",
+        //     zIndex: 1,
+            }}
+            >
             <Navbar.Brand className={headerStyles.navbarBrand} >
                 <Link to="/">
                     <Image className={["mb-0"].join(' ')} src={logo} />

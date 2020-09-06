@@ -61,6 +61,13 @@ const BackgroundSection = ({ className }) => (
                                     }
                                 }
                             }
+                            featuredImage5 {
+                                childImageSharp {
+                                    fluid (maxWidth: 1000) {
+                                        ...GatsbyImageSharpFluid
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -73,15 +80,42 @@ const BackgroundSection = ({ className }) => (
       const imageData2 = [data.allMarkdownRemark.edges[0].node.frontmatter.featuredImage2.childImageSharp.fluid, `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))`].reverse()
       const imageData3 = [data.allMarkdownRemark.edges[0].node.frontmatter.featuredImage3.childImageSharp.fluid, `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))`].reverse()
       const imageData4 = [data.allMarkdownRemark.edges[0].node.frontmatter.featuredImage4.childImageSharp.fluid, `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))`].reverse()
-      
+      const imageData5 = [data.allMarkdownRemark.edges[0].node.frontmatter.featuredImage5.childImageSharp.fluid, `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))`].reverse()
+
       return (
         // <React.Fragment>
         <Layout>
         <Head title="About" />
+
         <BackgroundImage
           Tag="section"
           className={className}
           fluid={imageData1}
+          backgroundColor={`#040e18`}
+        >
+            <Jumbotron className={[aboutStyles.container, "text-center"].join(' ')}>
+                <Container>
+                    <Row className="">
+                        <Col>
+                            <h1>WHO ARE WE?</h1>
+                        </Col>
+                    </Row>
+                    <Row className="justify-content-center">
+                        <Col sm={12} md={8}>
+                            <p>Hello! We are a Christian Fellowship at Cal Poly in San Luis Obispo.<br></br><br></br>
+                            We are part of a larger organization called Asian American Christian Fellowship that has other
+                            fellowships in the other colleges within the country!<br></br><br></br>
+                            Please continue reading to learn more about who we are and why we are.</p>
+                        </Col>
+                    </Row>
+                </Container>
+            </Jumbotron>
+        </BackgroundImage>
+
+        <BackgroundImage
+          Tag="section"
+          className={className}
+          fluid={imageData2}
           backgroundColor={`#040e18`}
         >
             <Jumbotron className={[aboutStyles.container, "text-center"].join(' ')}>
@@ -98,43 +132,6 @@ const BackgroundSection = ({ className }) => (
                     </Row>
                 </Container>
             </Jumbotron>
-        </BackgroundImage>
-
-        <BackgroundImage
-          Tag="section"
-          className={className}
-          fluid={imageData2}
-          backgroundColor={`#040e18`}
-        >
-            <Jumbotron fluid className={[aboutStyles.container, "text-center"].join(' ')}>
-                
-                <Container>
-                    <Row className="justify-content-center">
-                        <Col sm={12} md={9}>
-                            <h1>{data.allMarkdownRemark.edges[0].node.frontmatter.theme}</h1>
-                            <h3>{data.allMarkdownRemark.edges[0].node.frontmatter.verse}</h3>
-                        </Col>
-                    </Row>
-                    <Row className="pt-md-4">
-                        <Col sm={12} md={4} className="pt-5 pt-md-0">
-                            <h2>Fall</h2>
-                            <h3 className={aboutStyles.themeWords}>{data.allMarkdownRemark.edges[0].node.frontmatter.fallWords}</h3>
-                            <p>{data.allMarkdownRemark.edges[0].node.frontmatter.fall}</p>
-                        </Col>
-                        <Col sm={12} md={4} className="pt-5 pt-md-0">
-                            <h2>Winter</h2>
-                            <h3 className={aboutStyles.themeWords}>{data.allMarkdownRemark.edges[0].node.frontmatter.winterWords}</h3>
-                            <p>{data.allMarkdownRemark.edges[0].node.frontmatter.winter}</p>
-                        </Col>
-                        <Col sm={12} md={4} className="pt-5 pt-md-0">
-                            <h2>Spring</h2>
-                            <h3 className={aboutStyles.themeWords} >{data.allMarkdownRemark.edges[0].node.frontmatter.springWords}</h3>
-                            <p>{data.allMarkdownRemark.edges[0].node.frontmatter.spring}</p>
-                        </Col>
-                    </Row>
-                </Container>
-            </Jumbotron>
-
         </BackgroundImage>
 
         <BackgroundImage
@@ -158,14 +155,63 @@ const BackgroundSection = ({ className }) => (
                     </Row> */}
                 </Container>
             </Jumbotron>
-
-
         </BackgroundImage>
 
         <BackgroundImage
           Tag="section"
           className={className}
           fluid={imageData4}
+          backgroundColor={`#040e18`}
+        >
+            <Jumbotron fluid className={[aboutStyles.container, "text-center"].join(' ')}>
+
+                <Container>
+                    <Row className="justify-content-center mb-3">
+                        <Col sm={12} md={9}>
+                            <p>Every school year, our leadership team chooses a theme verse and word
+                            to guide the direction and focus of the fellowship. We also have a subtheme
+                            every quarter that highlights a different aspect of the verse. This year, our theme is...</p>
+                        </Col>
+                    </Row>
+                    <Row className="justify-content-center">
+                        <Col sm={12} md={9}>
+                            <h1>{data.allMarkdownRemark.edges[0].node.frontmatter.theme}</h1>
+                            <h3>{data.allMarkdownRemark.edges[0].node.frontmatter.verse}</h3>
+                            <h3>1 John 3:16</h3>
+                        </Col>
+                    </Row>
+                    <Row className="justify-content-center mt-3">
+                        <Col sm={12} md={9} className="">
+                             <h2>Subthemes</h2>
+                             <h3>This is how we know...</h3>
+                        </Col>
+                     </Row>
+                    <Row className="pt-md-4">
+                        <Col sm={12} md={4} className="pt-5 pt-md-0">
+                            <h3 className={aboutStyles.themeWords}>{data.allMarkdownRemark.edges[0].node.frontmatter.fallWords}</h3>
+                            <h2>Fall</h2>
+                            <p>{data.allMarkdownRemark.edges[0].node.frontmatter.fall}</p>
+                        </Col>
+                        <Col sm={12} md={4} className="pt-5 pt-md-0">
+                            <h3 className={aboutStyles.themeWords}>{data.allMarkdownRemark.edges[0].node.frontmatter.winterWords}</h3>
+                            <h2>Winter</h2>
+                            <p>{data.allMarkdownRemark.edges[0].node.frontmatter.winter}</p>
+                        </Col>
+                        <Col sm={12} md={4} className="pt-5 pt-md-0">
+                            <h3 className={aboutStyles.themeWords} >{data.allMarkdownRemark.edges[0].node.frontmatter.springWords}</h3>
+                            <h2>Spring</h2>
+                            <p>{data.allMarkdownRemark.edges[0].node.frontmatter.spring}</p>
+                        </Col>
+                    </Row>
+                </Container>
+            </Jumbotron>
+
+        </BackgroundImage>
+
+        <BackgroundImage
+          Tag="section"
+          className={className}
+          fluid={imageData5}
           backgroundColor={`#040e18`}
         >
              <Jumbotron fluid className={[aboutStyles.container].join(' ')} >
@@ -196,6 +242,7 @@ const BackgroundSection = ({ className }) => (
                                 <img
                                 src={aacfLogo}
                                 alt="aacf logo"
+                                width="20%"
                                 />
                             </a>
                         </Col>
@@ -204,7 +251,7 @@ const BackgroundSection = ({ className }) => (
             </Jumbotron>
 
         </BackgroundImage>
-            
+
         </Layout>
       )
     }}

@@ -1,6 +1,6 @@
 import React from "react"
 
-// import { Link } from 'gatsby' 
+// import { Link } from 'gatsby'
 //Link is a react component, preloads the page content and loads instantly
 
 import Layout from '../components/layout'
@@ -26,11 +26,10 @@ const IndexPage = () => {
             <Head title="Home"/>
             <Carousel/>
             <HomeHeading/>
-
         </Layout>
     )
-    
-} // renders html 
+
+} // renders html
 
 export default IndexPage  //exporting react component
 
