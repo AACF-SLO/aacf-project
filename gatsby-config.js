@@ -7,7 +7,7 @@
 module.exports = {
   /* Your site config here */
   /* siteMetaData used to query to get info */
-  
+
   plugins: [
       'gatsby-plugin-sass',
       'gatsby-plugin-react-helmet',
@@ -27,7 +27,7 @@ module.exports = {
           icon: `src/images/logo.png`
         }
       },
-      
+
       {
         resolve: 'gatsby-source-filesystem', /* source content from our md files */
         options: {
@@ -61,9 +61,9 @@ module.exports = {
         resolve: `gatsby-plugin-google-fonts`,
         options: {
           fonts: [
-            `Montserrat`,
-            `Lato`,
-            `Staatliches`
+             `Roboto`,
+             `Lato`,
+             `Oswald\:200,300,400,400i,500,600,700`
           ],
           display: 'swap'
         }
