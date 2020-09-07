@@ -60,7 +60,7 @@ const Header = () => {
                     </Navbar.Brand> */}
                     <NavDropdown className={headerStyles.navLink} title="CONNECT" id="collasible-nav-dropdown">
                         <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/large-group">Large Group</NavDropdown.Item>
-                        <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/bible-study">Bible Study</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/small-group">Bible Study</NavDropdown.Item>
                         <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/prayer">Prayer</NavDropdown.Item>
                         <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/moi">MOIs</NavDropdown.Item>
                         <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/mens">Men's</NavDropdown.Item>
