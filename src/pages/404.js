@@ -16,7 +16,7 @@ const NotFound = () => {
             <Container >
                 <Row>
                     <Col className="text-center">
-                        <h1>Page Not Found</h1>
+                        <h1>Page Not Found.</h1>
                         <p><Link to="/">Head home</Link></p>
                     </Col>
                 </Row>
