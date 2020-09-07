@@ -11,16 +11,16 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background: no-repeat fixed center center; 
+    background: no-repeat fixed center center;
     h1 {
         font-family: 'Staatliches';
-        font-size: 3rem;
+        font-size: 2.5rem;
         letter-spacing: .2rem;
         text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
     }
     h3 {
         font-family: 'Lato';
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         letter-spacing: 1.6px;
         text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
     }
@@ -60,24 +60,28 @@
             width: 8rem;
         }
         p {
-            font-family: 'Lato';
+            font-family: 'Roboto';
             margin-top: 1rem;
-            font-size: 1.5rem;
+            font-size: 1rem;
             color: white;
             text-decoration: none;
         }
         // :hover {
         //     color: #000;
         // }
-        
+
     }
-    
+
 }
 
 .button {
-    font-family: "Lato";
-    letter-spacing: 2px;
-    // font-size: 1.5rem;
+  :hover {
+      background-color: #d2d9eb;
+  }
+    font-family: "Oswald";
+    font-weight:700;
+    letter-spacing: 5px;
+    font-size: 1rem;
 }
 
 .background::after {
