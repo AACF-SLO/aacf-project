@@ -50,7 +50,7 @@ const Outreach = () => {
             <Head title="Outreach"/>
             {/* style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(${data.allMarkdownRemark.edges[0].node.frontmatter.photo.publicURL})`}}  */}
             <Jumbotron fluid className={[outreachStyles.jumbotron, "text-center"].join(' ')}>
-                <Img 
+                <Img
                     fluid={data.allMarkdownRemark.edges[0].node.frontmatter.featuredImage.childImageSharp.fluid}
                     style={{
                         position: "fixed",
@@ -67,7 +67,7 @@ const Outreach = () => {
                 <Container>
                     <Row>
                         <Col>
-                            <h1>Join Us In Outreach!</h1>
+                            <h1>JOIN US IN OUTREACH!</h1>
                         </Col>
                     </Row>
                     <Row className="justify-content-center">
@@ -75,13 +75,13 @@ const Outreach = () => {
                             <p>{data.allMarkdownRemark.edges[0].node.frontmatter.description}</p>
                             {/* <Button size="lg" variant="outline-primary">SIGN UP</Button> */}
                             {console.log(data.allMarkdownRemark.edges[0].node.frontmatter.link)}
-                            { data.allMarkdownRemark.edges[0].node.frontmatter.link.trim() === "" ? 
-                                (<OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Not Ready Yet!</Tooltip>}>
-                                    <span className="d-inline-block">
+                            { data.allMarkdownRemark.edges[0].node.frontmatter.link.trim() === "" ?
+                                (<OverlayTrigger overlay={<Tooltip id="tooltip-disabled">  Not Ready Yet!  </Tooltip>}>
+                                    <span className="d-inline-block mt-3">
                                         <Button className={outreachStyles.button} disabled style={{ pointerEvents: 'none' }} size="lg" variant="secondary">SIGN UP</Button>
                                     </span>
                                 </OverlayTrigger>
-                                ) 
+                                )
                                 : (<Button className={outreachStyles.button} target="_blank" href={data.allMarkdownRemark.edges[0].node.frontmatter.link} size="lg" variant="outline-primary">SIGN UP</Button>) }
                         </Col>
                     </Row>

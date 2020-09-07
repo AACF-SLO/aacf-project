@@ -223,7 +223,7 @@ const BackgroundSection = ({ className }) => (
                     </Row>
                     <Row>
                         <Col>
-                            <p className="lead text-center">The Asian American Christian Fellowship (AACF) as of division of JEMS, believes:</p>
+                            <p className="lead text-center">The Asian American Christian Fellowship (AACF) as a division of JEMS, believes:</p>
                             <ul id="statementsOfFaith">
                                 <li>That the Bible is God's Word, written by men divinely and uniquely inspired by the Holy Spirit, and that it is the supreme and final authority in all matters of faith and conduct.</li>
                                 <li>In One God, eternally existing in three persons: Father, Son and Holy Spirit.</li>
