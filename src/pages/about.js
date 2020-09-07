@@ -73,7 +73,7 @@ const BackgroundSection = ({ className }) => (
       const imageData2 = [data.allMarkdownRemark.edges[0].node.frontmatter.featuredImage2.childImageSharp.fluid, `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))`].reverse()
       const imageData3 = [data.allMarkdownRemark.edges[0].node.frontmatter.featuredImage3.childImageSharp.fluid, `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))`].reverse()
       const imageData4 = [data.allMarkdownRemark.edges[0].node.frontmatter.featuredImage4.childImageSharp.fluid, `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))`].reverse()
-      
+
       return (
         // <React.Fragment>
         <Layout>
@@ -107,7 +107,7 @@ const BackgroundSection = ({ className }) => (
           backgroundColor={`#040e18`}
         >
             <Jumbotron fluid className={[aboutStyles.container, "text-center"].join(' ')}>
-                
+
                 <Container>
                     <Row className="justify-content-center">
                         <Col sm={12} md={9}>
@@ -204,7 +204,7 @@ const BackgroundSection = ({ className }) => (
             </Jumbotron>
 
         </BackgroundImage>
-            
+
         </Layout>
       )
     }}

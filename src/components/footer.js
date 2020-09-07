@@ -9,6 +9,7 @@ import Col from 'react-bootstrap/Col'
 import cross from '../images/mini-cross.png'
 import instagram_logo from '../images/iglogoCopy.png'
 import facebook_logo from '../images/fblogo.png'
+import spotify from '../images/spotify.png'
 
 
 import footerStyles from './footer.module.scss'
@@ -30,18 +31,18 @@ const Footer = () => {
         <footer>
             <Container fluid className={footerStyles.containerFluid}>
                 <Row>
-                    <Col className="d-flex justify-content-center mt-3">  {/* having one Col will auto set to width 12 */}
+                    <Col className="d-flex justify-content-center mt-3 mb-1">  {/* having one Col will auto set to width 12 */}
                         <img src={cross} fluid="true" width={15} height={20} alt="Cross"/>
                     </Col>
                 </Row>
-                <Row className="justify-content-md-center mt-5">
+                <Row className="justify-content-md-center mt-2 mb-3">
                     <Col md="auto" className="d-flex justify-content-center">
                         <p className={footerStyles.footerLinks}><Link to="/about">
                             ABOUT
                         </Link>
                         </p>
                     </Col >
-                        
+
                     <Col md="auto" className="d-flex justify-content-center">
                         <p className={footerStyles.footerLinks}><Link to="/contact">
                             CONTACT
@@ -56,12 +57,15 @@ const Footer = () => {
                         </div>
                         <Row>
                             <Col className={[footerStyles.socialLogo, "d-flex justify-content-center justify-content-md-start"].join(' ')}>
+                            <a href="https://www.facebook.com/groups/aacfslo/" target="_blank" rel="noopener noreferrer">
+                                <img src={facebook_logo} fluid="true" alt="facebook"/>
+                            </a>
                                 <a href="https://www.instagram.com/aacf.slo/" target="_blank" rel="noopener noreferrer">
                                     <img src={instagram_logo}  fluid="true" alt="instagram"/>
                                 </a>
-                                <a href="https://www.facebook.com/groups/aacfslo/" target="_blank" rel="noopener noreferrer">
-                                    <img src={facebook_logo} fluid="true" alt="facebook"/>
-                                </a>
+                                   <a href="https://open.spotify.com/playlist/4G4TQUjiQEuDDzfy6yOpis?si=dGYYrUaZTBqzE52_60QOOA" target="_blank" rel="noopener noreferrer">
+                                       <img src={spotify} fluid="true" alt="spotify"/>
+                                   </a>
                             </Col>
                         </Row>
                     </Col>
@@ -76,8 +80,8 @@ const Footer = () => {
                 <div className={[footerStyles.footerEnd, "text-center"].join(' ')}>
                     {/* <p>{data.site.siteMetadata.footer1}</p> */}
                     {/* <p>{data.site.siteMetadata.footer2}</p> */}
-                    <p className="mb-0">Made with God`s <span role="img" aria-label="heart">❤️</span> by AACF SLO</p>
-                    <p className="mb-0">Copyright © 2019, Asian American Christian Fellowship at California Polytechnic State University - San Luis Obispo</p>
+                    <p className="mb-0">Made with God's <span role="img" aria-label="heart">❤️</span> by AACF SLO</p>
+                    <p className="mb-0">Copyright © 2020, Asian American Christian Fellowship at California Polytechnic State University - San Luis Obispo</p>
                 </div>
             </Container>
         </footer>

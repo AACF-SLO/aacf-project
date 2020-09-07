@@ -9,11 +9,11 @@ import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
 import NavDropdown from "react-bootstrap/NavDropdown"
 import Image from "react-bootstrap/Image"
-import logo from "../images/AACF_LOGO_FINAL_copy.png"
+import logo from "../images/AACF_LOGO_FINAL-black.png"
 // import Container from "react-bootstrap/Container"
 // import Button from "react-bootstrap/Button"
 
-// import './header.module.scss' before: <Link className="link", 
+// import './header.module.scss' before: <Link className="link",
 // import headerStyles from './header.module.scss'
 // now with css component module: <Link className={headerStyles.link}
 
@@ -24,12 +24,24 @@ const Header = () => {
     //querying to get title below
     // const data = useStaticQuery(graphql`
     //     query {
-            
+
     //     }
     // `)
 
     return (
-        <Navbar sticky="top" className={headerStyles.navbarExpandLg} collapseOnSelect expand="lg" bg="light" variant="light">
+        <Navbar className={headerStyles.navbarExpandLg} expand="lg" sticky="top" variant="light"
+        style={{
+           backgroundColor: "white",
+            // position: "fixed",
+        //     height: 0,
+        //     left: 0,
+        //     top: 0,
+        //     width: "100%",
+        //     maxHeight: "100vh",
+            height: "10%",
+        //     zIndex: 1,
+            }}
+            >
             <Navbar.Brand className={headerStyles.navbarBrand} >
                 <Link to="/">
                     <Image className={["mb-0"].join(' ')} src={logo} />
@@ -41,14 +53,14 @@ const Header = () => {
                 <Nav className={["ml-auto mr-3", headerStyles.navbarNav].join(' ')}>
                     <NavDropdown className={[headerStyles.navLink, headerStyles.dropdown].join(' ')} title="ABOUT" id="collasible-nav-dropdown">
                         <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/about">AACF</NavDropdown.Item>
-                        <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/ministries">Ministries</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/ministries" disabled>Ministries</NavDropdown.Item>
                     </NavDropdown>
                     {/* <Navbar.Brand className="d-none d-lg-block mr-0 px-4" href="#home">
                         <Image className={["mb-0"].join(' ')} src={logo} fluid />
                     </Navbar.Brand> */}
                     <NavDropdown className={headerStyles.navLink} title="CONNECT" id="collasible-nav-dropdown">
                         <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/large-group">Large Group</NavDropdown.Item>
-                        <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/small-group">Small Group</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/bible-study">Bible Study</NavDropdown.Item>
                         <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/prayer">Prayer</NavDropdown.Item>
                         <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/moi">MOIs</NavDropdown.Item>
                         <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/mens">Men's</NavDropdown.Item>
