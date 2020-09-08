@@ -59,15 +59,15 @@ const ConnectEvents = (props) => {
                                 className={[skeletonStyles.gif].join(' ')}
                             />
                             )} */}
-            
+
             {/* <Jumbotron fluid style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${props.data.markdownRemark.frontmatter.img.childImageSharp.fluid.src})`}}  className={[skeletonStyles.media, "text-center"].join(' ')}>
                 <Container>
                     <Row>
                         <Col>
                             <h1>test</h1>
-                            
-                            
-                            
+
+
+
                         </Col>
                     </Row>
                 </Container>
@@ -80,12 +80,12 @@ const ConnectEvents = (props) => {
                 />
             </div> */}
             {/* <Hero image={props.data.markdownRemark.frontmatter.img.childImageSharp.fluid}/> */}
-            <Img 
+            <Img
                 fluid={props.data.markdownRemark.frontmatter.img.childImageSharp.fluid}
                 style={{
                     width:`100%`,
                     maxHeight:`70vh`
-                    
+
                 }}
             />
             <Container className={[skeletonStyles.info, "text-center"].join(' ')}>
@@ -101,6 +101,10 @@ const ConnectEvents = (props) => {
                 </Row>
                 <Row className={[skeletonStyles.details, "justify-content-center d-flex mt-2 mt-md-4"].join(' ')}>
                     <Col xs={12} md={3}>
+                        <h3>Who</h3>
+                        <p>{props.data.markdownRemark.frontmatter.location}</p>
+                    </Col>
+                    <Col xs={12} md={3}>
                         <h3>Where</h3>
                         <p>{props.data.markdownRemark.frontmatter.location}</p>
                     </Col>
@@ -111,13 +115,13 @@ const ConnectEvents = (props) => {
                 </Row>
                 <Row className={["justify-content-center d-flex"].join(' ')}>
                     <Col xs={12} md={4}>
-                    { props.data.markdownRemark.frontmatter.link.trim() === "" ? 
+                    { props.data.markdownRemark.frontmatter.link.trim() === "" ?
                         (<OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Not Ready Yet!</Tooltip>}>
                             <span className="d-block">
                                 <Button className={skeletonStyles.button} disabled style={{ pointerEvents: 'none' }} size="lg" block variant="secondary">Sign Up</Button>
                             </span>
                         </OverlayTrigger>
-                        ) 
+                        )
                         : (<Button className={skeletonStyles.button} target="_blank" href={props.data.markdownRemark.frontmatter.link} size="lg" block variant="outline-primary">SIGN UP</Button>) }
                     </Col>
                 </Row>
