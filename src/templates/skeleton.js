@@ -27,10 +27,12 @@ export const query = graphql`
             frontmatter {
                 category
                 description
+                who
                 location
                 date
                 title
                 link
+                button
                 img {
                     childImageSharp {
                         fluid(maxWidth: 1920, quality: 80 ) {
@@ -102,7 +104,7 @@ const ConnectEvents = (props) => {
                 <Row className={[skeletonStyles.details, "justify-content-center d-flex mt-2 mt-md-4"].join(' ')}>
                     <Col xs={12} md={3}>
                         <h3>Who</h3>
-                        <p>{props.data.markdownRemark.frontmatter.location}</p>
+                        <p>{props.data.markdownRemark.frontmatter.who}</p>
                     </Col>
                     <Col xs={12} md={3}>
                         <h3>Where</h3>
@@ -118,11 +120,11 @@ const ConnectEvents = (props) => {
                     { props.data.markdownRemark.frontmatter.link.trim() === "" ?
                         (<OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Not Ready Yet!</Tooltip>}>
                             <span className="d-block">
-                                <Button className={skeletonStyles.button} disabled style={{ pointerEvents: 'none' }} size="lg" block variant="secondary">Sign Up</Button>
+                                <Button className={skeletonStyles.button} disabled style={{ pointerEvents: 'none' }} size="lg" block variant="secondary">{props.data.markdownRemark.frontmatter.button}</Button>
                             </span>
                         </OverlayTrigger>
                         )
-                        : (<Button className={skeletonStyles.button} target="_blank" href={props.data.markdownRemark.frontmatter.link} size="lg" block variant="outline-primary">SIGN UP</Button>) }
+                        : (<Button className={skeletonStyles.button} target="_blank" href={props.data.markdownRemark.frontmatter.link} size="lg" block variant="dark">{props.data.markdownRemark.frontmatter.button}</Button>) }
                     </Col>
                 </Row>
             </Container>
