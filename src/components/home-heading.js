@@ -64,7 +64,7 @@ const HomeHeading = ({ className }) => (
                         </Row>
                         <Row className={["justify-content-around d-flex mt-4"].join(' ')} >  {/* className={["justify-content-around d-flex"].join(' ')} */}
                             <Col xs={12} md={6}>
-                                <Link to="/small-group"><Button className={homeHeading.button} size="md" block  variant="light">BIBLE STUDY</Button></Link>
+                                <Link to="/bible-study"><Button className={homeHeading.button} size="md" block  variant="light">BIBLE STUDY</Button></Link>
                             </Col>
                         </Row>
                         <Row className={["justify-content-around d-flex mt-4"].join(' ')} >  {/* className={["justify-content-around d-flex"].join(' ')} */}
@@ -113,7 +113,7 @@ export default StyledBackgroundSection
 //                 </Row>
 //                 <Row className={["justify-content-around d-flex mt-4"].join(' ')} >  {/* className={["justify-content-around d-flex"].join(' ')} */}
 //                     <Col xs={12} md={6}>
-//                         <Link to="/bible-study"><Button className={homeHeading.button} size="lg" block  variant="primary">SMALL GROUP</Button></Link>
+//                         <Link to="/bible-study"><Button className={homeHeading.button} size="lg" block  variant="primary">BIBLE STUDY</Button></Link>
 //                     </Col>
 //                 </Row>
 
