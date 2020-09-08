@@ -110,6 +110,20 @@ ministries:
                 detail: "4th Year, Graphic Communications"
                 verse: ""
                 extra: ""
+            - person:
+                name: "Child of God"
+                core: ""
+                featuredImage: "../images/ministries/member.jpg"
+                detail: ""
+                verse: ""
+                extra: ""
+            - person:
+                name: "Child of God"
+                core: ""
+                featuredImage: "../images/ministries/member.jpg"
+                detail: ""
+                verse: ""
+                extra: ""
     - ministry:
         type: "ADVISORS"
         responsibility: "More info coming soon!"
@@ -125,7 +139,7 @@ ministries:
                 name: "Melanie Chow"
                 core: ""
                 featuredImage: "../images/ministries/member.jpg"
-                detail: "AACF Staffer"
+                detail: "AACF Staff"
                 verse:
                 extra: ""
             - person:
