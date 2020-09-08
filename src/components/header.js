@@ -53,7 +53,7 @@ const Header = () => {
                 <Nav className={["ml-auto mr-3", headerStyles.navbarNav].join(' ')}>
                     <NavDropdown className={[headerStyles.navLink, headerStyles.dropdown].join(' ')} title="ABOUT" id="collasible-nav-dropdown">
                         <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/about">AACF</NavDropdown.Item>
-                        <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/ministries" disabled>Ministries</NavDropdown.Item>
+                        <NavDropdown.Item className={headerStyles.dropdownItem} as={Link} to="/ministries">Ministries</NavDropdown.Item>
                     </NavDropdown>
                     {/* <Navbar.Brand className="d-none d-lg-block mr-0 px-4" href="#home">
                         <Image className={["mb-0"].join(' ')} src={logo} fluid />
