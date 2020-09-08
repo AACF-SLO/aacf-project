@@ -11,7 +11,7 @@ ministries:
                 name: "Monica Andres"
                 detail: "4th year, Computer Science"
                 core: "Core Coordinator"
-                featuredImage: "../images/ministries/member.jpg"
+                featuredImage: "../images/ministries/monica.png"
                 verse: "+ Galatians 2:20"
                 extra: "+ cc aka corn connoisseur"
             - person:
