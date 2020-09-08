@@ -2,140 +2,139 @@
 category: "Ministries"
 title: "Ministries"
 featuredImage: "../images/cross-about.jpg"
-ministries: 
-    - ministry: 
-        type: "large group"
-        responsibility: "responsibilities here"
-        people: 
+ministries:
+    - ministry:
+        type: "LARGE GROUP"
+        responsibility: "We plan the weekly Large Group events throughout the school year. From icebreakers and post large group events to activities and speakers, we try to make Large Group as God-centered and engaging as possible!"
+        people:
+            - person:
+                name: "Monica Andres"
+                detail: "4th year, Computer Science"
+                core: "Core Coordinator"
+                featuredImage: "../images/ministries/monica.png"
+                verse: "+ Galatians 2:20"
+                extra: "+ cc aka corn connoisseur"
             - person:
                 name: "Martin Jiang"
-                detail: "3rd year, Computer Engineering"
-                core: "CC"
+                core: ""
                 featuredImage: "../images/ministries/martin.JPG"
+                detail: "4th year, Computer Engineering"
+                verse: ""
+                extra: ""
             - person:
-                name: "Calvin Wang"
+                name: "Peter Nguyen"
                 core: ""
-                featuredImage: "../images/ministries/Calvin.jpg"
-                detail: "4th year, Civil Engineering"
-            - person: 
-                name: "Lawrence Lai"
+                featuredImage: "../images/ministries/member.jpg"
+                detail: "3rd year, Electrical Engineering"
+                verse:
+                extra: ""
+    - ministry:
+        type: "OUTREACH & PRAYER"
+        responsibility: "More info coming soon!"
+        people:
+            - person:
+                name: "Connor Lee"
+                core: "Core"
+                featuredImage: "../images/ministries/connor.jpg"
+                detail: "3rd year, Mechanical Engineering"
+                verse:
+                extra: ""
+            - person:
+                name: "Megan Ung"
                 core: ""
-                featuredImage: "../images/ministries/lawrence.jpg"
-                detail: "2nd year, Electrical Engineering"
-            - person: 
-                name: "Naryung Kim"
-                core: ""
-                featuredImage: "../images/ministries/naryung.jpg"
-                detail: "4th year, Child Development"
-            - person: 
+                featuredImage: "../images/ministries/member.jpg"
+                detail: "2nd year, Business, Information Systems"
+                verse:
+                extra: ""
+            - person:
+                name: "Jacob Bello"
+                core: "Worship Coordinator"
+                featuredImage: "../images/ministries/member.jpg"
+                detail: "3rd year, Business, Information Systems"
+                verse:
+                extra: ""
+            - person:
                 name: "Peter Mar"
                 core: ""
                 featuredImage: "../images/ministries/peter.JPG"
-                detail: "3rd year, Food Science"
+                detail: "4th year, Food Science"
+                verse: "+ 1 Corinthians 10:31"
+                extra: "+ Eating, Cooking, Baking are my specialties"
     - ministry:
-        type: "outreach"
-        responsibility: "responsibilities here"
-        people: 
+        type: "INREACH"
+        responsibility: "More info coming soon!"
+        people:
             - person:
-                name: "Jonathan Date-Chong"
+                name: "Phoebe Kim"
                 core: "Core"
-                featuredImage: "../images/ministries/dc.JPG"
-                detail: "4th year, Computer Science"
-            - person: 
-                name: "Andre Tran"
-                core: ""
-                featuredImage: "../images/ministries/andre.jpg"
-                detail: "4th year, Business"
-            - person: 
-                name: "Connor Lee"
-                core: ""
-                featuredImage: "../images/ministries/connor.jpg"
-                detail: "2nd year, Mechanical Engineering"
-            - person: 
-                name: "Kevin Yu"
-                core: ""
-                featuredImage: "../images/ministries/kevin.PNG"
-                detail: "4th year, Computer Engineering"
-            - person: 
-                name: "Rachel Jung"
-                core: ""
-                featuredImage: "../images/ministries/rachel.jpeg"
-                detail: "4th year, Business"
-    - ministry:
-        type: "small groups"
-        responsibility: "responsibilities here"
-        people:
-            - person: 
-                name: "Jaclyn Shimada"
-                core: "Core"
-                featuredImage: "../images/ministries/jackie.jpeg"
-                detail: "3rd year, Electrical Engineering"
-            - person: 
-                name: "Charley Zhang"
-                core: ""
-                featuredImage: "../images/ministries/charley.jpg"
-                detail: "3rd year, Experience Industry Management"
-            - person: 
-                name: "Stanley Suh"
-                core: ""
-                featuredImage: "../images/ministries/stanley.jpg"
-                detail: "3rd year, Business"
-    - ministry: 
-        type: "women's"
-        responsibility: "responsibilities here"
-        people:
-            - person: 
-                name: "Michelle Kang"
-                core: "Core"
-                featuredImage: "../images/ministries/michelle.jpg"
-                detail: "3rd year, Graphic Communications"
-            - person: 
-                name: "Courtney Koyama"
-                core: ""
-                featuredImage: "../images/ministries/courtney.PNG"
-                detail: "4th year, Business"
-            - person: 
-                name: "Monica Andres"
-                core: ""
-                featuredImage: "../images/ministries/monica.jpeg"
-                detail: "3rd year, Computer Science"
-    - ministry:
-        type: "men's"
-        responsibility: "responsibilities here"
-        people:
-            - person: 
-                name: "Isaiah Kim"
-                core: "Core"
-                featuredImage: "../images/ministries/isaiah.JPG"
-                detail: "3rd year, English"
-            - person: 
-                name: "Justin Wang"
-                core: ""
-                featuredImage: "../images/ministries/justin.JPG"
-                detail: "4th year, Business"
-            - person: 
+                featuredImage: "../images/ministries/phoebe.jpg"
+                detail: "3rd year, Landscape Architecture"
+                verse:
+                extra: ""
+            - person:
                 name: "Nick Desimone"
+                core: "Core"
+                featuredImage: "../images/ministries/member.jpg"
+                detail: "4th year, Mechanical Engineering"
+                verse:
+                extra: ""
+            - person:
+                name: "Danielle Tien"
                 core: ""
-                featuredImage: "../images/ministries/nick.jpg"
-                detail: "3rd year, Mechanical Engineering"
+                featuredImage: "../images/ministries/member.jpg"
+                detail: "2nd year, Food Science"
+                verse:
+                extra: ""
+            - person:
+                name: "Tommy Xu"
+                core: ""
+                featuredImage: "../images/ministries/member.jpg"
+                detail: "3rd year, Chemistry"
+                verse:
+                extra: ""
+            - person:
+                name: "Stephen Chang"
+                core: ""
+                featuredImage: "../images/ministries/member.jpg"
+                detail: "4th year, Agricultural Science, Double Majoring in AEPS"
+                verse: "+ 2 Corinthians 12:9"
+                extra: "+ I love studying and talking about weeds! (Not the smoking kind!)"
     - ministry:
-        type: "prayer"
-        responsibility: "This year’s prayer team will be lead by Core!"
+        type: "Design Team"
+        responsibility: "More info coming soon!"
+        people:
+            - person:
+                name: "Michelle Kang"
+                core: ""
+                featuredImage: "../images/ministries/member.jpg"
+                detail: "4th Year, Graphic Communications"
+                verse: ""
+                extra: ""
+    - ministry:
+        type: "ADVISORS"
+        responsibility: "More info coming soon!"
         people:
             - person:
                 name: "David Janzen"
                 core: ""
-                featuredImage: "../images/ministries/adam-m-1.jpg"
-                detail: “”
-    - ministry:
-        type: "advisor"
-        responsibility: "responsibility here"
-        people:
+                featuredImage: "../images/ministries/member.jpg"
+                detail: "Cal Poly Professor, Computer Science Department"
+                verse:
+                extra: ""
             - person:
-                name: "David Janzen"
+                name: "Melanie Chow"
                 core: ""
-                featuredImage: "../images/ministries/janzen.jpg"
-                detail: "Cal Poly Professor"
+                featuredImage: "../images/ministries/member.jpg"
+                detail: "AACF Staffer"
+                verse:
+                extra: ""
+            - person:
+                name: "More info coming soon!"
+                core: ""
+                featuredImage: "../images/ministries/member.jpg"
+                detail: "Child of God"
+                verse:
+                extra: ""
 ---
 can make each ministry a key/value pair or a list with '-'
 will be able to add image inside each person
