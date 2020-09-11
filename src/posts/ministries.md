@@ -101,14 +101,14 @@ ministries:
                 extra: "+ I love studying and talking about weeds! (Not the smoking kind!)"
     - ministry:
         type: "Design Team"
-        responsibility: "More info coming soon!"
+        responsibility: "In design team we see how our passions and talents can be used for God and others. We work together in creating graphics, apparel, social media content for the fellowship!"
         people:
             - person:
                 name: "Michelle Kang"
                 core: "Lead"
                 featuredImage: "../images/ministries/michelle.jpg"
                 detail: "4th Year, Graphic Communications"
-                verse: ""
+                verse: "Psalm 63:3"
                 extra: ""
             - person:
                 name: "Child of God"
