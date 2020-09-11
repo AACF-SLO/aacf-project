@@ -19,40 +19,40 @@ ministries:
                 core: ""
                 featuredImage: "../images/ministries/martin.JPG"
                 detail: "4th year, Computer Engineering"
-                verse: ""
+                verse: "+ Romans 8:31"
                 extra: ""
             - person:
                 name: "Peter Nguyen"
                 core: ""
-                featuredImage: "../images/ministries/member.jpg"
+                featuredImage: "../images/ministries/peter2.jpg"
                 detail: "3rd year, Electrical Engineering"
-                verse:
+                verse: "+ 1 Peter 5:7"
                 extra: ""
     - ministry:
         type: "OUTREACH & PRAYER"
-        responsibility: "More info coming soon!"
+        responsibility: "Our goals are to share the message of the Gospel with those around us and to unify our community through prayer."
         people:
             - person:
                 name: "Connor Lee"
                 core: "Core"
                 featuredImage: "../images/ministries/connor.jpg"
                 detail: "3rd year, Mechanical Engineering"
-                verse:
-                extra: ""
+                verse: "+ Colossians 3:17"
+                extra: "+ I'll teach you how to play SLO Uno"
             - person:
                 name: "Megan Ung"
                 core: ""
-                featuredImage: "../images/ministries/member.jpg"
+                featuredImage: "../images/ministries/megan.jpg"
                 detail: "2nd year, Business, Information Systems"
                 verse:
                 extra: ""
             - person:
                 name: "Jacob Bello"
                 core: "Worship Coordinator"
-                featuredImage: "../images/ministries/member.jpg"
+                featuredImage: "../images/ministries/jacob.jpg"
                 detail: "3rd year, Business, Information Systems"
-                verse:
-                extra: ""
+                verse: "+ John 11:35"
+                extra: "+ Yeah, I'm based. Based on the word of God."
             - person:
                 name: "Peter Mar"
                 core: ""
@@ -62,40 +62,40 @@ ministries:
                 extra: "+ Eating, Cooking, Baking are my specialties"
     - ministry:
         type: "INREACH"
-        responsibility: "More info coming soon!"
+        responsibility: "We are this year’s Inreach Team! We focus on events that intentionally strengthen our relationships with one another and grow us toward God as a family. This will look like fellowship between the men’s and women’s communities, Bible studies, etc. Our desire is to love and be loved by God with unity."
         people:
             - person:
                 name: "Phoebe Kim"
                 core: "Core"
                 featuredImage: "../images/ministries/phoebe.jpg"
                 detail: "3rd year, Landscape Architecture"
-                verse:
-                extra: ""
+                verse: "+ Jeremiah 31:3"
+                extra: "+ Ask me why I love Jesus"
             - person:
                 name: "Nick Desimone"
                 core: "Core"
-                featuredImage: "../images/ministries/member.jpg"
+                featuredImage: "../images/ministries/nick.jpg"
                 detail: "4th year, Mechanical Engineering"
-                verse:
-                extra: ""
+                verse: "+ Romans 1:25"
+                extra: "+ I love that I'm allowed to worship the Creator (capital C)"
             - person:
                 name: "Danielle Tien"
                 core: ""
-                featuredImage: "../images/ministries/member.jpg"
+                featuredImage: "../images/ministries/danielle.JPG"
                 detail: "2nd year, Food Science"
-                verse:
+                verse: "+ Romans 5:8"
                 extra: ""
             - person:
                 name: "Tommy Xu"
                 core: ""
-                featuredImage: "../images/ministries/member.jpg"
+                featuredImage: "../images/ministries/tommy.jpg"
                 detail: "3rd year, Chemistry"
-                verse:
-                extra: ""
+                verse: "+Ephesians 2:10"
+                extra: "+ My favorite verse is actually ephesians 2:10"
             - person:
                 name: "Stephen Chang"
                 core: ""
-                featuredImage: "../images/ministries/member.jpg"
+                featuredImage: "../images/ministries/stephen.jpg"
                 detail: "4th year, Agricultural Science, Double Majoring in AEPS"
                 verse: "+ 2 Corinthians 12:9"
                 extra: "+ I love studying and talking about weeds! (Not the smoking kind!)"
@@ -105,8 +105,8 @@ ministries:
         people:
             - person:
                 name: "Michelle Kang"
-                core: ""
-                featuredImage: "../images/ministries/member.jpg"
+                core: "Lead"
+                featuredImage: "../images/ministries/michelle.jpg"
                 detail: "4th Year, Graphic Communications"
                 verse: ""
                 extra: ""
@@ -140,13 +140,6 @@ ministries:
                 core: ""
                 featuredImage: "../images/ministries/member.jpg"
                 detail: "AACF Staff"
-                verse:
-                extra: ""
-            - person:
-                name: "More info coming soon!"
-                core: ""
-                featuredImage: "../images/ministries/member.jpg"
-                detail: "Child of God"
                 verse:
                 extra: ""
 ---

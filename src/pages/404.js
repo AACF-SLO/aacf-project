@@ -25,7 +25,7 @@ const NotFound = () => {
             <Head title="404"/>
             <div className={[errorStyles.heading," image"].join(' ')}>
 
-               <h2>404 Error. Page not found.<br />ZZZZZZZZ</h2>
+               <h2>404 Error. Page not found.<br />But you found us sleeping.<br />ZZZZZZZZ</h2>
 
                   <img src={sleep} alt="" />
 

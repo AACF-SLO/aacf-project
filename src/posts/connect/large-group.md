@@ -5,7 +5,7 @@ description: "Large Groups are weekly meetings currently held through Zoom where
 people in the fellowship in a larger group setting."
 who: "Everyone and anyone is welcome!"
 location: "Online via Zoom Call. (Please get the Zoom password through our Facebook group, weekly email newsletter, Instagram, or by emailing us)"
-date: "Every Friday at 7:30 PM."
+date: "Every Friday at 7:30 PM - 9:30 PM."
 gif: "../../images/connect/large_group.gif"
 link: ""
 img: "../../images/connect/large_group.jpg"

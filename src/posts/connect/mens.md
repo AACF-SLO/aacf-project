@@ -8,5 +8,5 @@ date: "Dates vary throughout the school year"
 gif: "../../images/connect/mens.gif"
 img: "../../images/connect/mens.jpg"
 link: ""
-button: "ZOOM LINK"
+button: "SIGN UP"
 ---
