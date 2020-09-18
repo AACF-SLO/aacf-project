@@ -7,7 +7,7 @@ who: "Everyone and anyone is welcome!"
 location: "Online via Zoom Call. (Please get the Zoom password through our Facebook group, weekly email newsletter, Instagram, or by emailing us)"
 date: "Every Friday at 7:30 PM - 9:30 PM."
 gif: "../../images/connect/large_group.gif"
-link: ""
+link: "https://calpoly.zoom.us/j/92871282995?pwd=RU1nU2NkNzRvcldzejh2dEo4ZitrUT09"
 img: "../../images/connect/large_group.jpg"
 button: "ZOOM LINK"
 ---
