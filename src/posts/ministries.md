@@ -10,7 +10,7 @@ ministries:
             - person:
                 name: "Monica Andres"
                 detail: "4th year, Computer Science"
-                core: "Core Coordinator"
+                core: "CC"
                 featuredImage: "../images/ministries/monica.png"
                 verse: "+ Galatians 2:20"
                 extra: "+ cc aka corn connoisseur"
@@ -69,8 +69,8 @@ ministries:
                 core: "Core"
                 featuredImage: "../images/ministries/phoebe.jpg"
                 detail: "3rd year, Landscape Architecture"
-                verse: "+ Jeremiah 31:3"
-                extra: "+ Ask me why I love Jesus"
+                verse: "+ Isaiah 41:14"
+                extra: "+ Fear not u worm"
             - person:
                 name: "Nick Desimone"
                 core: "Core"
