@@ -44,8 +44,8 @@ ministries:
                 core: ""
                 featuredImage: "../images/ministries/megan.jpg"
                 detail: "2nd year, Business, Information Systems"
-                verse: "Ephesians 3:19"
-                extra: "Let’s talk about the middle"
+                verse: "+ Ephesians 3:19"
+                extra: "+ Let’s talk about the middle"
             - person:
                 name: "Jacob Bello"
                 core: "Worship Coordinator"
