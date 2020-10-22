@@ -7,6 +7,6 @@ location: "Online via Zoom Call. (Please get the Zoom password through our Faceb
 date: "Check back again to see when Bible study will meet during the Fall!"
 gif: ""
 img: "../../images/connect/small_group.jpg"
-link: ""
-button: "SIGN UP"
+link: "https://calpoly.zoom.us/j/93261313313?pwd=ek1LVmR4NXZKcmdFOEd1bHcvS2M1dz09&fbclid=IwAR0bQquWYFAMKrf0eQjLybbmqj0vGiutsqAVHmJuQ2ksquNkhJZAUW1gfpY#success"
+button: "ZOOM LINK"
 ---
