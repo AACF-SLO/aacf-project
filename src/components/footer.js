@@ -49,6 +49,10 @@ const Footer = () => {
                         </Link>
                         </p>
                     </Col>
+                    <Col md="auto" className="d-flex justify-content-center">
+                        <p className={footerStyles.footerLinks}><a href="https://mailchi.mp/555292b0c94e/aacf-slo" target="_blank" rel="noopener noreferrer">NEWSLETTER</a>
+                        </p>
+                    </Col>
                     <Col md="auto">
                         <div className="d-flex justify-content-center">
                             <p className={footerStyles.footerLinks}>
