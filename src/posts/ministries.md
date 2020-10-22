@@ -111,18 +111,18 @@ ministries:
                 verse: "Psalm 63:3"
                 extra: ""
             - person:
-                name: "Child of God"
+                name: "Talyssa Cruz"
                 core: ""
-                featuredImage: "../images/ministries/member.jpg"
-                detail: ""
-                verse: ""
-                extra: ""
+                featuredImage: "../images/ministries/talyssa.jpg"
+                detail: "4th Year, Graphic Communications"
+                verse: "Philippians 1:21"
+                extra: "For to me, to live is Christ and to die is gain."
             - person:
-                name: "Child of God"
+                name: "Isaiah Kim"
                 core: ""
-                featuredImage: "../images/ministries/member.jpg"
-                detail: ""
-                verse: ""
+                featuredImage: "../images/ministries/isaiah.jpg"
+                detail: "4th Year, English, Minor in GRC"
+                verse: "2 Corinthians 12:9"
                 extra: ""
     - ministry:
         type: "ADVISORS"
@@ -131,7 +131,7 @@ ministries:
             - person:
                 name: "David Janzen"
                 core: ""
-                featuredImage: "../images/ministries/member.jpg"
+                featuredImage: "../images/ministries/david.jpg"
                 detail: "Cal Poly Professor, Computer Science Department"
                 verse:
                 extra: ""
@@ -139,7 +139,14 @@ ministries:
                 name: "Melanie Chow"
                 core: ""
                 featuredImage: "../images/ministries/member.jpg"
-                detail: "AACF Staff"
+                detail: "AACF Staffer"
+                verse:
+                extra: ""
+            - person:
+                name: "Adam Mayeda"
+                core: ""
+                featuredImage: "../images/ministries/adam.jpg"
+                detail: "AACF Staffer for Cal Poly SLO"
                 verse:
                 extra: ""
 ---
