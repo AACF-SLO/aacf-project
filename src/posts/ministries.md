@@ -47,13 +47,6 @@ ministries:
                 verse: "+ Ephesians 3:19"
                 extra: "+ Let’s talk about the middle"
             - person:
-                name: "Jacob Bello"
-                core: "Worship Coordinator"
-                featuredImage: "../images/ministries/jacob.jpg"
-                detail: "3rd year, Business, Information Systems"
-                verse: "+ John 11:35"
-                extra: "+ Yeah, I'm based. Based on the word of God."
-            - person:
                 name: "Peter Mar"
                 core: ""
                 featuredImage: "../images/ministries/peter.JPG"
