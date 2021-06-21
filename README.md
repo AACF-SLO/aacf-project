@@ -1,3 +1,6 @@
+GOOGLE DOC EXPLANING THE HOW-TO'S OF THE WEBSITE:
+https://docs.google.com/document/d/1FFDh_znW0xcXG4diZRmOZNqFBesbEoGcNXJDI6VG72Y/edit?usp=sharing
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
