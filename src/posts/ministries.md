@@ -15,9 +15,9 @@ ministries:
                 verse: ""
                 extra: "+ cc aka corn connoisseur"
             - person:
-                name: "Martin Jiang"
+                name: "Connor Lee"
                 core: ""
-                featuredImage: "../images/ministries/martin.JPG"
+                featuredImage: "../images/ministries/member.JPG"
                 detail: "4th year, Computer Engineering"
                 verse: "+ Romans 8:31"
                 extra: ""
