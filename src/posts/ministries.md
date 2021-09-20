@@ -9,10 +9,10 @@ ministries:
         people:
             - person:
                 name: "Danielle Tien"
-                detail: "4th year, Computer Science"
+                detail: "3rd year, Food Science"
                 core: "CC"
-                featuredImage: "../images/ministries/monica.png"
-                verse: "+ Galatians 2:20"
+                featuredImage: "../images/ministries/member.jpg"
+                verse: ""
                 extra: "+ cc aka corn connoisseur"
             - person:
                 name: "Martin Jiang"
