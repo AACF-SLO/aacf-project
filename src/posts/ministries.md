@@ -8,7 +8,7 @@ ministries:
         responsibility: "We plan the weekly Large Group events throughout the school year. From icebreakers and post large group events to activities and speakers, we try to make Large Group as God-centered and engaging as possible!"
         people:
             - person:
-                name: "Monica Andres"
+                name: "Danielle Tien"
                 detail: "4th year, Computer Science"
                 core: "CC"
                 featuredImage: "../images/ministries/monica.png"
