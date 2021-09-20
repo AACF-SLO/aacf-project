@@ -17,7 +17,7 @@ ministries:
             - person:
                 name: "Connor Lee"
                 core: ""
-                featuredImage: "../images/ministries/member.JPG"
+                featuredImage: "../images/ministries/member.jpg"
                 detail: "4th year, Computer Engineering"
                 verse: "+ Romans 8:31"
                 extra: ""
