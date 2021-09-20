@@ -1,6 +1,6 @@
 ---
 category: "about"
-theme: "HESED"
+theme: "INSIDE OUT"
 verse: "''This is how we know what love is: Jesus Christ laid down his life for us. And we ought to lay down our lives for our brothers and sisters.''"
 fall: "We want to dedicate this quarter to the “why” of our “how” in order to lay a strong foundation for our knowledge of the Gospel. Our understanding and acceptance of
 the Gospel is a prerequisite to genuinely love one another. We must recognize the foundational truths laid out in the Bible."
