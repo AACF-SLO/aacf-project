@@ -177,13 +177,12 @@ const BackgroundSection = ({ className }) => (
                         <Col sm={12} md={9}>
                             <h1>{data.allMarkdownRemark.edges[0].node.frontmatter.theme}</h1>
                             <h3>{data.allMarkdownRemark.edges[0].node.frontmatter.verse}</h3>
-                            <h2>1 John 3:16</h2>
+                            <h2>John 15:5</h2>
                         </Col>
                     </Row>
                     <Row className="justify-content-center mt-5 mb-0">
                         <Col sm={12} md={9} className="">
                              <h2>Subthemes</h2>
-                             <h3>This is how we know...</h3>
                         </Col>
                      </Row>
                     <Row className="pt-md-4 mt-0">
