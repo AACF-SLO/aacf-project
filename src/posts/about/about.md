@@ -1,18 +1,13 @@
 ---
 category: "about"
 theme: "INSIDE OUT"
-verse: "''This is how we know what love is: Jesus Christ laid down his life for us. And we ought to lay down our lives for our brothers and sisters.''"
-fall: "We want to dedicate this quarter to the “why” of our “how” in order to lay a strong foundation for our knowledge of the Gospel. Our understanding and acceptance of
-the Gospel is a prerequisite to genuinely love one another. We must recognize the foundational truths laid out in the Bible."
-winter: "A lot of people are stuck at home, so it’s harder to have a physical sense of loving one another. However, this shouldn’t stop us
-from laying down our lives for our brother and sisters in anyway that we can. We need to make sure that our faith put into actions
-isn’t growing cold because of the physical distances."
-spring: "The Church is the bride of Christ. It’s
-important to be a part of the church and not just a fellowship. For most of us, the fellowship is only during our college years, and so
-we believe it’s important to highlight the importance of church involvement so that it would carry over to post graduation."
-fallWords: "...what the Gospel means."
-winterWords: "...to love those around us."
-springWords: "...to be involved in the Church."
+verse: "''I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing.''"
+fall: "We love because He first loved us. Understanding God’s love is foundational for us to reflect and overflow His love onto others and to pursue other spiritual gifts and virtues God has given to us. As we understand the sheer magnitude of His amazing love and how undeserving of it we are, we naturally become inclined to show others that same love"
+winter: "We have the fullness of joy in God’s presence because of the reality of the Gospel. Joy is an internal condition that leads us to live our lives as worship regardless of circumstance. This internal condition is a result of our understanding of who Jesus is and our trust in His unfailing promises"
+spring: "We recognize that the lives that God desires us to have are far greater than the lives we desire for ourselves. Therefore our lives are no longer our own, but we surrender them to Christ. The end of kingdom living is not simply self-denial. Rather we deny ourselves and surrender to God because we recognize how worthy He is."
+fallWords: "foundational love"
+winterWords: "uncontainable joy"
+springWords: "kingdom living"
 featuredImage1: "../../images/rainbow/rainbow-01.png"
 featuredImage2: "../../images/rainbow/rainbow-02.png"
 featuredImage3: "../../images/rainbow/rainbow-03.png"
